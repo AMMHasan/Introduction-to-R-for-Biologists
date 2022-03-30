@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Page not found | Introduction to R for Biologists</title>
   <meta name="description" content="Page not found | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Page not found | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
+  
   
   
   
@@ -32,6 +33,7 @@
   
 
 
+<script src="libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -55,25 +57,27 @@
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -82,9 +86,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -134,30 +138,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Introduction to R for Biologists</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a><ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definition"><i class="fa fa-check"></i><b>1.1</b> Definition<span></span></a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#mini-history"><i class="fa fa-check"></i><b>1.2</b> Mini history<span></span></a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing R and RStudio<span></span></a><ul>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing R and RStudio<span></span></a>
+<ul>
 <li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#to-install-r"><i class="fa fa-check"></i><b>1.3.1</b> To Install R<span></span></a></li>
 <li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#to-install-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> To Install RStudio<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="who-am-i.html"><a href="who-am-i.html"><i class="fa fa-check"></i><b>2</b> Who am I?<span></span></a></li>
-<li class="chapter" data-level="3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html"><i class="fa fa-check"></i><b>3</b> Get to know RStudio interface<span></span></a><ul>
-<li class="chapter" data-level="3.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#rstudio-windowspanels"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels<span></span></a><ul>
+<li class="chapter" data-level="3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html"><i class="fa fa-check"></i><b>3</b> Get to know RStudio interface<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#rstudio-windowspanels"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels<span></span></a>
+<ul>
 <li class="chapter" data-level="3.1.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#source-window"><i class="fa fa-check"></i><b>3.1.1</b> Source window<span></span></a></li>
 <li class="chapter" data-level="3.1.2" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#environment-history-connections-build-git-etc"><i class="fa fa-check"></i><b>3.1.2</b> Environment / History (Connections / Build / Git etc)<span></span></a></li>
 <li class="chapter" data-level="3.1.3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#console"><i class="fa fa-check"></i><b>3.1.3</b> Console<span></span></a></li>
 <li class="chapter" data-level="3.1.4" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#files-plots-packages-help"><i class="fa fa-check"></i><b>3.1.4</b> Files / Plots / Packages / Help<span></span></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html"><i class="fa fa-check"></i><b>4</b> Data types and data structures<span></span></a><ul>
-<li class="chapter" data-level="4.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-types-in-r"><i class="fa fa-check"></i><b>4.1</b> Useful data types in R<span></span></a><ul>
+<li class="chapter" data-level="4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html"><i class="fa fa-check"></i><b>4</b> Data types and data structures<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-types-in-r"><i class="fa fa-check"></i><b>4.1</b> Useful data types in R<span></span></a>
+<ul>
 <li class="chapter" data-level="4.1.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#numbers"><i class="fa fa-check"></i><b>4.1.1</b> Numbers:<span></span></a></li>
 <li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
 <li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-structures-in-r"><i class="fa fa-check"></i><b>4.2</b> Useful data structures in R<span></span></a><ul>
+<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-structures-in-r"><i class="fa fa-check"></i><b>4.2</b> Useful data structures in R<span></span></a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> vector<span></span></a></li>
 <li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> matrix<span></span></a></li>
 <li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#dataframe"><i class="fa fa-check"></i><b>4.2.3</b> dataframe<span></span></a></li>
@@ -168,8 +179,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.4</b> Import and export data<span></span></a></li>
 <li class="chapter" data-level="4.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#exercise"><i class="fa fa-check"></i><b>4.5</b> Exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>5</b> R plot<span></span></a><ul>
-<li class="chapter" data-level="5.1" data-path="r-plot.html"><a href="r-plot.html#basic-plots-in-r"><i class="fa fa-check"></i><b>5.1</b> Basic plots in R<span></span></a><ul>
+<li class="chapter" data-level="5" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>5</b> R plot<span></span></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="r-plot.html"><a href="r-plot.html#basic-plots-in-r"><i class="fa fa-check"></i><b>5.1</b> Basic plots in R<span></span></a>
+<ul>
 <li class="chapter" data-level="5.1.1" data-path="r-plot.html"><a href="r-plot.html#scatter"><i class="fa fa-check"></i><b>5.1.1</b> scatter<span></span></a></li>
 <li class="chapter" data-level="5.1.2" data-path="r-plot.html"><a href="r-plot.html#bar-plot"><i class="fa fa-check"></i><b>5.1.2</b> bar plot<span></span></a></li>
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
@@ -177,8 +190,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a><ul>
-<li class="chapter" data-level="6.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#control-flow-in-r"><i class="fa fa-check"></i><b>6.1</b> Control flow in R<span></span></a><ul>
+<li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#control-flow-in-r"><i class="fa fa-check"></i><b>6.1</b> Control flow in R<span></span></a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#if-else"><i class="fa fa-check"></i><b>6.1.1</b> If-else<span></span></a></li>
 <li class="chapter" data-level="6.1.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#while"><i class="fa fa-check"></i><b>6.1.2</b> while<span></span></a></li>
 <li class="chapter" data-level="6.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>6.1.3</b> for loop<span></span></a></li>

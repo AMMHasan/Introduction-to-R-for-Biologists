@@ -32,7 +32,7 @@ I will go through these four tabls in this panel. However, sometimes you may hav
 1. Files - Files tab showes you where you are and what are the contents of the directory, which is equivalent to folder in windows OS. You can also see the path of the working directory on the top. Let's set your current directory -
 
 ```{r}
-setwd("/Users/testuser/Documents/bookdown/Introduction-to-R-for-Biologists/")
+setwd("/Users/mahedi/Documents/Collaborations/UCL_CI/Introduction-to-R-for-Biologists")
 ```
 
 2. Plots - This tab shows the plots after generated. One cool and handy feature of RStudio is to have it integrated. You can go back and forth between plots using left and right arrow keys. Small broom resets your plots panel and deletes from the memory. You can either copy your plot to the clipboard or export as .jpeg or .pdf file. 
