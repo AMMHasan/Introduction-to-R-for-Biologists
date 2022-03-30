@@ -1,0 +1,11 @@
+# References
+
+RStudio: https://www.youtube.com/watch?v=FIrsOBy5k58
+
+Quick-R: for help
+
+R-seek: for help
+
+R-bloggers: active developments in R
+
+Book: R in action

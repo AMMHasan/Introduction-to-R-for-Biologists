@@ -1,0 +1,9 @@
+# R programming and R functions for the beginners
+
+## Control flow in R
+### If-else
+### while
+### for loop
+
+## User-defined functions in R
+## Exercise

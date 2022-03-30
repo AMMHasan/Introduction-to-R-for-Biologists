@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to R for Biologists</title>
-  <meta name="description" content="Introduction to R for Biologists" />
+  <title>Chapter 3 Get to know RStudio interface | Introduction to R for Biologists</title>
+  <meta name="description" content="Chapter 3 Get to know RStudio interface | Introduction to R for Biologists" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to R for Biologists" />
+  <meta property="og:title" content="Chapter 3 Get to know RStudio interface | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to R for Biologists" />
+  <meta name="twitter:title" content="Chapter 3 Get to know RStudio interface | Introduction to R for Biologists" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="who-am-i.html"/>
+<link rel="prev" href="who-am-i.html"/>
+<link rel="next" href="data-types-and-data-structures.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -206,64 +206,47 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Introduction to R for Biologists</h1>
-<p class="author"><em>Dr A M Mahedi Hasan</em></p>
-<p class="date"><em>2022-03-30</em></p>
+<div id="get-to-know-rstudio-interface" class="section level1 hasAnchor">
+<h1><span class="header-section-number">Chapter 3</span> Get to know RStudio interface<a href="get-to-know-rstudio-interface.html#get-to-know-rstudio-interface" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>RStudio is an integrated development environment (IDE) for R.</p>
+<div id="rstudio-windowspanels" class="section level2 hasAnchor">
+<h2><span class="header-section-number">3.1</span> RStudio Windows/Panels<a href="get-to-know-rstudio-interface.html#rstudio-windowspanels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Upon openning RStudio, you may see three windows or panels. However, it can be extended to four with the source panel opened (File &gt; New File &gt; R Script). You can reorder the windows / panels as per your wish.</p>
+<div id="source-window" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.1</span> Source window<a href="get-to-know-rstudio-interface.html#source-window" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The source panel is where you create and edit your collection of codes in i.e. R Scripts. This is your script editor. You can save it in “.R” extension and reuse your codes later or in the case of sudden crush of your computer. As you type in your codes, make a habit of saving the codes (command + S or Ctrl + S) as you do with most of the text editors. However, you have to run the codes actively through the Console (coming next in the discussion). You can run the whole page of codes or a snippet of code from the source panel.</p>
+<p>There are many ways to run your codes from the Source panel through the Console. This could be with copy your codes and then paste on the Console and then hit enter. Or selectitng the code snippet that you wish to execute and clicking on the “Run” button on the top of the Source window. Alternatively, you can use the short-cut “Command + Enter” on Mac, or “Control + Enter” on Windows OS.</p>
 </div>
-<div id="introduction" class="section level1 hasAnchor">
-<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><em>Course being desined for the MSc Students on UCL Cancer Institute.</em></p>
-<div id="definition" class="section level2 hasAnchor">
-<h2><span class="header-section-number">1.1</span> Definition<a href="index.html#definition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>R</strong> is a programming language for statistical computing and graphics supported by the <strong>R</strong> Core Team and the <strong>R</strong> Foundation for Statistical Computing. - Wikipedia</p>
+<div id="environment-history-connections-build-git-etc" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.2</span> Environment / History (Connections / Build / Git etc)<a href="get-to-know-rstudio-interface.html#environment-history-connections-build-git-etc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>This panel contains several tabs and the number depends on whether you have installed/ loaded one or few packages. I will touch on only the Environment and the History tabs.</p>
+<p>The Environment tab of this panel shows you all the data objects (like vectors, dataframes etc) that you’ve created during the current R session . You can even double click on a loaded dataset on Environment tab and view in the Source panel, however, I won’t recommend this if the dataset is relatively sizable. The little broom on the top resets your environment and deletes the variables or data.</p>
+<p>The History tab keeps the commands that you used and can be reused by double click to execute, or shift + double click moves to the Source editor (R Script).</p>
 </div>
-<div id="mini-history" class="section level2 hasAnchor">
-<h2><span class="header-section-number">1.2</span> Mini history<a href="index.html#mini-history" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>R</strong> is an open-source implementation of the S programming language, which was designed for statistical analysis. <strong>S</strong> was created by Rick Becker, John Chambers, Doug Dunn, Jean McRae, and Judy Schilling at Bell Labs around 1976.
-In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, started on an implementation of <strong>S</strong> which had become the <strong>R</strong> programming language over time. In 1995, statistician Martin Mächler convinced them to make <strong>R</strong> a free and open-source software. The first official release came in June 1995. and the first official “stable beta” version (v1.0) was released on 29 February 2000. R is supported by a huge community leevel contribution as it is upen source.</p>
+<div id="console" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.3</span> Console<a href="get-to-know-rstudio-interface.html#console" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One can treat the Console Panel as the heart of RStudio. This is the default window in Base-R. You executes your R commands here actually. The Console works a is a prompt like a terminal in UNIX OS and let you check your codes interactively. Keep in mind that, when you turn off the RStudio, the Console deletes all the codes that you have executed in the current R session and when you reopen RStudio, you start with a fresh Console.</p>
 </div>
-<div id="installing-r-and-rstudio" class="section level2 hasAnchor">
-<h2><span class="header-section-number">1.3</span> Installing R and RStudio<a href="index.html#installing-r-and-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We will be using RStudio, which is an Integrated Development Environment (IDE) of R. To my view, it is very handy working in RStudio environemnt, rather than using simply R. However, to use RStudio, we’ll need to install first the Base-R, and then RStudio software. Base-R is the basic software which contains the R programming language. Desktop version of both software are totally free and open source.</p>
-<div id="to-install-r" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.3.1</span> To Install R<a href="index.html#to-install-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="for-mac-users" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.1.1</span> For Mac users<a href="index.html#for-mac-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Open an internet browser and go to www.r-project.org.</li>
-<li>Click the “download R” link in the middle of the page under “Getting Started.”</li>
-<li>Select a CRAN location (a mirror site) and click the corresponding link.</li>
-<li>Click on the “Download R for MacOS” link at the top of the page.</li>
-<li>Click on an appropriate link under Latest releases.</li>
-<li>Save the .pkg file, double-click it to open, and follow the installation instructions.</li>
-<li>Now that R is installed, you need to download and install RStudio.</li>
-</ul>
-</div>
-<div id="for-windows-users" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.1.2</span> For Windows users<a href="index.html#for-windows-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="for-linux-users" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.1.3</span> For Linux users<a href="index.html#for-linux-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-</div>
-<div id="to-install-rstudio" class="section level3 hasAnchor">
-<h3><span class="header-section-number">1.3.2</span> To Install RStudio<a href="index.html#to-install-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="for-mac-users-1" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.2.1</span> For Mac users<a href="index.html#for-mac-users-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Go to www.rstudio.com and click on the “Download” tab on the top</li>
-<li>Click on “Download” button under RStudio Desktop.</li>
-<li>Click on the version recommended for your system (i.e. the latest Mac version), save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.</li>
-</ul>
-</div>
-<div id="for-windows-users-1" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.2.2</span> For Windows users<a href="index.html#for-windows-users-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-</div>
-<div id="for-linux-users-1" class="section level4 hasAnchor">
-<h4><span class="header-section-number">1.3.2.3</span> For Linux users<a href="index.html#for-linux-users-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="files-plots-packages-help" class="section level3 hasAnchor">
+<h3><span class="header-section-number">3.1.4</span> Files / Plots / Packages / Help<a href="get-to-know-rstudio-interface.html#files-plots-packages-help" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>I will go through these four tabls in this panel. However, sometimes you may have an aditional tab called Viewer.</p>
+<ol style="list-style-type: decimal">
+<li>Files - Files tab showes you where you are and what are the contents of the directory, which is equivalent to folder in windows OS. You can also see the path of the working directory on the top. Let’s set your current directory -</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">setwd</span>(<span class="st">&quot;/Users/testuser/Documents/bookdown/Introduction-to-R-for-Biologists/&quot;</span>)</a></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Plots - This tab shows the plots after generated. One cool and handy feature of RStudio is to have it integrated. You can go back and forth between plots using left and right arrow keys. Small broom resets your plots panel and deletes from the memory. You can either copy your plot to the clipboard or export as .jpeg or .pdf file.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">hist</span>(<span class="kw">rnorm</span>(<span class="dv">1000</span>), <span class="dt">main =</span> <span class="st">&quot;Histogram of 1000 random numbers&quot;</span>)</a></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Packages - R packages are bundles of functions generated by R users and released for others to use for free. Sometimes low weight data are embedded within. This list contains all the packages that are downloaded in this computer (or came as base packages with R). And the loaded packages are the ones with tick marks (checked).</li>
+</ol>
+<p>FYI, there are more than 19000 packages in CRAN, more than 2000 packages in Bioconductor.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Help - Help tab provides the information regarding functions - detailed descriptions, usage, arguments etc. This utility can be summoned using the search box or by the <code>?function_name</code> in the console. You can either type the name of a function in the search window, or use the code to search for a function with the name.</li>
+</ol>
 
-</div>
 </div>
 </div>
 </div>
@@ -272,8 +255,8 @@ In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auck
           </div>
         </div>
       </div>
-
-<a href="who-am-i.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="who-am-i.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-types-and-data-structures.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -304,7 +287,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/edit/master/index.Rmd",
+"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/edit/master/02-R_env.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -312,7 +295,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/index.Rmd",
+"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/02-R_env.Rmd",
 "text": null
 },
 "download": null,

@@ -1,0 +1,124 @@
+# Data types and data structures
+
+## Useful data types in R
+
+There are different data types, but we will touch up on few but heavily used data types in this class. These are namely -
+
+### Numbers: 
+Numbers can be an Integer, or it can be a floating number (decimal numbers) which is recognized as simple Numeric. The later category is continuous number, meaning it can take up any value within a given range. 
+
+###  Character: 
+This type of data can be equivalent to categorical variable. These could be nominal (just names) or ordinal (names with hidden order) variables. 
+
+### Logical: 
+such as True or False. These can be the result of a boolean operation. 
+
+Let’s see an example - 
+
+participant.ID Date weight.in.kg height.in.cm smoker Overall.health.condition BMI1_001 01/11/2021 55.5 172 No Intermediate BMI1_002 01/11/2021 45.0 165 Yes Good 
+BMI1_003 01/11/2021 75.0 150 No Poor 
+Here in the table above, participant.ID, smoker, Overall.health.condition columns represent character data type. Of them, participant.ID and smoker columns contain nominal data, while the Overall.health.condition represents the ordinal data type. 
+file:///Users/mahedi/Downloads/class2.nb.html Page 1 of 14 
+
+Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20 
+The columns namely weight.in.kg and height.in.cm contain numeric and integer data type respectively. 
+A very very important information: Categorical data (nominal or ordinal) in R are also called Factors. Sometimes, you need to detach this characteristic from your data and convert it to merely character type for the sake of data handling. 
+Hide 
+Overall.health.condition <- factor(c("Intermediate", "Good", "Poor")) Overall.health.condition 
+[1] Intermediate Good Poor  
+Levels: Good Intermediate Poor 
+Hide 
+Overall.health.condition <- factor(c("Intermediate", "Good", "Poor"),   ordered = F) 
+Overall.health.condition 
+[1] Intermediate Good Poor  
+Levels: Good Intermediate Poor 
+Hide 
+Overall.health.condition <- factor(c("Intermediate", "Good", "Poor"),   ordered = T) 
+Overall.health.condition 
+[1] Intermediate Good Poor  
+Levels: Good < Intermediate < Poor 
+Hide
+Overall.health.condition <- factor(c("Intermediate", "Good", "Poor"),   ordered = T,  
+ levels = c("Poor", "Intermediate", "Good")) Overall.health.condition 
+[1] Intermediate Good Poor  
+Levels: Poor < Intermediate < Good 
+There are also complex data types, date data types (The Date column in the above table contains date data type) etc, which we will not cover in this course. 
+
+
+
+
+
+
+## Useful data structures in R
+### vector
+### matrix
+### dataframe
+
+There are few useful pre-defined data structures heavily used in R and there are user defined data structures as well (there are no limits in this case). We will discuss a few of the former - 
+
+
+### Vector: 
+Let’s first think of a variable and value pair, like you have a variable x and it has a value of 2 . Like what we write in R: x <- 2 which means, we assign the value 2 to x . This is equivalent to a scalar. You can put more than one value in a variable, and then it will be equivalent to a vector: y <- c(1,2,3,4,5,6) . Here we have used the combine function c() to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc). 
+
+Each of the component of the vector is called its Element. You can call or refer the elements individually or as a group using their positional index. The positional index starts from 1 (or you call it one-based indexing). For example, if you want to call the first element of y , you can refer to it by typing y[1] , or you can refer to the 4th element by typing y[4] . If you want to refer to from 2nd to the 4th elements of y , you type in y[c(2,3,4)] or you can use y[2:4] . 
+
+### Matrix: 
+A matrix is a two-dimensional (row and column) array of same data type. Matrices are created using matrix() function. Think of you have 20 numbers, from 1 to 20. You want to create a matrix with 4 rows and 5 columns. So you type in: 
+Hide
+myMatrix <- matrix(data=1:20,nrow = 4,ncol = 5) 
+myMatrix 
+ [,1] [,2] [,3] [,4] [,5] 
+[1,] 1 5 9 13 17 
+[2,] 2 6 10 14 18 
+[3,] 3 7 11 15 19 
+[4,] 4 8 12 16 20 
+If you want to subset the matrix you can do it easily. Always remember, matrix is a m row by n column (m x n) structure which you define in R as [m,n] or [row, column] . If you want to choose the first row and first column (which also indicates the element 1 in myMatrix), you type in myMatrix[1,1] . If you want to select first 2 rows and 2nd to 4th columns, you type in myMatrix[c(1,2), c(2,3,4)] or myMatrix[c(1:2), c(2:4)] . 
+Array: You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course. 
+### Data frame: 
+For you, data frame is the main data type that will have a huge utility in this course. You will import data in this format and manipulate data in this format and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is again a two dimensional array. It is more general than a matrix and can contain different data types in it. However, each column contains a single data type (of course). The function to create a data frame is data.frame() and an easy way to create a data frame is 
+myDataFrame <- data.frame(column1, column2, column3)) 
+file:///Users/mahedi/Downloads/class2.nb.html Page 3 of 14 
+Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20 
+Let’s see the same data frame again and observe carefully how it is done. 
+Hide
+myDataFrame <- data.frame( 
+ participant.ID=c("BMI1_001", "BMI1_002", "BMI1_003"), 
+ Date=c("01/11/2021", "01/11/2021", "01/11/2021"),  
+ weight.in.kg=c(55.5,45,75), "height in cm"=c(172,165,150), 
+ smoker=c("No", "Yes", "No"), 
+ Overall.health.condition=c("Intermediate", "Good", "Poor") 
+ ) 
+myDataFrame 
+
+participant.ID <chr> 
+Date <chr> 
+weight.in.kg <dbl> 
+height.in.cm <dbl> 
+smo… <chr> 
+Overall.health.condition <chr> 
+
+BMI1_001 01/11/2021 55.5 172 No Intermediate BMI1_002 01/11/2021 45.0 165 Yes Good BMI1_003 01/11/2021 75.0 150 No Poor 3 rows 
+Remember, each of the vector defining each column in the data frame has to be of same length. Now, if you want to subset the data frame as you did from matrix, you can use the same technique. For example, if you want to know the weight and height of first two patients, you type in 
+myDataFrame[c(1,2),c(3,4)] . Interestingly in the case of data frame, you can use the column names to do that, like - 
+myDataFrame[c(1,2),c("weight.in.kg", "height.in.cm")] 
+Further more, there is another level of flexibility for selecting a column information by using a $ notation as in myDataFrame$weight.in.kg . 
+Now, you can inquire what are the column names by utilizing colnames() function and for the row names - rownames() , of course. Here, in this case, we don’t have row names yet, but we can assign them with row1 , row2 and row2 by typing in 
+rownames(myDataFrame) <- c("row1", "row2", "row3") 
+Now, if we want to subset using row and column names, we can type in - 
+myDataFrame[c("row1","row2"),c("weight.in.kg", "height.in.cm")] 
+Important nomenclature alert: In the realm of statistics, we refer a row as an observation and a column as a variable. In the realm of data analysts, they are records and fields, respectively. And, in the realm of Machine Learning, they are examples and attributes, respectively 
+List: In R, List is the (arguably) the most complex data structure which can hold different data types 
+file:///Users/mahedi/Downloads/class2.nb.html Page 4 of 14 
+Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20 
+and data structures. Even, a list can hold another list. We will not cover this data structure in this course. 
+
+
+
+## Manipulating data
+## Import and export data
+
+Import and export data: 
+For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with .txt extension and another with .csv . First we will deal with our example_data.txt file and to import it, we will use read.table() function. And for example_data.csv file, we will use read.csv() function. 
+For exporting the file, we will use either write.table() function or write.csv() function. To deal with .xls or .xlsx files, we will touch this topic when we discuss how to load packages, later. 
+
+## Exercise

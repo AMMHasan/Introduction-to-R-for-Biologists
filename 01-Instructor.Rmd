@@ -1,0 +1,5 @@
+# Who am I?
+
+
+<img src="/Users/testuser/Documents/bookdown/Introduction-to-R-for-Biologists/figs/At_scottish_border.jpeg" />
+<img src="/Users/testuser/Documents/bookdown/Introduction-to-R-for-Biologists/figs/map.png" />

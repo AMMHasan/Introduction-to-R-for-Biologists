@@ -1,0 +1,9 @@
+# R plot
+
+## Basic plots in R
+### scatter
+### bar plot
+### histogram
+### box plot
+
+## Exercise
