@@ -24,7 +24,7 @@
 <meta name="author" content="Dr A M Mahedi Hasan" />
 
 
-<meta name="date" content="2022-03-30" />
+<meta name="date" content="2022-04-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -167,16 +169,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
 <li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-structures-in-r"><i class="fa fa-check"></i><b>4.2</b> Useful data structures in R<span></span></a>
+<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-structure"><i class="fa fa-check"></i><b>4.2</b> Data structure<span></span></a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> vector<span></span></a></li>
-<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> matrix<span></span></a></li>
-<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#dataframe"><i class="fa fa-check"></i><b>4.2.3</b> dataframe<span></span></a></li>
-<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector-1"><i class="fa fa-check"></i><b>4.2.4</b> Vector:<span></span></a></li>
-<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix-1"><i class="fa fa-check"></i><b>4.2.5</b> Matrix:<span></span></a></li>
+<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.3</b> Manipulating data<span></span></a></li>
-<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.4</b> Import and export data<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
+<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
 <li class="chapter" data-level="4.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#exercise"><i class="fa fa-check"></i><b>4.5</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>5</b> R plot<span></span></a>
@@ -188,7 +190,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
 <li class="chapter" data-level="5.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a>
 <ul>
@@ -199,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>6.1.3</b> for loop<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r"><i class="fa fa-check"></i><b>6.2</b> User-defined functions in R<span></span></a></li>
-<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-2"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-1"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References<span></span></a></li>
 <li class="divider"></li>
@@ -233,13 +234,246 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="for-loop" class="section level3 hasAnchor" number="6.1.3">
 <h3><span class="header-section-number">6.1.3</span> for loop<a href="r-programming-and-r-functions-for-the-beginners.html#for-loop" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Topic: function, loops, conditional execution, scripting, basic plotting</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Functions ######</span></span>
+<span id="cb36-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&quot;I am a good boy&quot;</span>) <span class="co"># Here print() and sum() is a built-in R function </span></span></code></pre></div>
+<pre><code>## [1] &quot;I am a good boy&quot;</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="dv">3</span>,<span class="dv">7</span>)</span></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fuunction without any argument</span></span>
+<span id="cb40-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb40-2" aria-hidden="true" tabindex="-1"></a>printOnly <span class="ot">&lt;-</span> <span class="cf">function</span>(){</span>
+<span id="cb40-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;hi&quot;</span>)</span>
+<span id="cb40-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb40-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb40-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="fu">printOnly</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;hi&quot;</code></pre>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Function with argument, like &quot;name&quot;</span></span>
+<span id="cb42-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb42-2" aria-hidden="true" tabindex="-1"></a>printOnly2 <span class="ot">&lt;-</span> <span class="cf">function</span>(name){</span>
+<span id="cb42-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;hi&quot;</span>, name))</span>
+<span id="cb42-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb42-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb42-5" aria-hidden="true" tabindex="-1"></a><span class="fu">printOnly2</span>(<span class="st">&quot;Maria&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;hi Maria&quot;</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a &lt;- 2</span></span>
+<span id="cb44-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="co"># b &lt;- 3</span></span>
+<span id="cb44-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="co"># a+b</span></span>
+<span id="cb44-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Function that returns a result upon calling</span></span>
+<span id="cb44-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-6" aria-hidden="true" tabindex="-1"></a>add <span class="ot">&lt;-</span> <span class="cf">function</span>(parameter1, parameter2){</span>
+<span id="cb44-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the main action of this function</span></span>
+<span id="cb44-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-8" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> parameter1 <span class="sc">+</span> parameter2</span>
+<span id="cb44-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(result)</span>
+<span id="cb44-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb44-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb44-12" aria-hidden="true" tabindex="-1"></a><span class="fu">add</span>(<span class="dv">4</span>,<span class="dv">33</span>)</span></code></pre></div>
+<pre><code>## [1] 37</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="do">########### SCOPE ##########</span></span>
+<span id="cb46-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-4" aria-hidden="true" tabindex="-1"></a>name <span class="ot">&lt;-</span> <span class="st">&quot;He is Rajib&quot;</span></span>
+<span id="cb46-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-5" aria-hidden="true" tabindex="-1"></a>loc <span class="ot">&lt;-</span> <span class="st">&quot;He stays in Tangail&quot;</span></span>
+<span id="cb46-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-7" aria-hidden="true" tabindex="-1"></a>stay <span class="ot">&lt;-</span> <span class="cf">function</span>(loc){</span>
+<span id="cb46-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(name)</span>
+<span id="cb46-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-9" aria-hidden="true" tabindex="-1"></a>  loc <span class="ot">&lt;-</span> <span class="st">&quot;He stays in Dhaka&quot;</span></span>
+<span id="cb46-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(loc)</span>
+<span id="cb46-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-11" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb46-12" aria-hidden="true" tabindex="-1"></a><span class="fu">stay</span>(loc)</span></code></pre></div>
+<pre><code>## [1] &quot;He is Rajib&quot;
+## [1] &quot;He stays in Dhaka&quot;</code></pre>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># But, if you print &quot;loc&quot; now, see what happens......</span></span>
+<span id="cb48-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(loc)</span></code></pre></div>
+<pre><code>## [1] &quot;He stays in Tangail&quot;</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="do">######### Scripting (or programming) with R#######</span></span>
+<span id="cb50-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="do">########## if else #######</span></span>
+<span id="cb50-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="co"># if(condition){</span></span>
+<span id="cb50-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="co">#   do something</span></span>
+<span id="cb50-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-7" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span>
+<span id="cb50-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-8" aria-hidden="true" tabindex="-1"></a><span class="co"># else{</span></span>
+<span id="cb50-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="co">#   do the alternative</span></span>
+<span id="cb50-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-10" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span>
+<span id="cb50-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-12" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb50-13"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-13" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(a <span class="sc">==</span> <span class="dv">1</span>){</span>
+<span id="cb50-14"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;a is equal 1&quot;</span>)</span>
+<span id="cb50-15"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-15" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb50-16"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;a is not equal 1&quot;</span>)</span>
+<span id="cb50-17"><a href="r-programming-and-r-functions-for-the-beginners.html#cb50-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;a is not equal 1&quot;</code></pre>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># grade A: 8-10</span></span>
+<span id="cb52-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb52-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="co"># grade B: 6-7</span></span>
+<span id="cb52-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="co"># </span></span>
+<span id="cb52-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-5" aria-hidden="true" tabindex="-1"></a><span class="co"># grade C:4-5</span></span>
+<span id="cb52-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb52-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="co"># grade D: 0-3</span></span>
+<span id="cb52-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-9" aria-hidden="true" tabindex="-1"></a>grade <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># out of 10</span></span>
+<span id="cb52-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Here look at the usage of &quot;if else&quot;</span></span>
+<span id="cb52-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(grade <span class="sc">&gt;=</span> <span class="dv">8</span> <span class="sc">&amp;</span> grade <span class="sc">&lt;=</span> <span class="dv">10</span>){</span>
+<span id="cb52-13"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Student1 got grade A&quot;</span>)</span>
+<span id="cb52-14"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-14" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span>(grade <span class="sc">&gt;=</span> <span class="dv">6</span> <span class="sc">&amp;</span> grade <span class="sc">&lt;=</span><span class="dv">7</span>){</span>
+<span id="cb52-15"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Student1 got grade B&quot;</span>)</span>
+<span id="cb52-16"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-16" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> <span class="cf">if</span>(grade <span class="sc">&gt;=</span> <span class="dv">4</span> <span class="sc">&amp;</span> grade <span class="sc">&lt;=</span> <span class="dv">5</span>){</span>
+<span id="cb52-17"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Student1 got grade C&quot;</span>)</span>
+<span id="cb52-18"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-18" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span>{</span>
+<span id="cb52-19"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">&quot;Student1 for grade D&quot;</span>)</span>
+<span id="cb52-20"><a href="r-programming-and-r-functions-for-the-beginners.html#cb52-20" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;Student1 got grade C&quot;</code></pre>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="do">####### while #####</span></span>
+<span id="cb54-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="co"># while(condition){</span></span>
+<span id="cb54-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="co">#   execute some action</span></span>
+<span id="cb54-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span>
+<span id="cb54-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-7" aria-hidden="true" tabindex="-1"></a><span class="co"># This will start an infinite loop</span></span>
+<span id="cb54-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-8" aria-hidden="true" tabindex="-1"></a><span class="co"># a &lt;- 10</span></span>
+<span id="cb54-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="co"># while(a &lt; 11){</span></span>
+<span id="cb54-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-10" aria-hidden="true" tabindex="-1"></a><span class="co">#   print(&quot;a is less than 11&quot;)</span></span>
+<span id="cb54-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-11" aria-hidden="true" tabindex="-1"></a><span class="co"># }</span></span>
+<span id="cb54-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-13"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-13" aria-hidden="true" tabindex="-1"></a><span class="do">## Here look at the usage of 1) paste() functioon and 2) break</span></span>
+<span id="cb54-14"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-15"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-15" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb54-16"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-16" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(a <span class="sc">&lt;</span> <span class="dv">20</span>){</span>
+<span id="cb54-17"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(a, <span class="st">&quot; is less than 20&quot;</span>))</span>
+<span id="cb54-18"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-18" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> a<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb54-19"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(a <span class="sc">==</span> <span class="dv">20</span>){</span>
+<span id="cb54-20"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="st">&quot;Now a is equal to 20&quot;</span>)</span>
+<span id="cb54-21"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
+<span id="cb54-22"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="st">&quot;I have not obeying the break function&quot;</span>) <span class="co"># when break is applied, this line will not be executed.</span></span>
+<span id="cb54-23"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-23" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb54-24"><a href="r-programming-and-r-functions-for-the-beginners.html#cb54-24" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;10  is less than 20&quot;
+## [1] &quot;11  is less than 20&quot;
+## [1] &quot;12  is less than 20&quot;
+## [1] &quot;13  is less than 20&quot;
+## [1] &quot;14  is less than 20&quot;
+## [1] &quot;15  is less than 20&quot;
+## [1] &quot;16  is less than 20&quot;
+## [1] &quot;17  is less than 20&quot;
+## [1] &quot;18  is less than 20&quot;
+## [1] &quot;19  is less than 20&quot;
+## [1] &quot;Now a is equal to 20&quot;</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="do">######### for loop #####</span></span>
+<span id="cb56-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb56-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;c&quot;</span>,<span class="st">&quot;d&quot;</span>,<span class="st">&quot;e&quot;</span>)</span>
+<span id="cb56-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-5" aria-hidden="true" tabindex="-1"></a><span class="co"># looping through the contents of a vector directly</span></span>
+<span id="cb56-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> b){</span>
+<span id="cb56-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb56-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb56-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;a&quot;
+## [1] &quot;b&quot;
+## [1] &quot;c&quot;
+## [1] &quot;d&quot;
+## [1] &quot;e&quot;</code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># looping through sequential numbers. In some programming language you have to define the initial value and the increment in this line.</span></span>
+<span id="cb58-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb58-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(i)</span>
+<span id="cb58-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb58-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] 1
+## [1] 2
+## [1] 3
+## [1] 4
+## [1] 5</code></pre>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># for a bit better understanding</span></span>
+<span id="cb60-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb60-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;the value of i is&quot;</span>, i))</span>
+<span id="cb60-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb60-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;the value of i is 1&quot;
+## [1] &quot;the value of i is 2&quot;
+## [1] &quot;the value of i is 3&quot;
+## [1] &quot;the value of i is 4&quot;
+## [1] &quot;the value of i is 5&quot;</code></pre>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># looping through the contents of a vector using indexing</span></span>
+<span id="cb62-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(b)){</span>
+<span id="cb62-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb62-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(b[i])</span>
+<span id="cb62-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb62-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;a&quot;
+## [1] &quot;b&quot;
+## [1] &quot;c&quot;
+## [1] &quot;d&quot;
+## [1] &quot;e&quot;</code></pre>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at this piece of code to understand the nested loop and the change of the values of i and j</span></span>
+<span id="cb64-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>){</span>
+<span id="cb64-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">6</span><span class="sc">:</span><span class="dv">10</span>){</span>
+<span id="cb64-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;Now i is&quot;</span>, i, <span class="st">&quot;and j is&quot;</span>, j))</span>
+<span id="cb64-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-5" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb64-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb64-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;Now i is 1 and j is 6&quot;
+## [1] &quot;Now i is 1 and j is 7&quot;
+## [1] &quot;Now i is 1 and j is 8&quot;
+## [1] &quot;Now i is 1 and j is 9&quot;
+## [1] &quot;Now i is 1 and j is 10&quot;
+## [1] &quot;Now i is 2 and j is 6&quot;
+## [1] &quot;Now i is 2 and j is 7&quot;
+## [1] &quot;Now i is 2 and j is 8&quot;
+## [1] &quot;Now i is 2 and j is 9&quot;
+## [1] &quot;Now i is 2 and j is 10&quot;
+## [1] &quot;Now i is 3 and j is 6&quot;
+## [1] &quot;Now i is 3 and j is 7&quot;
+## [1] &quot;Now i is 3 and j is 8&quot;
+## [1] &quot;Now i is 3 and j is 9&quot;
+## [1] &quot;Now i is 3 and j is 10&quot;
+## [1] &quot;Now i is 4 and j is 6&quot;
+## [1] &quot;Now i is 4 and j is 7&quot;
+## [1] &quot;Now i is 4 and j is 8&quot;
+## [1] &quot;Now i is 4 and j is 9&quot;
+## [1] &quot;Now i is 4 and j is 10&quot;
+## [1] &quot;Now i is 5 and j is 6&quot;
+## [1] &quot;Now i is 5 and j is 7&quot;
+## [1] &quot;Now i is 5 and j is 8&quot;
+## [1] &quot;Now i is 5 and j is 9&quot;
+## [1] &quot;Now i is 5 and j is 10&quot;</code></pre>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># further usage of foor loop</span></span>
+<span id="cb66-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a1&quot;</span>,<span class="st">&quot;a2&quot;</span>,<span class="st">&quot;a3&quot;</span>,<span class="st">&quot;a4&quot;</span>,<span class="st">&quot;a5&quot;</span>,<span class="st">&quot;a6&quot;</span>)</span>
+<span id="cb66-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;b1&quot;</span>,<span class="st">&quot;b2&quot;</span>,<span class="st">&quot;b3&quot;</span>,<span class="st">&quot;b4&quot;</span>,<span class="st">&quot;b5&quot;</span>,<span class="st">&quot;b6&quot;</span>)</span>
+<span id="cb66-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-4" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;c1&quot;</span>,<span class="st">&quot;c2&quot;</span>,<span class="st">&quot;c3&quot;</span>,<span class="st">&quot;c4&quot;</span>,<span class="st">&quot;c5&quot;</span>,<span class="st">&quot;c6&quot;</span>)</span>
+<span id="cb66-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-6" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(a,b,c,<span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb66-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(colVlaue <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(df)){</span>
+<span id="cb66-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(rowValue <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb66-10"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(df[rowValue,colVlaue])</span>
+<span id="cb66-11"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb66-12"><a href="r-programming-and-r-functions-for-the-beginners.html#cb66-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;a1&quot;
+## [1] &quot;a2&quot;
+## [1] &quot;a3&quot;
+## [1] &quot;a4&quot;
+## [1] &quot;a5&quot;
+## [1] &quot;a6&quot;
+## [1] &quot;b1&quot;
+## [1] &quot;b2&quot;
+## [1] &quot;b3&quot;
+## [1] &quot;b4&quot;
+## [1] &quot;b5&quot;
+## [1] &quot;b6&quot;
+## [1] &quot;c1&quot;
+## [1] &quot;c2&quot;
+## [1] &quot;c3&quot;
+## [1] &quot;c4&quot;
+## [1] &quot;c5&quot;
+## [1] &quot;c6&quot;</code></pre>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ...... and using if clause inside the for loop</span></span>
+<span id="cb68-2"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb68-3"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(colValue <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(df)){</span>
+<span id="cb68-4"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(rowValue <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb68-5"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(df[rowValue,colValue] <span class="sc">==</span> <span class="st">&quot;c6&quot;</span>){</span>
+<span id="cb68-6"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">print</span>(<span class="fu">c</span>(rowValue, colValue))</span>
+<span id="cb68-7"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-7" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb68-8"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb68-9"><a href="r-programming-and-r-functions-for-the-beginners.html#cb68-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] 6 3</code></pre>
 </div>
 </div>
 <div id="user-defined-functions-in-r" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> User-defined functions in R<a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="exercise-2" class="section level2 hasAnchor" number="6.3">
-<h2><span class="header-section-number">6.3</span> Exercise<a href="r-programming-and-r-functions-for-the-beginners.html#exercise-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="exercise-1" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Exercise<a href="r-programming-and-r-functions-for-the-beginners.html#exercise-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>

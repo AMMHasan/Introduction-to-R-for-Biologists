@@ -24,7 +24,7 @@
 <meta name="author" content="Dr A M Mahedi Hasan" />
 
 
-<meta name="date" content="2022-03-30" />
+<meta name="date" content="2022-04-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,6 +54,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -167,16 +169,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
 <li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-structures-in-r"><i class="fa fa-check"></i><b>4.2</b> Useful data structures in R<span></span></a>
+<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-structure"><i class="fa fa-check"></i><b>4.2</b> Data structure<span></span></a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> vector<span></span></a></li>
-<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> matrix<span></span></a></li>
-<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#dataframe"><i class="fa fa-check"></i><b>4.2.3</b> dataframe<span></span></a></li>
-<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector-1"><i class="fa fa-check"></i><b>4.2.4</b> Vector:<span></span></a></li>
-<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix-1"><i class="fa fa-check"></i><b>4.2.5</b> Matrix:<span></span></a></li>
+<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.3</b> Manipulating data<span></span></a></li>
-<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.4</b> Import and export data<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
+<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
 <li class="chapter" data-level="4.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#exercise"><i class="fa fa-check"></i><b>4.5</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>5</b> R plot<span></span></a>
@@ -188,7 +190,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
 <li class="chapter" data-level="5.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a>
 <ul>
@@ -199,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>6.1.3</b> for loop<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r"><i class="fa fa-check"></i><b>6.2</b> User-defined functions in R<span></span></a></li>
-<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-2"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-1"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References<span></span></a></li>
 <li class="divider"></li>
@@ -223,125 +224,265 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="data-types-and-data-structures" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Data types and data structures<a href="data-types-and-data-structures.html#data-types-and-data-structures" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In this chapter, we will cover the following topics -</p>
+<ul>
+<li>Data type
+<ul>
+<li>Numbers</li>
+<li>Characters</li>
+<li>Logical</li>
+</ul></li>
+<li>Data structure
+<ul>
+<li>Vector</li>
+<li>Matrix</li>
+<li>Array</li>
+<li>Data frame</li>
+<li>List</li>
+</ul></li>
+<li>Import and export data
+<ul>
+<li>.txt</li>
+<li>.csv</li>
+<li>.xlsx</li>
+</ul></li>
+<li>Manipulating data</li>
+</ul>
 <div id="useful-data-types-in-r" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Useful data types in R<a href="data-types-and-data-structures.html#useful-data-types-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>There are different data types, but we will touch up on few but heavily used data types in this class. These are namely -</p>
+<p>There are different data types used in <em>R</em>. We will touch upon a few but heavily used data types in this class. These are namely -</p>
 <div id="numbers" class="section level3 hasAnchor" number="4.1.1">
 <h3><span class="header-section-number">4.1.1</span> Numbers:<a href="data-types-and-data-structures.html#numbers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Numbers can be an Integer, or it can be a floating number (decimal numbers) which is recognized as simple Numeric. The later category is continuous number, meaning it can take up any value within a given range.</p>
+<p>Numbers can be an Integers, or can be floating numbers (decimal numbers). They are recognized as simple <code>Numeric</code> data type in <em>R</em>.</p>
 </div>
 <div id="character" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Character:<a href="data-types-and-data-structures.html#character" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>This type of data can be equivalent to categorical variable. These could be nominal (just names) or ordinal (names with hidden order) variables.</p>
+<p>This type of data can be equivalent to categorical variable. In other programming language, this is equivalent to <em>String</em> or <em>Text</em> data type. Here in <em>R</em>, these can be nominal (just names) or ordinal (names with hidden order) variables.</p>
 </div>
 <div id="logical" class="section level3 hasAnchor" number="4.1.3">
 <h3><span class="header-section-number">4.1.3</span> Logical:<a href="data-types-and-data-structures.html#logical" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>such as True or False. These can be the result of a boolean operation.</p>
 <p>Let’s see an example -</p>
-<p>participant.ID Date weight.in.kg height.in.cm smoker Overall.health.condition BMI1_001 01/11/2021 55.5 172 No Intermediate BMI1_002 01/11/2021 45.0 165 Yes Good
-BMI1_003 01/11/2021 75.0 150 No Poor
-Here in the table above, participant.ID, smoker, Overall.health.condition columns represent character data type. Of them, participant.ID and smoker columns contain nominal data, while the Overall.health.condition represents the ordinal data type.
-<a href="file:///Users/mahedi/Downloads/class2.nb.html" class="uri">file:///Users/mahedi/Downloads/class2.nb.html</a> Page 1 of 14</p>
-<p>Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20
-The columns namely weight.in.kg and height.in.cm contain numeric and integer data type respectively.
-A very very important information: Categorical data (nominal or ordinal) in R are also called Factors. Sometimes, you need to detach this characteristic from your data and convert it to merely character type for the sake of data handling.
-Hide
-Overall.health.condition &lt;- factor(c(“Intermediate”, “Good”, “Poor”)) Overall.health.condition
-[1] Intermediate Good Poor<br />
-Levels: Good Intermediate Poor
-Hide
-Overall.health.condition &lt;- factor(c(“Intermediate”, “Good”, “Poor”), ordered = F)
+<table class="table table-striped" style="width: auto !important; ">
+<thead>
+<tr>
+<th style="text-align:left;">
+participant.ID
+</th>
+<th style="text-align:left;">
+Date
+</th>
+<th style="text-align:right;">
+weight.in.kg
+</th>
+<th style="text-align:right;">
+height.in.cm
+</th>
+<th style="text-align:left;">
+smoker
+</th>
+<th style="text-align:left;">
 Overall.health.condition
-[1] Intermediate Good Poor<br />
-Levels: Good Intermediate Poor
-Hide
-Overall.health.condition &lt;- factor(c(“Intermediate”, “Good”, “Poor”), ordered = T)
-Overall.health.condition
-[1] Intermediate Good Poor<br />
-Levels: Good &lt; Intermediate &lt; Poor
-Hide
-Overall.health.condition &lt;- factor(c(“Intermediate”, “Good”, “Poor”), ordered = T,<br />
-levels = c(“Poor”, “Intermediate”, “Good”)) Overall.health.condition
-[1] Intermediate Good Poor<br />
-Levels: Poor &lt; Intermediate &lt; Good
-There are also complex data types, date data types (The Date column in the above table contains date data type) etc, which we will not cover in this course.</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+BMI1_001
+</td>
+<td style="text-align:left;">
+01/11/2021
+</td>
+<td style="text-align:right;">
+55.5
+</td>
+<td style="text-align:right;">
+172
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Intermediate
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BMI1_002
+</td>
+<td style="text-align:left;">
+02/11/2021
+</td>
+<td style="text-align:right;">
+45.0
+</td>
+<td style="text-align:right;">
+165
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+BMI1_003
+</td>
+<td style="text-align:left;">
+03/11/2021
+</td>
+<td style="text-align:right;">
+75.0
+</td>
+<td style="text-align:right;">
+150
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Poor
+</td>
+</tr>
+</tbody>
+</table>
+<p>Here in the table above, <em>participant.ID</em>, <em>smoker</em>, <em>Overall.health.condition</em> columns represent character data type. Of them, <em>participant.ID</em> and <em>smoker</em> columns contain nominal data, while the <em>Overall.health.condition</em> represents the ordinal data type.</p>
+<p>The columns namely <em>weight.in.kg</em> and <em>height.in.cm</em> contain numeric data type.</p>
+<p>A very very important information -
+Categorical data (nominal or ordinal) in <em>R</em> are also called <em>Factors</em>. Sometimes, you need to detach this characteristic (i.e. being factors) from your data and convert it to merely character type for the sake of data handling.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="data-types-and-data-structures.html#cb3-1" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span> ))</span>
+<span id="cb3-2"><a href="data-types-and-data-structures.html#cb3-2" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
+<pre><code>## [1] Intermediate Good         Poor         Good         Poor        
+## Levels: Good Intermediate Poor</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="data-types-and-data-structures.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb5-2"><a href="data-types-and-data-structures.html#cb5-2" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb5-3"><a href="data-types-and-data-structures.html#cb5-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> F)</span>
+<span id="cb5-4"><a href="data-types-and-data-structures.html#cb5-4" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
+<pre><code>## [1] Intermediate Good         Poor         Good         Poor        
+## Levels: Good Intermediate Poor</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-types-and-data-structures.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb7-2"><a href="data-types-and-data-structures.html#cb7-2" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb7-3"><a href="data-types-and-data-structures.html#cb7-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> T)</span>
+<span id="cb7-4"><a href="data-types-and-data-structures.html#cb7-4" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
+<pre><code>## [1] Intermediate Good         Poor         Good         Poor        
+## Levels: Good &lt; Intermediate &lt; Poor</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="data-types-and-data-structures.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb9-2"><a href="data-types-and-data-structures.html#cb9-2" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb9-3"><a href="data-types-and-data-structures.html#cb9-3" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> T, </span>
+<span id="cb9-4"><a href="data-types-and-data-structures.html#cb9-4" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>))</span>
+<span id="cb9-5"><a href="data-types-and-data-structures.html#cb9-5" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
+<pre><code>## [1] Intermediate Good         Poor         Good         Poor        
+## Levels: Poor &lt; Intermediate &lt; Good</code></pre>
+<p>There are also <em>complex</em> data types, <em>date</em> data types etc, which we will not cover in this course.</p>
 </div>
 </div>
-<div id="useful-data-structures-in-r" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Useful data structures in R<a href="data-types-and-data-structures.html#useful-data-structures-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="data-structure" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Data structure<a href="data-types-and-data-structures.html#data-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are few useful pre-defined data structures heavily used in <em>R</em> and there are user defined data structures as well (there are no limits in this case). We will discuss a few of the former class -</p>
 <div id="vector" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> vector<a href="data-types-and-data-structures.html#vector" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">4.2.1</span> Vector:<a href="data-types-and-data-structures.html#vector" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Let’s first think of a variable and value pair, like you have a variable <code>x</code> and it has a value of <code>2</code>. Like what we write in <em>R</em>:
+<code>x &lt;- 2</code>, which means, we assign the value <code>2</code> to <code>x</code>. This is equivalent to a <em>scalar</em>.
+You can put more than one value in a variable, and then it will be equivalent to a <em>vector</em>:</p>
+<pre><code>y &lt;- c(1,2,3,4,5,6)</code></pre>
+<p>Here we have used the <em>combine function</em> <code>c()</code> to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc). Just remember, if you want to hold multiple elements (be it numeric values or characters), enclose them with the <em>combine function</em> (as above).</p>
+<p>Each of the component of the vector is called its <em>Element</em>. You can call or refer the elements individually or as a group using their <em>positional index</em>. The positional index starts from <code>1</code>, which you can refer to as <em>one-based indexing</em>. For example, if you want to call or retrieve the first element of vector <code>y</code>, you can type in <code>y[1]</code>. Similarly, you can refer to the 4th element by typing in <code>y[4]</code>. If you want to refer to from 2nd to the 4th elements of <code>y</code>, you type in <code>y[c(2,3,4)]</code> or you can use <code>y[2:4]</code>.</p>
+<p>A useful tip - for sequential numbers, you can use a short-cut using colon sign in between the minimum and maximum values (inclusive) of the range. Like, for 1 to 100, you type in <code>1:100</code>.</p>
 </div>
 <div id="matrix" class="section level3 hasAnchor" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> matrix<a href="data-types-and-data-structures.html#matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">4.2.2</span> Matrix:<a href="data-types-and-data-structures.html#matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A matrix is a two-dimensional (row and column) array of a single data type. Matrices are created using <code>matrix()</code> function. Think of you having 20 numbers, from 1 to 20 and you want to create a matrix with 4 rows and 5 columns. So you type in:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data-types-and-data-structures.html#cb12-1" aria-hidden="true" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">nrow =</span> <span class="dv">4</span>,<span class="at">ncol =</span> <span class="dv">5</span>)</span>
+<span id="cb12-2"><a href="data-types-and-data-structures.html#cb12-2" aria-hidden="true" tabindex="-1"></a>myMatrix</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4] [,5]
+## [1,]    1    5    9   13   17
+## [2,]    2    6   10   14   18
+## [3,]    3    7   11   15   19
+## [4,]    4    8   12   16   20</code></pre>
+<p>If you want to subset the matrix you can do it easily. Always remember, matrix is a <code>m</code> row by <code>n</code> column <code>(m x n)</code> structure which you define in <em>R</em> as <code>[m,n]</code> or <code>[row, column]</code>. If you want to choose the value in the first row and the first column (which also indicates numeric <code>1</code> in myMatrix), you type in <code>myMatrix[1,1]</code>. If you want to select first 2 rows and 2nd to 4th columns, you type in <code>myMatrix[c(1,2), c(2,3,4)]</code> or <code>myMatrix[1:2, 2:4]</code>.</p>
 </div>
-<div id="dataframe" class="section level3 hasAnchor" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> dataframe<a href="data-types-and-data-structures.html#dataframe" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>There are few useful pre-defined data structures heavily used in R and there are user defined data structures as well (there are no limits in this case). We will discuss a few of the former -</p>
+<div id="array" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Array:<a href="data-types-and-data-structures.html#array" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.</p>
 </div>
-<div id="vector-1" class="section level3 hasAnchor" number="4.2.4">
-<h3><span class="header-section-number">4.2.4</span> Vector:<a href="data-types-and-data-structures.html#vector-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Let’s first think of a variable and value pair, like you have a variable x and it has a value of 2 . Like what we write in R: x &lt;- 2 which means, we assign the value 2 to x . This is equivalent to a scalar. You can put more than one value in a variable, and then it will be equivalent to a vector: y &lt;- c(1,2,3,4,5,6) . Here we have used the combine function c() to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc).</p>
-<p>Each of the component of the vector is called its Element. You can call or refer the elements individually or as a group using their positional index. The positional index starts from 1 (or you call it one-based indexing). For example, if you want to call the first element of y , you can refer to it by typing y[1] , or you can refer to the 4th element by typing y[4] . If you want to refer to from 2nd to the 4th elements of y , you type in y[c(2,3,4)] or you can use y[2:4] .</p>
+<div id="data-frame" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Data frame:<a href="data-types-and-data-structures.html#data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is <code>data.frame()</code> and an easy way to create a data frame is</p>
+<pre><code>myDataFrame &lt;- data.frame(column1, column2, column3))</code></pre>
+<p>Let’s see the same data frame again and observe carefully how it is done.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="data-types-and-data-structures.html#cb15-1" aria-hidden="true" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
+<span id="cb15-2"><a href="data-types-and-data-structures.html#cb15-2" aria-hidden="true" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
+<span id="cb15-3"><a href="data-types-and-data-structures.html#cb15-3" aria-hidden="true" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
+<span id="cb15-4"><a href="data-types-and-data-structures.html#cb15-4" aria-hidden="true" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
+<span id="cb15-5"><a href="data-types-and-data-structures.html#cb15-5" aria-hidden="true" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
+<span id="cb15-6"><a href="data-types-and-data-structures.html#cb15-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span>
+<span id="cb15-7"><a href="data-types-and-data-structures.html#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="data-types-and-data-structures.html#cb15-8" aria-hidden="true" tabindex="-1"></a>myDataFrame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(participant.ID, Date, weight.in.kg, height.in.cm, smoker, Overall.health.condition)</span>
+<span id="cb15-9"><a href="data-types-and-data-structures.html#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="data-types-and-data-structures.html#cb15-10" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<pre><code>##   participant.ID       Date weight.in.kg height.in.cm smoker
+## 1       BMI1_001 01/11/2021         55.5          172     No
+## 2       BMI1_002 01/11/2021         45.0          165    Yes
+## 3       BMI1_003 01/11/2021         75.0          150     No
+##   Overall.health.condition
+## 1             Intermediate
+## 2                     Good
+## 3                     Poor</code></pre>
+<p>Remember, each of the vector defining each column in the data frame has to be of same length. Now, if you want to subset the data frame as you did from matrix, you can use the same technique. For example, if you want to know the weight and height of first two patients, you type in <code>myDataFrame[c(1,2),c(3,4)]</code>. Interestingly in the case of data frame, you can use the column names to do that, like -</p>
+<pre><code>myDataFrame[c(1,2),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
+<p>Further more, there is another level of flexibility for selecting a column information by using <code>dataframe$columnName</code> notation as in our case <code>myDataFrame$weight.in.kg</code>.</p>
+<p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>, of course. Here, in this case, we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
+<pre><code>rownames(myDataFrame) &lt;-  c(&quot;row1&quot;, &quot;row2&quot;, &quot;row3&quot;)</code></pre>
+<p>Now, if we want to subset using row and column names, we can type in -</p>
+<pre><code>myDataFrame[c(&quot;row1&quot;,&quot;row2&quot;),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
+<p>Important nomenclature alert: In the realm of statistics, we refer a row as an <em>observation</em> and a column as a <em>variable.</em> In the realm of data analysts, they are <em>records</em> and <em>fields</em>, respectively. And, in the realm of Machine Learning, they are <em>examples</em> and <em>attributes</em>, respectively</p>
 </div>
-<div id="matrix-1" class="section level3 hasAnchor" number="4.2.5">
-<h3><span class="header-section-number">4.2.5</span> Matrix:<a href="data-types-and-data-structures.html#matrix-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A matrix is a two-dimensional (row and column) array of same data type. Matrices are created using matrix() function. Think of you have 20 numbers, from 1 to 20. You want to create a matrix with 4 rows and 5 columns. So you type in:
-Hide
-myMatrix &lt;- matrix(data=1:20,nrow = 4,ncol = 5)
-myMatrix
-[,1] [,2] [,3] [,4] [,5]
-[1,] 1 5 9 13 17
-[2,] 2 6 10 14 18
-[3,] 3 7 11 15 19
-[4,] 4 8 12 16 20
-If you want to subset the matrix you can do it easily. Always remember, matrix is a m row by n column (m x n) structure which you define in R as [m,n] or [row, column] . If you want to choose the first row and first column (which also indicates the element 1 in myMatrix), you type in myMatrix[1,1] . If you want to select first 2 rows and 2nd to 4th columns, you type in myMatrix[c(1,2), c(2,3,4)] or myMatrix[c(1:2), c(2:4)] .
-Array: You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.
-### Data frame:
-For you, data frame is the main data type that will have a huge utility in this course. You will import data in this format and manipulate data in this format and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is again a two dimensional array. It is more general than a matrix and can contain different data types in it. However, each column contains a single data type (of course). The function to create a data frame is data.frame() and an easy way to create a data frame is
-myDataFrame &lt;- data.frame(column1, column2, column3))
-<a href="file:///Users/mahedi/Downloads/class2.nb.html" class="uri">file:///Users/mahedi/Downloads/class2.nb.html</a> Page 3 of 14
-Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20
-Let’s see the same data frame again and observe carefully how it is done.
-Hide
-myDataFrame &lt;- data.frame(
-participant.ID=c(“BMI1_001”, “BMI1_002”, “BMI1_003”),
-Date=c(“01/11/2021”, “01/11/2021”, “01/11/2021”),<br />
-weight.in.kg=c(55.5,45,75), “height in cm”=c(172,165,150),
-smoker=c(“No”, “Yes”, “No”),
-Overall.health.condition=c(“Intermediate”, “Good”, “Poor”)
-)
-myDataFrame</p>
-<p>participant.ID <chr>
-Date <chr>
-weight.in.kg <dbl>
-height.in.cm <dbl>
-smo… <chr>
-Overall.health.condition <chr></p>
-<p>BMI1_001 01/11/2021 55.5 172 No Intermediate BMI1_002 01/11/2021 45.0 165 Yes Good BMI1_003 01/11/2021 75.0 150 No Poor 3 rows
-Remember, each of the vector defining each column in the data frame has to be of same length. Now, if you want to subset the data frame as you did from matrix, you can use the same technique. For example, if you want to know the weight and height of first two patients, you type in
-myDataFrame[c(1,2),c(3,4)] . Interestingly in the case of data frame, you can use the column names to do that, like -
-myDataFrame[c(1,2),c(“weight.in.kg”, “height.in.cm”)]
-Further more, there is another level of flexibility for selecting a column information by using a $ notation as in myDataFrame$weight.in.kg .
-Now, you can inquire what are the column names by utilizing colnames() function and for the row names - rownames() , of course. Here, in this case, we don’t have row names yet, but we can assign them with row1 , row2 and row2 by typing in
-rownames(myDataFrame) &lt;- c(“row1”, “row2”, “row3”)
-Now, if we want to subset using row and column names, we can type in -
-myDataFrame[c(“row1”,“row2”),c(“weight.in.kg”, “height.in.cm”)]
-Important nomenclature alert: In the realm of statistics, we refer a row as an observation and a column as a variable. In the realm of data analysts, they are records and fields, respectively. And, in the realm of Machine Learning, they are examples and attributes, respectively
-List: In R, List is the (arguably) the most complex data structure which can hold different data types
-<a href="file:///Users/mahedi/Downloads/class2.nb.html" class="uri">file:///Users/mahedi/Downloads/class2.nb.html</a> Page 4 of 14
-Basic statistics and exploratory data analysis in R for Biologists 05/02/2022, 14:20
-and data structures. Even, a list can hold another list. We will not cover this data structure in this course.</p>
+<div id="list" class="section level3 hasAnchor" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> List:<a href="data-types-and-data-structures.html#list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In <em>R</em>, List is the (arguably) the most complex data structure which can hold different data types and data structures. Even, a list can hold another list. We will not cover this data structure in this course.</p>
 </div>
 </div>
-<div id="manipulating-data" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Manipulating data<a href="data-types-and-data-structures.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="import-and-export-data" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Import and export data<a href="data-types-and-data-structures.html#import-and-export-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with <code>.txt</code> extension and another with <code>.csv</code>. First we will deal with our <code>example_data.txt</code> file and to import it, we will use <code>read.table()</code> function. And for <code>example_data.csv</code> file, we will use <code>read.csv()</code> function.</p>
+<p>For exporting the file, we will use either <code>write.table()</code> function or <code>write.csv()</code> function.</p>
+<p>To deal with <em>.xls</em> or .<em>xlsx</em> files, we will touch on this topic when we discuss how to <em>load packages</em>, later.</p>
+<p>The basic mode of reading a tabular dataset is the <code>read.table()</code> function. There are few others, like read.csv(), read.csv2(), read.ftable(), read.delim() etc. There are some basic parameter that you should be careful on -</p>
+<ol style="list-style-type: decimal">
+<li>file = /path/to/the/file</li>
+<li>header = the default is set to <code>TRUE</code>, however, if the data doesn’t have a column name, set it to false.</li>
+<li>sep = for <code>read.table()</code>, it is set to white space. For <code>read.csv()</code>, it is a comma. For <code>read.csv2()</code>, it’s set to a semi-colon. For <code>read.delim()</code> or <code>read.delim2()</code>, it’s is a tab <code>"\t"</code>.</li>
+<li>row.names = if there’s a column for row name (usually the first column in the raw data), specify with the column number and later get rid of that column using say, data[,column_number] &lt;- NULL</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-types-and-data-structures.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read a tabular dataframe</span></span></code></pre></div>
+<p>Now, reading a csv file -</p>
+<p>What about excel files?</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-types-and-data-structures.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(readxl)</span></span>
+<span id="cb21-2"><a href="data-types-and-data-structures.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># list the sheets of the excel file</span></span>
+<span id="cb21-3"><a href="data-types-and-data-structures.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">#excel_sheets(&#39;Sample-Sales-Data.xlsx&#39;)</span></span>
+<span id="cb21-4"><a href="data-types-and-data-structures.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">#df &lt;- read_excel(&#39;Sample-Sales-Data.xlsx&#39;,sheet=&#39;Sheet1&#39;)</span></span></code></pre></div>
+<p>How to check after each read-in?</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="data-types-and-data-structures.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dimension of the data</span></span>
+<span id="cb22-2"><a href="data-types-and-data-structures.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># check the head or tail</span></span>
+<span id="cb22-3"><a href="data-types-and-data-structures.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># apply str() and summary() function </span></span></code></pre></div>
+<p>reading in files from the web -</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-types-and-data-structures.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># from CRUK ML course</span></span></code></pre></div>
+<p>How to write the output into csv, tab or xls files -</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-types-and-data-structures.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># write.table()</span></span>
+<span id="cb24-2"><a href="data-types-and-data-structures.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># write.csv()</span></span>
+<span id="cb24-3"><a href="data-types-and-data-structures.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># library(xlsx)</span></span>
+<span id="cb24-4"><a href="data-types-and-data-structures.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- data.frame(matrix(1:10))</span></span>
+<span id="cb24-5"><a href="data-types-and-data-structures.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># #write.xlsx(df, &quot;output.xlsx&quot;)</span></span></code></pre></div>
 </div>
-<div id="import-and-export-data" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Import and export data<a href="data-types-and-data-structures.html#import-and-export-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Import and export data:
-For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with .txt extension and another with .csv . First we will deal with our example_data.txt file and to import it, we will use read.table() function. And for example_data.csv file, we will use read.csv() function.
-For exporting the file, we will use either write.table() function or write.csv() function. To deal with .xls or .xlsx files, we will touch this topic when we discuss how to load packages, later.</p>
+<div id="manipulating-data" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Manipulating data<a href="data-types-and-data-structures.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-types-and-data-structures.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use mtcars dataframe</span></span>
+<span id="cb25-2"><a href="data-types-and-data-structures.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># selecting columns by numerical indexing or column names</span></span>
+<span id="cb25-3"><a href="data-types-and-data-structures.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># implementing average of each columns, sum of each column, colSums etc</span></span>
+<span id="cb25-4"><a href="data-types-and-data-structures.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># add NA value to the dataframe, check for NA using is.na() function and then do the same operations with na.rm=TRUE argument.</span></span></code></pre></div>
 </div>
 <div id="exercise" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Exercise<a href="data-types-and-data-structures.html#exercise" class="anchor-section" aria-label="Anchor link to header"></a></h2>

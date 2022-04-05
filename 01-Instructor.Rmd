@@ -1,12 +1,19 @@
 # Who am I?
 
 A M Mahedi Hasan, MRSB | AF-HEA
+
 Post-doctoral Research Associate (Computational Biology)
+
 Treatment Resistance Group
+
 UCL Cancer Institute
+
 2nd Floor, Paul O'Gorman Building
+
 72 Huntley Street, London
+
 WC1E 6DD
 
-<img src="../figs/At_scottish_border.jpeg" />
-<img src="../figs/map.png" />
+
+<img src="/Users/mahedi/Documents/Collaborations/UCL_CI/Introduction-to-R-for-Biologists/figs/At_scottish_border.jpeg" />
+<img src="/Users/mahedi/Documents/Collaborations/UCL_CI/Introduction-to-R-for-Biologists/figs/map.png" />

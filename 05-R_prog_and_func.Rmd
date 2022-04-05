@@ -5,5 +5,173 @@
 ### while
 ### for loop
 
+
+Topic: function, loops, conditional execution, scripting, basic plotting
+
+
+```{r}
+## Functions ######
+print("I am a good boy") # Here print() and sum() is a built-in R function 
+sum(3,7)
+
+# Fuunction without any argument
+printOnly <- function(){
+  print("hi")
+}
+printOnly()
+
+# Function with argument, like "name"
+printOnly2 <- function(name){
+  print(paste("hi", name))
+}
+printOnly2("Maria")
+
+# a <- 2
+# b <- 3
+# a+b
+
+# Function that returns a result upon calling
+add <- function(parameter1, parameter2){
+  # the main action of this function
+  result <- parameter1 + parameter2
+  return(result)
+}
+
+add(4,33)
+
+########### SCOPE ##########
+
+
+name <- "He is Rajib"
+loc <- "He stays in Tangail"
+
+stay <- function(loc){
+  print(name)
+  loc <- "He stays in Dhaka"
+  print(loc)
+}
+stay(loc)
+
+# But, if you print "loc" now, see what happens......
+print(loc)
+
+######### Scripting (or programming) with R#######
+
+########## if else #######
+
+# if(condition){
+#   do something
+# }
+# else{
+#   do the alternative
+# }
+
+a <- 10
+if(a == 1){
+  print("a is equal 1")
+} else {
+  print("a is not equal 1")
+}
+
+# grade A: 8-10
+# 
+# grade B: 6-7
+# 
+# grade C:4-5
+#
+# grade D: 0-3
+
+grade <- 5 # out of 10
+
+# Here look at the usage of "if else"
+if(grade >= 8 & grade <= 10){
+  print("Student1 got grade A")
+} else if(grade >= 6 & grade <=7){
+  print("Student1 got grade B")
+} else if(grade >= 4 & grade <= 5){
+  print("Student1 got grade C")
+} else{
+  print("Student1 for grade D")
+}
+
+####### while #####
+
+# while(condition){
+#   execute some action
+# }
+
+# This will start an infinite loop
+# a <- 10
+# while(a < 11){
+#   print("a is less than 11")
+# }
+
+## Here look at the usage of 1) paste() functioon and 2) break
+
+a <- 10
+while(a < 20){
+  print(paste(a, " is less than 20"))
+  a <- a+1
+  if(a == 20){
+    print("Now a is equal to 20")
+    break
+    print("I have not obeying the break function") # when break is applied, this line will not be executed.
+  }
+}
+######### for loop #####
+a <- 1:10
+b <- c("a","b","c","d","e")
+
+# looping through the contents of a vector directly
+for(i in b){
+  print(i)
+}
+
+# looping through sequential numbers. In some programming language you have to define the initial value and the increment in this line.
+for(i in 1:5){
+  print(i)
+}
+
+# for a bit better understanding
+for(i in 1:5){
+  print(paste("the value of i is", i))
+}
+
+# looping through the contents of a vector using indexing
+for(i in 1:length(b)){
+  print(b[i])
+}
+
+# Look at this piece of code to understand the nested loop and the change of the values of i and j
+for(i in 1:5){
+  for(j in 6:10){
+    print(paste("Now i is", i, "and j is", j))
+  }
+}
+
+# further usage of foor loop
+a <- c("a1","a2","a3","a4","a5","a6")
+b <- c("b1","b2","b3","b4","b5","b6")
+c <- c("c1","c2","c3","c4","c5","c6")
+
+df <- data.frame(a,b,c,stringsAsFactors = FALSE)
+
+for(colVlaue in 1:ncol(df)){
+  for(rowValue in 1:nrow(df)){
+    print(df[rowValue,colVlaue])
+  }
+}
+# ...... and using if clause inside the for loop
+
+for(colValue in 1:ncol(df)){
+  for(rowValue in 1:nrow(df)){
+    if(df[rowValue,colValue] == "c6"){
+      print(c(rowValue, colValue))
+    }
+  }
+}
+
+
+```
 ## User-defined functions in R
 ## Exercise
