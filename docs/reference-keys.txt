@@ -5,11 +5,12 @@ installing-r-and-rstudio
 to-install-r
 for-mac-users
 for-windows-users
-for-linux-users
+for-linux-ubuntu-distribution-users
 to-install-rstudio
 for-mac-users-1
 for-windows-users-1
-for-linux-users-1
+for-linux-users
+rstudio-cloud
 who-am-i
 get-to-know-rstudio-interface
 rstudio-windowspanels

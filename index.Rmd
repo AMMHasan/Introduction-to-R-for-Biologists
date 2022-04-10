@@ -7,7 +7,7 @@ site: bookdown::bookdown_site
 
 # Introduction
 
-*Course being desined for the MSc Students in UCL Cancer Institute.*
+This course is designed for the MSc Students in UCL Cancer Institute to introduce **R** (statistical-) programming language. I would appreciate if you could participate in this pre-course [survey]<link> to have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of **R** -
 
 ## Definition
 
@@ -33,7 +33,20 @@ We will be using RStudio, which is an Integrated Development Environment (IDE) o
 - Now that R is installed, you need to download and install RStudio.
 
 #### For Windows users
-#### For Linux users
+- Open an internet browser and go to www.cran.r-project.org.
+- Click the "download R for Windows" link under "Download and Install R" box.
+- Click on the `base` version.
+- Click on the latest version of **R** for Windows (as if for this tutorial, the latest version is `Download R 4.1.3 for Windows (87 megabytes, 32/64 bit)`). Save the `.exe` file on your computer.
+- Double-click on the `.exe` file, and follow the default installation instructions. Please do not install **R** on your network drive, it will make your life difficult.
+- Now that **R** is installed, you need to download and install RStudio.
+
+
+#### For Linux (Ubuntu distribution) users
+
+For most of the versions of Linux, **R** should already be installed. However, if you want to install it manually, this is the code -
+```
+sudo apt-get install r-base r-base-dev
+```
 
 ### To Install RStudio
 #### For Mac users
@@ -42,8 +55,23 @@ We will be using RStudio, which is an Integrated Development Environment (IDE) o
 - Click on the version recommended for your system (i.e. the latest Mac version), save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.
 
 #### For Windows users
+- Go to www.rstudio.com and click on the "Download" tab on the top
+- Click on `RStudio Desktop` and it will bring down to the free `Open Source Edition` option.
+- Click on the `DOWNLOAD RSTUDIO DESKTOP` button
+- Now from the `Download the RStudio IDE`, click on the `Download` button.
+- Now click on the latest version of RStudio - `DOWNLOAD RSTUDIO FOR WINDOWS` button, save the `.exe` file on your computer, double-click it to open, and then follow the default settings to install on your computer.
+
 #### For Linux users
+- Go to www.rstudio.com
+- Choose the right package and download for your system
+- Open the file in `Ubuntu Software Centre`
+- Click install and follow the set of instruction
 
-
+#### RStudio Cloud
+If you have further problem installing **R** on you computer, do not worry. You can log on to the RStudio Cloud. Simply -
+- google for `RStudio Cloud` or go to https://rstudio.cloud/. 
+- Sign up and log in (you can do it with you google or github profile)
+- From the `New Project` button on the top-right, select for `New Rstudio Project`.
+- Now you will have a RStudio interface with 1 CPU and 1 GB of RAM which is sufficient for our course.
 
 
