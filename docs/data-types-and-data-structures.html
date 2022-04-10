@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Data types and data structures | Introduction to R for Biologists</title>
   <meta name="description" content="Chapter 4 Data types and data structures | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Data types and data structures | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Dr A M Mahedi Hasan" />
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2022-04-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="get-to-know-rstudio-interface.html"/>
 <link rel="next" href="r-plot.html"/>
-<script src="libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -173,9 +171,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
 <li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
-<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
-<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
-<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#short-exercise"><i class="fa fa-check"></i><b>4.2.3</b> Short exercise<span></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.4</b> Array:<span></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.5</b> Data frame:<span></span></a></li>
+<li class="chapter" data-level="4.2.6" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.6</b> List:<span></span></a></li>
+<li class="chapter" data-level="4.2.7" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#short-exercise-1"><i class="fa fa-check"></i><b>4.2.7</b> Short exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
 <li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
@@ -190,17 +190,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
 <li class="chapter" data-level="5.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
 </ul></li>
+<li class="chapter" data-level="5.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a>
+<li class="chapter" data-level="6" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html"><i class="fa fa-check"></i><b>6</b> Control flow in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#control-flow-in-r"><i class="fa fa-check"></i><b>6.1</b> Control flow in R<span></span></a>
+<li class="chapter" data-level="6.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#conditional-execution"><i class="fa fa-check"></i><b>6.1</b> Conditional execution<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#if-else"><i class="fa fa-check"></i><b>6.1.1</b> If-else<span></span></a></li>
-<li class="chapter" data-level="6.1.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#while"><i class="fa fa-check"></i><b>6.1.2</b> while<span></span></a></li>
-<li class="chapter" data-level="6.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>6.1.3</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.1.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#if-else-statement"><i class="fa fa-check"></i><b>6.1.1</b> <code>If-else</code> statement<span></span></a></li>
+<li class="chapter" data-level="6.1.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-2"><i class="fa fa-check"></i><b>6.1.2</b> Short exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r"><i class="fa fa-check"></i><b>6.2</b> User-defined functions in R<span></span></a></li>
-<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-1"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#loops"><i class="fa fa-check"></i><b>6.2</b> Loops<span></span></a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#while-loop"><i class="fa fa-check"></i><b>6.2.1</b> while loop<span></span></a></li>
+<li class="chapter" data-level="6.2.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-3"><i class="fa fa-check"></i><b>6.2.2</b> Short exercise<span></span></a></li>
+<li class="chapter" data-level="6.2.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#for-loop"><i class="fa fa-check"></i><b>6.2.3</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.2.4" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-4"><i class="fa fa-check"></i><b>6.2.4</b> Short exercise<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#user-defined-functions"><i class="fa fa-check"></i><b>6.3</b> User defined functions<span></span></a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-without-return"><i class="fa fa-check"></i><b>6.3.1</b> Function without return()<span></span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-with-a-return"><i class="fa fa-check"></i><b>6.3.2</b> Function with a return()<span></span></a></li>
+<li class="chapter" data-level="6.3.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#scoping"><i class="fa fa-check"></i><b>6.3.3</b> Scoping<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#exercise-2"><i class="fa fa-check"></i><b>6.4</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References<span></span></a></li>
 <li class="divider"></li>
@@ -404,12 +416,15 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## [4,]    4    8   12   16   20</code></pre>
 <p>If you want to subset the matrix you can do it easily. Always remember, matrix is a <code>m</code> row by <code>n</code> column <code>(m x n)</code> structure which you define in <em>R</em> as <code>[m,n]</code> or <code>[row, column]</code>. If you want to choose the value in the first row and the first column (which also indicates numeric <code>1</code> in myMatrix), you type in <code>myMatrix[1,1]</code>. If you want to select first 2 rows and 2nd to 4th columns, you type in <code>myMatrix[c(1,2), c(2,3,4)]</code> or <code>myMatrix[1:2, 2:4]</code>.</p>
 </div>
-<div id="array" class="section level3 hasAnchor" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Array:<a href="data-types-and-data-structures.html#array" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="short-exercise" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Short exercise<a href="data-types-and-data-structures.html#short-exercise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="array" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Array:<a href="data-types-and-data-structures.html#array" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.</p>
 </div>
-<div id="data-frame" class="section level3 hasAnchor" number="4.2.4">
-<h3><span class="header-section-number">4.2.4</span> Data frame:<a href="data-types-and-data-structures.html#data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="data-frame" class="section level3 hasAnchor" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> Data frame:<a href="data-types-and-data-structures.html#data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is <code>data.frame()</code> and an easy way to create a data frame is</p>
 <pre><code>myDataFrame &lt;- data.frame(column1, column2, column3))</code></pre>
 <p>Let’s see the same data frame again and observe carefully how it is done.</p>
@@ -434,22 +449,39 @@ You can put more than one value in a variable, and then it will be equivalent to
 <p>Remember, each of the vector defining each column in the data frame has to be of same length. Now, if you want to subset the data frame as you did from matrix, you can use the same technique. For example, if you want to know the weight and height of first two patients, you type in <code>myDataFrame[c(1,2),c(3,4)]</code>. Interestingly in the case of data frame, you can use the column names to do that, like -</p>
 <pre><code>myDataFrame[c(1,2),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
 <p>Further more, there is another level of flexibility for selecting a column information by using <code>dataframe$columnName</code> notation as in our case <code>myDataFrame$weight.in.kg</code>.</p>
-<p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>, of course. Here, in this case, we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
-<pre><code>rownames(myDataFrame) &lt;-  c(&quot;row1&quot;, &quot;row2&quot;, &quot;row3&quot;)</code></pre>
+<p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>. Here, in this case, we see there is no row name, rather they are indexed.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-types-and-data-structures.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame)</span></code></pre></div>
+<pre><code>## [1] &quot;1&quot; &quot;2&quot; &quot;3&quot;</code></pre>
+<p>we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-types-and-data-structures.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame) <span class="ot">&lt;-</span>  <span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>, <span class="st">&quot;row2&quot;</span>, <span class="st">&quot;row3&quot;</span>)</span></code></pre></div>
+<p>For simplicity, we will change the column names as well to simply <code>column1</code>, <code>column2</code> etc -</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-types-and-data-structures.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(myDataFrame) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column1&quot;</span>,<span class="st">&quot;column2&quot;</span>,<span class="st">&quot;column3&quot;</span>,<span class="st">&quot;column4&quot;</span>,<span class="st">&quot;column5&quot;</span>,<span class="st">&quot;column6&quot;</span>)</span></code></pre></div>
+<p>And, let’s see the current look of our data-frame -</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="data-types-and-data-structures.html#cb22-1" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<pre><code>##       column1    column2 column3 column4 column5      column6
+## row1 BMI1_001 01/11/2021    55.5     172      No Intermediate
+## row2 BMI1_002 01/11/2021    45.0     165     Yes         Good
+## row3 BMI1_003 01/11/2021    75.0     150      No         Poor</code></pre>
 <p>Now, if we want to subset using row and column names, we can type in -</p>
-<pre><code>myDataFrame[c(&quot;row1&quot;,&quot;row2&quot;),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-types-and-data-structures.html#cb24-1" aria-hidden="true" tabindex="-1"></a>subDataFrame <span class="ot">&lt;-</span> myDataFrame[<span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>,<span class="st">&quot;row2&quot;</span>),<span class="fu">c</span>(<span class="st">&quot;column2&quot;</span>, <span class="st">&quot;column3&quot;</span>)]</span>
+<span id="cb24-2"><a href="data-types-and-data-structures.html#cb24-2" aria-hidden="true" tabindex="-1"></a>subDataFrame</span></code></pre></div>
+<pre><code>##         column2 column3
+## row1 01/11/2021    55.5
+## row2 01/11/2021    45.0</code></pre>
 <p>Important nomenclature alert: In the realm of statistics, we refer a row as an <em>observation</em> and a column as a <em>variable.</em> In the realm of data analysts, they are <em>records</em> and <em>fields</em>, respectively. And, in the realm of Machine Learning, they are <em>examples</em> and <em>attributes</em>, respectively</p>
 </div>
-<div id="list" class="section level3 hasAnchor" number="4.2.5">
-<h3><span class="header-section-number">4.2.5</span> List:<a href="data-types-and-data-structures.html#list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="list" class="section level3 hasAnchor" number="4.2.6">
+<h3><span class="header-section-number">4.2.6</span> List:<a href="data-types-and-data-structures.html#list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In <em>R</em>, List is the (arguably) the most complex data structure which can hold different data types and data structures. Even, a list can hold another list. We will not cover this data structure in this course.</p>
+</div>
+<div id="short-exercise-1" class="section level3 hasAnchor" number="4.2.7">
+<h3><span class="header-section-number">4.2.7</span> Short exercise<a href="data-types-and-data-structures.html#short-exercise-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
 </div>
 <div id="import-and-export-data" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Import and export data<a href="data-types-and-data-structures.html#import-and-export-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with <code>.txt</code> extension and another with <code>.csv</code>. First we will deal with our <code>example_data.txt</code> file and to import it, we will use <code>read.table()</code> function. And for <code>example_data.csv</code> file, we will use <code>read.csv()</code> function.</p>
-<p>For exporting the file, we will use either <code>write.table()</code> function or <code>write.csv()</code> function.</p>
-<p>To deal with <em>.xls</em> or .<em>xlsx</em> files, we will touch on this topic when we discuss how to <em>load packages</em>, later.</p>
+<p>For this course, we will limit ourselves to import data from our personal computers. Before that, go to the following link, download an excel file called <code>excell_iris_data.xlsx</code> and save to your working directory: <a href="https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/excell_iris_data.xlsx" class="uri">https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/excell_iris_data.xlsx</a>
+Download a csv version of this file from by going to this page: <a href="https://raw.githubusercontent.com/AMMHasan/Introduction-to-R-for-Biologists/master/csv_iris_data.csv" class="uri">https://raw.githubusercontent.com/AMMHasan/Introduction-to-R-for-Biologists/master/csv_iris_data.csv</a>. Right-click on the empty space on the page, select <code>Save As...</code>, then save the file to your working directory.</p>
 <p>The basic mode of reading a tabular dataset is the <code>read.table()</code> function. There are few others, like read.csv(), read.csv2(), read.ftable(), read.delim() etc. There are some basic parameter that you should be careful on -</p>
 <ol style="list-style-type: decimal">
 <li>file = /path/to/the/file</li>
@@ -457,35 +489,163 @@ You can put more than one value in a variable, and then it will be equivalent to
 <li>sep = for <code>read.table()</code>, it is set to white space. For <code>read.csv()</code>, it is a comma. For <code>read.csv2()</code>, it’s set to a semi-colon. For <code>read.delim()</code> or <code>read.delim2()</code>, it’s is a tab <code>"\t"</code>.</li>
 <li>row.names = if there’s a column for row name (usually the first column in the raw data), specify with the column number and later get rid of that column using say, data[,column_number] &lt;- NULL</li>
 </ol>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-types-and-data-structures.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read a tabular dataframe</span></span></code></pre></div>
-<p>Now, reading a csv file -</p>
-<p>What about excel files?</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-types-and-data-structures.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(readxl)</span></span>
-<span id="cb21-2"><a href="data-types-and-data-structures.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># list the sheets of the excel file</span></span>
-<span id="cb21-3"><a href="data-types-and-data-structures.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">#excel_sheets(&#39;Sample-Sales-Data.xlsx&#39;)</span></span>
-<span id="cb21-4"><a href="data-types-and-data-structures.html#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">#df &lt;- read_excel(&#39;Sample-Sales-Data.xlsx&#39;,sheet=&#39;Sheet1&#39;)</span></span></code></pre></div>
-<p>How to check after each read-in?</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="data-types-and-data-structures.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># dimension of the data</span></span>
-<span id="cb22-2"><a href="data-types-and-data-structures.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co"># check the head or tail</span></span>
-<span id="cb22-3"><a href="data-types-and-data-structures.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># apply str() and summary() function </span></span></code></pre></div>
-<p>reading in files from the web -</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-types-and-data-structures.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># from CRUK ML course</span></span></code></pre></div>
-<p>How to write the output into csv, tab or xls files -</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-types-and-data-structures.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># write.table()</span></span>
-<span id="cb24-2"><a href="data-types-and-data-structures.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="co"># write.csv()</span></span>
-<span id="cb24-3"><a href="data-types-and-data-structures.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co"># library(xlsx)</span></span>
-<span id="cb24-4"><a href="data-types-and-data-structures.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># df &lt;- data.frame(matrix(1:10))</span></span>
-<span id="cb24-5"><a href="data-types-and-data-structures.html#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># #write.xlsx(df, &quot;output.xlsx&quot;)</span></span></code></pre></div>
+<p>Now we will read the csv file -</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="data-types-and-data-structures.html#cb26-1" aria-hidden="true" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;csv_iris_data.csv&quot;</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb26-2"><a href="data-types-and-data-structures.html#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
+<p>Now that we have read our data-frame and checked few rows from the top of it, we want to export it to our computer -</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="data-types-and-data-structures.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> df_csv, <span class="at">file =</span> <span class="st">&quot;My_output_df.csv&quot;</span>)</span></code></pre></div>
+<p>In the case of reading an excel file, either with <em>.xls</em> or .<em>xlsx</em> extension, we need to load a package called <code>readxl</code>.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-types-and-data-structures.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb29-2"><a href="data-types-and-data-structures.html#cb29-2" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&#39;excell_iris_data.xlsx&#39;</span>,<span class="at">sheet=</span><span class="st">&#39;Sheet1&#39;</span>)</span>
+<span id="cb29-3"><a href="data-types-and-data-structures.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code></pre></div>
+<pre><code>## # A tibble: 6 × 5
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+##          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;  
+## 1          5.1         3.5          1.4         0.2 setosa 
+## 2          4.9         3            1.4         0.2 setosa 
+## 3          4.7         3.2          1.3         0.2 setosa 
+## 4          4.6         3.1          1.5         0.2 setosa 
+## 5          5           3.6          1.4         0.2 setosa 
+## 6          5.4         3.9          1.7         0.4 setosa</code></pre>
+<p>Unfortunately, to write an excel file, we need another package -</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-types-and-data-structures.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xlsx)</span>
+<span id="cb31-2"><a href="data-types-and-data-structures.html#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.xlsx</span>(<span class="at">x=</span>df_excel, <span class="st">&quot;My_output_df.xlsx&quot;</span>)</span></code></pre></div>
 </div>
 <div id="manipulating-data" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Manipulating data<a href="data-types-and-data-structures.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-types-and-data-structures.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use mtcars dataframe</span></span>
-<span id="cb25-2"><a href="data-types-and-data-structures.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># selecting columns by numerical indexing or column names</span></span>
-<span id="cb25-3"><a href="data-types-and-data-structures.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># implementing average of each columns, sum of each column, colSums etc</span></span>
-<span id="cb25-4"><a href="data-types-and-data-structures.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># add NA value to the dataframe, check for NA using is.na() function and then do the same operations with na.rm=TRUE argument.</span></span></code></pre></div>
+<p>First thing, I would do to check after loading a data-frame to the <em>R</em> environment is to check its dimension, look at the top and bottom of the dataset, look at the structure and summary of the data by following set of commands -</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="data-types-and-data-structures.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the dimension of the data</span></span>
+<span id="cb32-2"><a href="data-types-and-data-structures.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_csv)</span></code></pre></div>
+<pre><code>## [1] 150   5</code></pre>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="data-types-and-data-structures.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the head or tail</span></span>
+<span id="cb34-2"><a href="data-types-and-data-structures.html#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="data-types-and-data-structures.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(df_csv)</span></code></pre></div>
+<pre><code>##     Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+## 145          6.7         3.3          5.7         2.5 virginica
+## 146          6.7         3.0          5.2         2.3 virginica
+## 147          6.3         2.5          5.0         1.9 virginica
+## 148          6.5         3.0          5.2         2.0 virginica
+## 149          6.2         3.4          5.4         2.3 virginica
+## 150          5.9         3.0          5.1         1.8 virginica</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="data-types-and-data-structures.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># apply str() and summary() function </span></span>
+<span id="cb38-2"><a href="data-types-and-data-structures.html#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df_csv)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
+##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+##  $ Species     : chr  &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; ...</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="data-types-and-data-structures.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_csv)</span></code></pre></div>
+<pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+##    Species         
+##  Length:150        
+##  Class :character  
+##  Mode  :character  
+##                    
+##                    
+## </code></pre>
+<p>We have covered how to change the row or column names in the section <code>Data frame</code></p>
+<p>Now we will see how to add new column or row to the data-frame. As we have seen that there are 150 rows in <code>df_csv</code> data-frame, therefore, we need a column that contains 150 data points. Let’s create a vector <code>random_numbers</code> that holds 150 random numbers -</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="data-types-and-data-structures.html#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="at">seed =</span> <span class="dv">123</span>)</span>
+<span id="cb42-2"><a href="data-types-and-data-structures.html#cb42-2" aria-hidden="true" tabindex="-1"></a>random_numbers <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">150</span>),<span class="dv">2</span>)</span>
+<span id="cb42-3"><a href="data-types-and-data-structures.html#cb42-3" aria-hidden="true" tabindex="-1"></a>random_numbers</span></code></pre></div>
+<pre><code>##   [1] -0.56 -0.23  1.56  0.07  0.13  1.72  0.46 -1.27 -0.69 -0.45  1.22  0.36
+##  [13]  0.40  0.11 -0.56  1.79  0.50 -1.97  0.70 -0.47 -1.07 -0.22 -1.03 -0.73
+##  [25] -0.63 -1.69  0.84  0.15 -1.14  1.25  0.43 -0.30  0.90  0.88  0.82  0.69
+##  [37]  0.55 -0.06 -0.31 -0.38 -0.69 -0.21 -1.27  2.17  1.21 -1.12 -0.40 -0.47
+##  [49]  0.78 -0.08  0.25 -0.03 -0.04  1.37 -0.23  1.52 -1.55  0.58  0.12  0.22
+##  [61]  0.38 -0.50 -0.33 -1.02 -1.07  0.30  0.45  0.05  0.92  2.05 -0.49 -2.31
+##  [73]  1.01 -0.71 -0.69  1.03 -0.28 -1.22  0.18 -0.14  0.01  0.39 -0.37  0.64
+##  [85] -0.22  0.33  1.10  0.44 -0.33  1.15  0.99  0.55  0.24 -0.63  1.36 -0.60
+##  [97]  2.19  1.53 -0.24 -1.03 -0.71  0.26 -0.25 -0.35 -0.95 -0.05 -0.78 -1.67
+## [109] -0.38  0.92 -0.58  0.61 -1.62 -0.06  0.52  0.30  0.11 -0.64 -0.85 -1.02
+## [121]  0.12 -0.95 -0.49 -0.26  1.84 -0.65  0.24  0.08 -0.96 -0.07  1.44  0.45
+## [133]  0.04 -0.42 -2.05  1.13 -1.46  0.74  1.91 -1.44  0.70 -0.26 -1.57 -1.51
+## [145] -1.60 -0.53 -1.46  0.69  2.10 -1.29</code></pre>
+<p>Now, we will add this vector to the data-frame as a column -</p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="data-types-and-data-structures.html#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># df_csv$random_number_column &lt;- random_numbers</span></span>
+<span id="cb44-2"><a href="data-types-and-data-structures.html#cb44-2" aria-hidden="true" tabindex="-1"></a>new_df <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_csv, random_numbers)</span>
+<span id="cb44-3"><a href="data-types-and-data-structures.html#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_df)</span></code></pre></div>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species random_numbers
+## 1          5.1         3.5          1.4         0.2  setosa          -0.56
+## 2          4.9         3.0          1.4         0.2  setosa          -0.23
+## 3          4.7         3.2          1.3         0.2  setosa           1.56
+## 4          4.6         3.1          1.5         0.2  setosa           0.07
+## 5          5.0         3.6          1.4         0.2  setosa           0.13
+## 6          5.4         3.9          1.7         0.4  setosa           1.72</code></pre>
+<p>Similarly, let’s create another vector of 6 matched data-type elements to match the six columns in the <code>new_df</code>, and add to the end of the data-frame -</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="data-types-and-data-structures.html#cb46-1" aria-hidden="true" tabindex="-1"></a>new_row <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Length), </span>
+<span id="cb46-2"><a href="data-types-and-data-structures.html#cb46-2" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Width),</span>
+<span id="cb46-3"><a href="data-types-and-data-structures.html#cb46-3" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Length),</span>
+<span id="cb46-4"><a href="data-types-and-data-structures.html#cb46-4" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Width),</span>
+<span id="cb46-5"><a href="data-types-and-data-structures.html#cb46-5" aria-hidden="true" tabindex="-1"></a>             <span class="st">&quot;random_sp&quot;</span>,</span>
+<span id="cb46-6"><a href="data-types-and-data-structures.html#cb46-6" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>random_numbers)</span>
+<span id="cb46-7"><a href="data-types-and-data-structures.html#cb46-7" aria-hidden="true" tabindex="-1"></a>             )</span>
+<span id="cb46-8"><a href="data-types-and-data-structures.html#cb46-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-9"><a href="data-types-and-data-structures.html#cb46-9" aria-hidden="true" tabindex="-1"></a>new_df2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(new_df, new_row)</span>
+<span id="cb46-10"><a href="data-types-and-data-structures.html#cb46-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-11"><a href="data-types-and-data-structures.html#cb46-11" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(new_df2)</span></code></pre></div>
+<pre><code>##         Sepal.Length      Sepal.Width Petal.Length      Petal.Width   Species
+## 146              6.7                3          5.2              2.3 virginica
+## 147              6.3              2.5            5              1.9 virginica
+## 148              6.5                3          5.2                2 virginica
+## 149              6.2              3.4          5.4              2.3 virginica
+## 150              5.9                3          5.1              1.8 virginica
+## 151 5.84333333333333 3.05733333333333        3.758 1.19933333333333 random_sp
+##          random_numbers
+## 146               -0.53
+## 147               -1.46
+## 148                0.69
+## 149                 2.1
+## 150               -1.29
+## 151 -0.0244666666666667</code></pre>
+<p>Now, we will touch on another important topic today - dealing with missing data. Missing data in <em>R</em> are represented by the symbol <strong>NA</strong> (not available) or impossible values (i.e. dividing by zero) are represented by the symbol <strong>NaN</strong> (not a number). Here we will deal with only <strong>NA</strong> which is the most common in day-to-day <em>R</em>. If we have a vector <code>x</code> which contains one or more <strong>NA</strong> values, we use <code>is.na()</code> function to inquire about <strong>NA</strong> values-</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="data-types-and-data-structures.html#cb48-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="cn">NA</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>,<span class="dv">6</span>)</span>
+<span id="cb48-2"><a href="data-types-and-data-structures.html#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(x)</span></code></pre></div>
+<pre><code>## [1] FALSE FALSE  TRUE FALSE FALSE  TRUE FALSE FALSE</code></pre>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="data-types-and-data-structures.html#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(x))</span></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<p>The problem with the missing value(s) is that it hampers the simple operations, like - calculating the mean or sum etc -</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="data-types-and-data-structures.html#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x)</span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="data-types-and-data-structures.html#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<p>However, if you include a magic argument <code>na.rm=TRUE</code>, then the problem can be overcome and those operations can be performed on rest of the valid values of the vector <code>x</code> -</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="data-types-and-data-structures.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] 21</code></pre>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="data-types-and-data-structures.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<pre><code>## [1] 3.5</code></pre>
+<p>However, a cleaver way to handle the missing data points is to <em>impute</em> them, and a clever way of doing is to take the mean of the rest of the data points -</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="data-types-and-data-structures.html#cb60-1" aria-hidden="true" tabindex="-1"></a>x[<span class="fu">is.na</span>(x)] <span class="ot">&lt;-</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> T)</span></code></pre></div>
+<p>Obviously, there are more complex ways to impute the missing data, we will not cover those in this lecture</p>
 </div>
 <div id="exercise" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Exercise<a href="data-types-and-data-structures.html#exercise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<pre><code>Please do the following steps -
+1. Load the file named &quot;iris_data_NA.csv&quot;.
+2. Find out how many data points are missing.
+3. Impute the missing data points with the median value of the respective columns. Round the values of the imputed data points to 2 decimal points using the funtion round()
+4. What are the sums of each column (with numeric values)?</code></pre>
 
 </div>
 </div>

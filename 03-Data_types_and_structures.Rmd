@@ -109,6 +109,8 @@ myMatrix
 ```
 If you want to subset the matrix you can do it easily. Always remember, matrix is a `m` row by `n` column `(m x n)` structure which you define in *R* as `[m,n]` or `[row, column]`. If you want to choose the value in the first row and the first column (which also indicates numeric `1` in myMatrix), you type in `myMatrix[1,1]`. If you want to select first 2 rows and 2nd to 4th columns, you type in `myMatrix[c(1,2), c(2,3,4)]` or `myMatrix[1:2, 2:4]`.
 
+### Short exercise
+
 ### Array: 
 You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.
 
@@ -139,14 +141,35 @@ myDataFrame[c(1,2),c("weight.in.kg", "height.in.cm")]
 ``` 
 Further more, there is another level of flexibility for selecting a column information by using `dataframe$columnName` notation as in our case `myDataFrame$weight.in.kg`.
 
-Now, you can inquire what are the column names by utilizing `colnames()` function and for the row names - `rownames()`, of course. Here, in this case, we don't have row names yet, but we can assign them with `row1`, `row2` and `row2` by typing in 
+Now, you can inquire what are the column names by utilizing `colnames()` function and for the row names - `rownames()`. Here, in this case, we see there is no row name, rather they are indexed.
+
+```{r}
+rownames(myDataFrame)
 ```
+
+
+we don't have row names yet, but we can assign them with `row1`, `row2` and `row2` by typing in 
+```{r}
 rownames(myDataFrame) <-  c("row1", "row2", "row3")
 ```
 
-Now, if we want to subset using row and column names, we can type in -
+For simplicity, we will change the column names as well to simply `column1`, `column2` etc -
+
+```{r}
+colnames(myDataFrame) <- c("column1","column2","column3","column4","column5","column6")
 ```
-myDataFrame[c("row1","row2"),c("weight.in.kg", "height.in.cm")]
+
+And, let's see the current look of our data-frame -
+
+```{r}
+myDataFrame
+```
+
+
+Now, if we want to subset using row and column names, we can type in -
+```{r}
+subDataFrame <- myDataFrame[c("row1","row2"),c("column2", "column3")]
+subDataFrame
 ```
 
 Important nomenclature alert: In the realm of statistics, we refer a row as an *observation* and a column as a *variable.* In the realm of data analysts, they are *records* and *fields*, respectively. And, in the realm of Machine Learning, they are *examples* and *attributes*, respectively
@@ -154,17 +177,12 @@ Important nomenclature alert: In the realm of statistics, we refer a row as an *
 ### List: 
 In *R*, List is the (arguably) the most complex data structure which can hold different data types and data structures. Even, a list can hold another list. We will not cover this data structure in this course. 
 
+### Short exercise
 
 ## Import and export data
 
-For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with `.txt` extension and another with `.csv`. First we will deal with our `example_data.txt` file and to import it, we will use `read.table()` function. And for `example_data.csv` file, we will use `read.csv()` function. 
-
-For exporting the file, we will use either `write.table()` function or `write.csv()` function. 
-
-To deal with *.xls* or .*xlsx* files, we will touch on this topic when we discuss how to *load packages*, later.
-
-
-
+For this course, we will limit ourselves to import data from our personal computers. Before that, go to the following link, download an excel file called `excell_iris_data.xlsx` and save to your working directory: <https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/excell_iris_data.xlsx>
+Download a csv version of this file from by going to this page: <https://raw.githubusercontent.com/AMMHasan/Introduction-to-R-for-Biologists/master/csv_iris_data.csv>. Right-click on the empty space on the page, select `Save As...`, then save the file to your working directory.
 
 
 The basic mode of reading a tabular dataset is the `read.table()` function. There are few others, like read.csv(), read.csv2(), read.ftable(), read.delim() etc. There are some basic parameter that you should be careful on -
@@ -175,69 +193,113 @@ The basic mode of reading a tabular dataset is the `read.table()` function. Ther
 4. row.names = if there's a column for row name (usually the first column in the raw data), specify with the column number and later get rid of that column using say, data[,column_number] <- NULL
 
 
+Now we will read the csv file -
 ```{r}
-# read a tabular dataframe
+df_csv <- read.csv(file = "csv_iris_data.csv", row.names = 1)
+head(df_csv)
+```
+Now that we have read our data-frame and checked few rows from the top of it, we want to export it to our computer -
 
+```{r}
+write.csv(x = df_csv, file = "My_output_df.csv")
 ```
 
 
-Now, reading a csv file -
-
-```{r}
-
+In the case of reading an excel file, either with *.xls* or .*xlsx* extension, we need to load a package called `readxl`.
+```{r, message=FALSE, warning=FALSE}
+library(readxl)
+df_excel <- read_excel('excell_iris_data.xlsx',sheet='Sheet1')
+head(df_excel)
 ```
-
-What about excel files?
-
+Unfortunately, to write an excel file, we need another package -
 ```{r}
-#library(readxl)
-# list the sheets of the excel file
-#excel_sheets('Sample-Sales-Data.xlsx')
-#df <- read_excel('Sample-Sales-Data.xlsx',sheet='Sheet1')
-
-
+library(xlsx)
+write.xlsx(x=df_excel, "My_output_df.xlsx")
 ```
-
-How to check after each read-in?
-
-```{r}
-# dimension of the data
-# check the head or tail
-# apply str() and summary() function 
-```
-
-reading in files from the web -
-
-```{r}
-# from CRUK ML course
-```
-
-
-
-
-
-How to write the output into csv, tab or xls files -
-
-```{r}
-# write.table()
-# write.csv()
-# library(xlsx)
-# df <- data.frame(matrix(1:10))
-# #write.xlsx(df, "output.xlsx")
-
-```
-
-
 
 
 ## Manipulating data
 
+First thing, I would do to check after loading a data-frame to the *R* environment is to check its dimension, look at the top and bottom of the dataset, look at the structure and summary of the data by following set of commands -
+
 ```{r}
-# use mtcars dataframe
-# selecting columns by numerical indexing or column names
-# implementing average of each columns, sum of each column, colSums etc
-# add NA value to the dataframe, check for NA using is.na() function and then do the same operations with na.rm=TRUE argument.
+# check the dimension of the data
+dim(df_csv)
+# check the head or tail
+head(df_csv)
+tail(df_csv)
+# apply str() and summary() function 
+str(df_csv)
+summary(df_csv)
+```
+
+We have covered how to change the row or column names in the section `Data frame`
+
+Now we will see how to add new column or row to the data-frame. As we have seen that there are 150 rows in `df_csv` data-frame, therefore, we need a column that contains 150 data points. Let's create a vector `random_numbers` that holds 150 random numbers -
+
+```{r}
+set.seed(seed = 123)
+random_numbers <- round(rnorm(150),2)
+random_numbers
+```
+
+Now, we will add this vector to the data-frame as a column -
+```{r}
+# df_csv$random_number_column <- random_numbers
+new_df <- cbind(df_csv, random_numbers)
+head(new_df)
 
 ```
 
+Similarly, let's create another vector of 6 matched data-type elements to match the six columns in the `new_df`, and add to the end of the data-frame -
+```{r}
+new_row <- c(mean(new_df$Sepal.Length), 
+             mean(new_df$Sepal.Width),
+             mean(new_df$Petal.Length),
+             mean(new_df$Petal.Width),
+             "random_sp",
+             mean(new_df$random_numbers)
+             )
+
+new_df2 <- rbind(new_df, new_row)
+
+tail(new_df2)
+
+```
+
+Now, we will touch on another important topic today - dealing with missing data. Missing data in *R* are represented by the symbol **NA** (not available) or impossible values (i.e. dividing by zero) are represented by the symbol **NaN** (not a number). Here we will deal with only **NA** which is the most common in day-to-day *R*. If we have a vector `x` which contains one or more **NA** values, we use `is.na()` function to inquire about **NA** values-
+```{r}
+x <- c(1,2,NA,3,4,NA,5,6)
+is.na(x)
+any(is.na(x))
+```
+
+The problem with the missing value(s) is that it hampers the simple operations, like - calculating the mean or sum etc -
+
+```{r}
+sum(x)
+mean(x)
+```
+However, if you include a magic argument `na.rm=TRUE`, then the problem can be overcome and those operations can be performed on rest of the valid values of the vector `x` -
+```{r}
+sum(x, na.rm = TRUE)
+mean(x, na.rm = TRUE)
+```
+
+However, a cleaver way to handle the missing data points is to *impute* them, and a clever way of doing is to take the mean of the rest of the data points -
+```{r}
+x[is.na(x)] <- mean(x, na.rm = T)
+```
+
+Obviously, there are more complex ways to impute the missing data, we will not cover those in this lecture
+
 ## Exercise
+
+```
+Please do the following steps -
+1. Load the file named "iris_data_NA.csv".
+2. Find out how many data points are missing.
+3. Impute the missing data points with the median value of the respective columns. Round the values of the imputed data points to 2 decimal points using the funtion round()
+4. What are the sums of each column (with numeric values)?
+```
+

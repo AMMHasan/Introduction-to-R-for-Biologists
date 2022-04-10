@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 R plot | Introduction to R for Biologists</title>
   <meta name="description" content="Chapter 5 R plot | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 R plot | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
-  
   
   
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Dr A M Mahedi Hasan" />
 
 
-<meta name="date" content="2022-04-05" />
+<meta name="date" content="2022-04-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +31,7 @@
   
   
 <link rel="prev" href="data-types-and-data-structures.html"/>
-<link rel="next" href="r-programming-and-r-functions-for-the-beginners.html"/>
-<script src="libs/header-attrs-2.13/header-attrs.js"></script>
+<link rel="next" href="control-flow-in-r.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -173,9 +171,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
 <li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
-<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
-<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
-<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#short-exercise"><i class="fa fa-check"></i><b>4.2.3</b> Short exercise<span></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.4</b> Array:<span></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.5</b> Data frame:<span></span></a></li>
+<li class="chapter" data-level="4.2.6" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.6</b> List:<span></span></a></li>
+<li class="chapter" data-level="4.2.7" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#short-exercise-1"><i class="fa fa-check"></i><b>4.2.7</b> Short exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
 <li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
@@ -190,17 +190,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
 <li class="chapter" data-level="5.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
 </ul></li>
+<li class="chapter" data-level="5.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>6</b> R programming and R functions for the beginners<span></span></a>
+<li class="chapter" data-level="6" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html"><i class="fa fa-check"></i><b>6</b> Control flow in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#control-flow-in-r"><i class="fa fa-check"></i><b>6.1</b> Control flow in R<span></span></a>
+<li class="chapter" data-level="6.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#conditional-execution"><i class="fa fa-check"></i><b>6.1</b> Conditional execution<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#if-else"><i class="fa fa-check"></i><b>6.1.1</b> If-else<span></span></a></li>
-<li class="chapter" data-level="6.1.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#while"><i class="fa fa-check"></i><b>6.1.2</b> while<span></span></a></li>
-<li class="chapter" data-level="6.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>6.1.3</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.1.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#if-else-statement"><i class="fa fa-check"></i><b>6.1.1</b> <code>If-else</code> statement<span></span></a></li>
+<li class="chapter" data-level="6.1.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-2"><i class="fa fa-check"></i><b>6.1.2</b> Short exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r"><i class="fa fa-check"></i><b>6.2</b> User-defined functions in R<span></span></a></li>
-<li class="chapter" data-level="6.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-1"><i class="fa fa-check"></i><b>6.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#loops"><i class="fa fa-check"></i><b>6.2</b> Loops<span></span></a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#while-loop"><i class="fa fa-check"></i><b>6.2.1</b> while loop<span></span></a></li>
+<li class="chapter" data-level="6.2.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-3"><i class="fa fa-check"></i><b>6.2.2</b> Short exercise<span></span></a></li>
+<li class="chapter" data-level="6.2.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#for-loop"><i class="fa fa-check"></i><b>6.2.3</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.2.4" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-4"><i class="fa fa-check"></i><b>6.2.4</b> Short exercise<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#user-defined-functions"><i class="fa fa-check"></i><b>6.3</b> User defined functions<span></span></a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-without-return"><i class="fa fa-check"></i><b>6.3.1</b> Function without return()<span></span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-with-a-return"><i class="fa fa-check"></i><b>6.3.2</b> Function with a return()<span></span></a></li>
+<li class="chapter" data-level="6.3.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#scoping"><i class="fa fa-check"></i><b>6.3.3</b> Scoping<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#exercise-2"><i class="fa fa-check"></i><b>6.4</b> Exercise<span></span></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References<span></span></a></li>
 <li class="divider"></li>
@@ -226,70 +238,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 5</span> R plot<a href="r-plot.html#r-plot" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="basic-plots-in-r" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Basic plots in R<a href="r-plot.html#basic-plots-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Base <em>R</em> has a vast library of functions for plotting data so that you communicate your results to others. Even there are addition packages (i.e. <code>ggplot</code>) to plot complex and big data more efficiently. We will cover a few from the base <em>R</em> in this class. We will use a built-in data-frame (<code>mtcars</code>) that comes with <em>R</em> installation and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using <em>R</em>, but we will cover a few of them in this class.</p>
 <div id="scatter" class="section level3 hasAnchor" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> scatter<a href="r-plot.html#scatter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Again, we will use the data frame (myDat) that we have created while importing the data from our computer and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using <em>R</em>, but we will cover a few of them in this class.</p>
 <p>The first one we will learn is <em>scatter plot</em>. You need two variables to draw it and basically you look at the relationship between these two variables using <em>scatter plot</em>. The function to do it is simply <code>plot()</code></p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="r-plot.html#cb26-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
-<span id="cb26-2"><a href="r-plot.html#cb26-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>disp</span>
-<span id="cb26-3"><a href="r-plot.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="r-plot.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>mpg,mtcars<span class="sc">$</span>disp)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-2.png" width="672" /></p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="r-plot.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-3.png" width="672" /></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="r-plot.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,</span>
-<span id="cb29-2"><a href="r-plot.html#cb29-2" aria-hidden="true" tabindex="-1"></a>     y, </span>
-<span id="cb29-3"><a href="r-plot.html#cb29-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;miles per gallon&quot;</span>, </span>
-<span id="cb29-4"><a href="r-plot.html#cb29-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;displacement&quot;</span>, </span>
-<span id="cb29-5"><a href="r-plot.html#cb29-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;salmon&quot;</span>, </span>
-<span id="cb29-6"><a href="r-plot.html#cb29-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch=</span><span class="dv">19</span>, </span>
-<span id="cb29-7"><a href="r-plot.html#cb29-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty =</span><span class="dv">2</span>, </span>
-<span id="cb29-8"><a href="r-plot.html#cb29-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">type =</span> <span class="st">&quot;b&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-14-4.png" width="672" /></p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="r-plot.html#cb62-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
+<span id="cb62-2"><a href="r-plot.html#cb62-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>disp</span>
+<span id="cb62-3"><a href="r-plot.html#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="co"># the easiest way is to use plot() function</span></span>
+<span id="cb62-4"><a href="r-plot.html#cb62-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="r-plot.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can input the data-points directly, but look at the axis labels</span></span>
+<span id="cb63-2"><a href="r-plot.html#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>mpg,mtcars<span class="sc">$</span>disp)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-2.png" width="672" /></p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="r-plot.html#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We can decorate the plot with different annotations -</span></span>
+<span id="cb64-2"><a href="r-plot.html#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,</span>
+<span id="cb64-3"><a href="r-plot.html#cb64-3" aria-hidden="true" tabindex="-1"></a>     y, </span>
+<span id="cb64-4"><a href="r-plot.html#cb64-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;miles per gallon&quot;</span>, </span>
+<span id="cb64-5"><a href="r-plot.html#cb64-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;displacement&quot;</span>, </span>
+<span id="cb64-6"><a href="r-plot.html#cb64-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col=</span><span class="st">&quot;salmon&quot;</span>, </span>
+<span id="cb64-7"><a href="r-plot.html#cb64-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch=</span><span class="dv">19</span>, </span>
+<span id="cb64-8"><a href="r-plot.html#cb64-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty =</span><span class="dv">2</span>, </span>
+<span id="cb64-9"><a href="r-plot.html#cb64-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">type =</span> <span class="st">&quot;b&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-24-3.png" width="672" /></p>
 </div>
 <div id="bar-plot" class="section level3 hasAnchor" number="5.1.2">
 <h3><span class="header-section-number">5.1.2</span> bar plot<a href="r-plot.html#bar-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The last type of graphs that we will cover today is the bar plot. If we want to know how many cars are there by the types of cylinders in the mtcars data type, we use the table() function. Then we use the bar plot to visualize the counts.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="r-plot.html#cb30-1" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(mtcars<span class="sc">$</span>cyl)</span>
-<span id="cb30-2"><a href="r-plot.html#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts,</span>
-<span id="cb30-3"><a href="r-plot.html#cb30-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Number of cylinders in a car&quot;</span>,</span>
-<span id="cb30-4"><a href="r-plot.html#cb30-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Frequency&quot;</span>,</span>
-<span id="cb30-5"><a href="r-plot.html#cb30-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">&quot;The number of cars by different cylinder types&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>Another type of graph that we will cover today is the <em>bar plot</em>. If we want to know how many cars are there by the types of cylinders in the <code>mtcars</code> data, we use the <code>table()</code> function. Then we use the <code>barplot()</code> function to visualise the counts.</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="r-plot.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a count table</span></span>
+<span id="cb65-2"><a href="r-plot.html#cb65-2" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(mtcars<span class="sc">$</span>cyl)</span>
+<span id="cb65-3"><a href="r-plot.html#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the count table now. </span></span>
+<span id="cb65-4"><a href="r-plot.html#cb65-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="r-plot.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can add some annotations as well</span></span>
+<span id="cb66-2"><a href="r-plot.html#cb66-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts,</span>
+<span id="cb66-3"><a href="r-plot.html#cb66-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Number of cylinders in a car&quot;</span>,</span>
+<span id="cb66-4"><a href="r-plot.html#cb66-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Frequency&quot;</span>,</span>
+<span id="cb66-5"><a href="r-plot.html#cb66-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">&quot;The number of cars by different cylinder types&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-2.png" width="672" /></p>
 </div>
 <div id="histogram" class="section level3 hasAnchor" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> histogram<a href="r-plot.html#histogram" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The next type of graph we will cover is the Histogram. Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="r-plot.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="r-plot.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">20</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-2.png" width="672" /></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="r-plot.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">10</span>, <span class="at">xlab =</span> <span class="st">&quot;weight (1000 lbs)&quot;</span>)</span>
-<span id="cb33-2"><a href="r-plot.html#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>) </span>
-<span id="cb33-3"><a href="r-plot.html#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">median</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;blue&quot;</span>, <span class="at">lty=</span><span class="dv">3</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-16-3.png" width="672" /></p>
+<p>The next type of graph we will cover is the <em>Histogram.</em> Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="r-plot.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># simply -</span></span>
+<span id="cb67-2"><a href="r-plot.html#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb68-1"><a href="r-plot.html#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can change the break points of the histogram -</span></span>
+<span id="cb68-2"><a href="r-plot.html#cb68-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">20</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-2.png" width="672" /></p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="r-plot.html#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can also add some annotations</span></span>
+<span id="cb69-2"><a href="r-plot.html#cb69-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">10</span>, <span class="at">xlab =</span> <span class="st">&quot;weight (1000 lbs)&quot;</span>)</span>
+<span id="cb69-3"><a href="r-plot.html#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>) </span>
+<span id="cb69-4"><a href="r-plot.html#cb69-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">median</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;blue&quot;</span>, <span class="at">lty=</span><span class="dv">3</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-3.png" width="672" /></p>
 </div>
 <div id="box-plot" class="section level3 hasAnchor" number="5.1.4">
 <h3><span class="header-section-number">5.1.4</span> box plot<a href="r-plot.html#box-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The next type of plot is also very important to understand the distribution of your data, and that is a box plot.</p>
+<p>The last type of plot, that we will cover today, is the <em>box plot</em>. It is important to understand the distribution of your data, and <em>box plot</em> is an alternative, but effecient way.</p>
 <div class="figure">
 <img src="https://miro.medium.com/max/1400/1*2c21SkzJMf3frPXPAR_gZA.png" alt="" />
 <p class="caption">boxplot</p>
 </div>
-<p>For example, if you want to see the distribution of the same weight of the cars using boxplot, the command is -</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="r-plot.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>wt, <span class="at">horizontal =</span> T)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-17-1.png" width="672" />
+<p>For example, if you want to see the distribution of the same weight of the cars using <em>box plot</em>, the command is -</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb70-1"><a href="r-plot.html#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>wt, <span class="at">horizontal =</span> T)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" />
 Most importantly, you can look at the data compared to other variable as well. For example, if you and to look at the MPG values by car cylinders, here is the code -</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="r-plot.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(wt<span class="sc">~</span>cyl,</span>
-<span id="cb35-2"><a href="r-plot.html#cb35-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">data=</span>mtcars, </span>
-<span id="cb35-3"><a href="r-plot.html#cb35-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">&quot;Car weight Data&quot;</span>,</span>
-<span id="cb35-4"><a href="r-plot.html#cb35-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab=</span><span class="st">&quot;Number of Cylinders in a car&quot;</span>, </span>
-<span id="cb35-5"><a href="r-plot.html#cb35-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab=</span><span class="st">&quot;Weight (1000 lbs) of the cars&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-18-1.png" width="672" />
-## Exercise</p>
-
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb71-1"><a href="r-plot.html#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(wt<span class="sc">~</span>cyl,</span>
+<span id="cb71-2"><a href="r-plot.html#cb71-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">data=</span>mtcars, </span>
+<span id="cb71-3"><a href="r-plot.html#cb71-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">&quot;Car weight Data&quot;</span>,</span>
+<span id="cb71-4"><a href="r-plot.html#cb71-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab=</span><span class="st">&quot;Number of Cylinders in a car&quot;</span>, </span>
+<span id="cb71-5"><a href="r-plot.html#cb71-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab=</span><span class="st">&quot;Weight (1000 lbs) of the cars&quot;</span>)</span></code></pre></div>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 </div>
+</div>
+<div id="exercise-1" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Exercise<a href="r-plot.html#exercise-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
 </div>
 </div>
             </section>
@@ -298,7 +321,7 @@ Most importantly, you can look at the data compared to other variable as well. F
         </div>
       </div>
 <a href="data-types-and-data-structures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="r-programming-and-r-functions-for-the-beginners.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="control-flow-in-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,17 +1,21 @@
 # R plot
 
 ## Basic plots in R
-### scatter
-Again, we will use the data frame (myDat) that we have created while importing the data from our computer and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using *R*, but we will cover a few of them in this class. 
 
+Base *R* has a vast library of functions for plotting data so that you communicate your results to others. Even there are addition packages (i.e. `ggplot`) to plot complex and big data more efficiently. We will cover a few from the base *R* in this class. We will use a built-in data-frame (`mtcars`) that comes with *R* installation and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using *R*, but we will cover a few of them in this class. 
+
+
+### scatter
 The first one we will learn is *scatter plot*. You need two variables to draw it and basically you look at the relationship between these two variables using *scatter plot*. The function to do it is simply `plot()`
 
 ```{r}
 x <- mtcars$mpg
 y <- mtcars$disp
+# the easiest way is to use plot() function
 plot(x,y)
+# You can input the data-points directly, but look at the axis labels
 plot(mtcars$mpg,mtcars$disp)
-plot(x,y)
+# We can decorate the plot with different annotations -
 plot(x,
      y, 
      xlab = "miles per gallon", 
@@ -23,10 +27,14 @@ plot(x,
 ```
 
 ### bar plot
-The last type of graphs that we will cover today is the bar plot. If we want to know how many cars are there by the types of cylinders in the mtcars data type, we use the table() function. Then we use the bar plot to visualize the counts.
+Another type of graph that we will cover today is the *bar plot*. If we want to know how many cars are there by the types of cylinders in the `mtcars` data, we use the `table()` function. Then we use the `barplot()` function to visualise the counts.
 
 ```{r}
+# create a count table
 counts <- table(mtcars$cyl)
+# plot the count table now. 
+barplot(counts)
+# you can add some annotations as well
 barplot(counts,
         xlab = "Number of cylinders in a car",
         ylab = "Frequency",
@@ -35,24 +43,25 @@ barplot(counts,
 
 ### histogram
 
-The next type of graph we will cover is the Histogram. Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -
+The next type of graph we will cover is the *Histogram.* Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -
 
 ```{r}
+# simply -
 hist(mtcars$wt)
-
+# you can change the break points of the histogram -
 hist(mtcars$wt, breaks = 20)
-
+# you can also add some annotations
 hist(mtcars$wt, breaks = 10, xlab = "weight (1000 lbs)")
 abline(v=mean(mtcars$wt), col="red", lty=2, lwd=2) 
 abline(v=median(mtcars$wt), col="blue", lty=3, lwd=2)
 ```
 
 ### box plot
-The next type of plot is also very important to understand the distribution of your data, and that is a box plot. 
+The last type of plot, that we will cover today, is the *box plot*. It is important to understand the distribution of your data, and  *box plot* is an alternative, but effecient way. 
 
 ![boxplot](https://miro.medium.com/max/1400/1*2c21SkzJMf3frPXPAR_gZA.png)
 
-For example, if you want to see the distribution of the same weight of the cars using boxplot, the command is - 
+For example, if you want to see the distribution of the same weight of the cars using *box plot*, the command is - 
 
 ```{r}
 boxplot(mtcars$wt, horizontal = T)
@@ -66,4 +75,5 @@ boxplot(wt~cyl,
         xlab="Number of Cylinders in a car", 
         ylab="Weight (1000 lbs) of the cars")
 ```
+
 ## Exercise

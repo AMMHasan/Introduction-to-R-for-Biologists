@@ -1,125 +1,124 @@
-# R programming and R functions for the beginners
-
-## Control flow in R
-### If-else
-### while
-### for loop
+# Control flow in *R* 
 
 
-Topic: function, loops, conditional execution, scripting, basic plotting
+In this chapter, we will cover basically the so-called *Control flow in R*  with the following topics -
+
+* Conditional execution
+  + `If-else` statements
+* Loops
+  + `while` loop
+  + `for` loop
+* User defined funstions in *R*
+  + Functions without `return`
+  + Functions with `return`
+
+## Conditional execution
+
+
+### `If-else` statement
+
+The very basic *conditional execution* is the `if` and `if-else` statements. Let's think you have a condition of do something (i.e. choose from a set of data-points or perform a mathematical operation) using *R*, you use , like -
+```{r}
+x <- 10
+if(x == 10){
+  print("x is equal to 10")
+}
+```
+
+If you want to add more twist to the condition, you bring in `else` statement - `if(condition){do something} else{do the alternative}`. Like here -
+
+```{r}
+x <- 11
+if(x == 10){
+  print("x is equal to 10")
+} else{
+  print("x is not equal to 10")
+}
+
+```
+
+You are not quiet content with the arguments here, you want to add more twists to the conditions, you add intermediate `else if` condition -
+```{r}
+x <- 11
+if(x > 20){
+  print("x is greater than 20")
+} else if(x <= 20 & x >= 10){
+  print("x is between 10 and 20")
+} else{
+  print("x is not less than  10")
+}
+```
+
+### Short exercise
+
+You have a job to grade 20 math scripts (the score ranges from 0 to 10) from a class of yr 7 students according to the following scale -
+
+```
+grade A: 8-10
+grade B: 6-7
+grade C: 4-5
+grade D: 0-3
+
+```
+
+Now write a set of conditional `if else` statements so that if there are 100s of students, one can do the grading smoothly using your code. Now check if a student scored 5, what his/her grade would be?
+
+
+## Loops
+
+Loops are efficient ways to perform some mathematical operation iteratively, like - keep walking until you reach your destination (using *while loop*) or read each element of a vector, add one to it and do the same to the next (using *for loop*). 
+
+
+### while loop
+
+The basic structure of while loop is `while(condition){execute some action}`, like -
 
 
 ```{r}
-## Functions ######
-print("I am a good boy") # Here print() and sum() is a built-in R function 
-sum(3,7)
-
-# Fuunction without any argument
-printOnly <- function(){
-  print("hi")
-}
-printOnly()
-
-# Function with argument, like "name"
-printOnly2 <- function(name){
-  print(paste("hi", name))
-}
-printOnly2("Maria")
-
-# a <- 2
-# b <- 3
-# a+b
-
-# Function that returns a result upon calling
-add <- function(parameter1, parameter2){
-  # the main action of this function
-  result <- parameter1 + parameter2
-  return(result)
-}
-
-add(4,33)
-
-########### SCOPE ##########
-
-
-name <- "He is Rajib"
-loc <- "He stays in Tangail"
-
-stay <- function(loc){
-  print(name)
-  loc <- "He stays in Dhaka"
-  print(loc)
-}
-stay(loc)
-
-# But, if you print "loc" now, see what happens......
-print(loc)
-
-######### Scripting (or programming) with R#######
-
-########## if else #######
-
-# if(condition){
-#   do something
-# }
-# else{
-#   do the alternative
-# }
-
-a <- 10
-if(a == 1){
-  print("a is equal 1")
-} else {
-  print("a is not equal 1")
-}
-
-# grade A: 8-10
-# 
-# grade B: 6-7
-# 
-# grade C:4-5
-#
-# grade D: 0-3
-
-grade <- 5 # out of 10
-
-# Here look at the usage of "if else"
-if(grade >= 8 & grade <= 10){
-  print("Student1 got grade A")
-} else if(grade >= 6 & grade <=7){
-  print("Student1 got grade B")
-} else if(grade >= 4 & grade <= 5){
-  print("Student1 got grade C")
-} else{
-  print("Student1 for grade D")
-}
-
-####### while #####
-
-# while(condition){
-#   execute some action
-# }
-
-# This will start an infinite loop
+# Think logically before executing the following code snippet -
 # a <- 10
-# while(a < 11){
-#   print("a is less than 11")
+# while(a < 20){
+#  print("a is less than 20")
 # }
+```
 
-## Here look at the usage of 1) paste() functioon and 2) break
-
+There are two ways to tackle this - 
+1. you can add aother condition -
+```{r}
 a <- 10
 while(a < 20){
-  print(paste(a, " is less than 20"))
-  a <- a+1
-  if(a == 20){
-    print("Now a is equal to 20")
-    break
-    print("I have not obeying the break function") # when break is applied, this line will not be executed.
-  }
+  print("a is less than 20")
+  a <- a + 1
+  print(paste0("Because value of a is now ", a))
 }
-######### for loop #####
-a <- 1:10
+
+```
+
+2. Using `break` to break out of the loop
+
+```{r}
+a <- 10
+while(a < 20){
+  
+  a <- a + 1
+  if(a < 20){
+    print("a is less than 20")
+    print(paste0("Because value of a is now ", a))
+  }else{
+    break
+  }
+  
+}
+```
+
+Look carefully, though `break` is applied in the `if-else` statement, it is active to the loop that it is a part of.
+
+### Short exercise
+
+### for loop
+
+Say, you have a vector `b <- c("a","b","c","d","e")` and you want to read the elements iteratively and then print them, what you can do is - 
+```{r}
 b <- c("a","b","c","d","e")
 
 # looping through the contents of a vector directly
@@ -127,51 +126,140 @@ for(i in b){
   print(i)
 }
 
-# looping through sequential numbers. In some programming language you have to define the initial value and the increment in this line.
-for(i in 1:5){
-  print(i)
-}
-
-# for a bit better understanding
-for(i in 1:5){
-  print(paste("the value of i is", i))
-}
-
 # looping through the contents of a vector using indexing
 for(i in 1:length(b)){
   print(b[i])
 }
 
-# Look at this piece of code to understand the nested loop and the change of the values of i and j
+```
+
+Looping through sequential numbers (in some programming language you have to define the initial value and the increment in this line) -
+```{r}
+for(i in 1:5){
+  print(i)
+}
+```
+
+For a bit better understanding -
+```{r}
+for(i in 1:5){
+  print(paste0("The current value of i is ", i))
+}
+```
+
+Look carefully at this piece of code to understand the nested loop and the change of the values of `i` and `j`
+
+```{r}
 for(i in 1:5){
   for(j in 6:10){
     print(paste("Now i is", i, "and j is", j))
   }
 }
+```
 
-# further usage of foor loop
-a <- c("a1","a2","a3","a4","a5","a6")
-b <- c("b1","b2","b3","b4","b5","b6")
-c <- c("c1","c2","c3","c4","c5","c6")
+Or, the following code snippet -
+```{r}
 
-df <- data.frame(a,b,c,stringsAsFactors = FALSE)
+my_matrix <- matrix(1:18, nrow = 3, byrow = T)
 
-for(colVlaue in 1:ncol(df)){
-  for(rowValue in 1:nrow(df)){
-    print(df[rowValue,colVlaue])
-  }
+for(i in my_matrix){
+  print(i)
 }
-# ...... and using if clause inside the for loop
 
-for(colValue in 1:ncol(df)){
-  for(rowValue in 1:nrow(df)){
-    if(df[rowValue,colValue] == "c6"){
-      print(c(rowValue, colValue))
-    }
+```
+
+But you do not want to print it by column, rather you want to do it by row -
+
+```{r}
+for(row_index in 1:nrow(my_matrix)){
+  for(col_index in 1:ncol(my_matrix)){
+    print(my_matrix[row_index,col_index])
   }
 }
 
 
 ```
-## User-defined functions in R
+
+### Short exercise
+
+## User defined functions
+
+By now, we have already seen some functions, like - `print()` and `mean()` that are built-in to your *R* environment. Sometimes they are not enough, you may need to perform some extra mathematical operations. Here comes the cool feature of *R* programming language, you can define your own functions. The basic structure of a fucntion is -
+
+```
+function_name <- function(input1, ..., inputN=default_value){
+  code to execute
+  return() # if any
+}
+```
+### Function without return()
+
+Let's first look at a very simple function. This does not take any input as prerequisit and will not return any value -
+
+```{r}
+printOnly <- function(){
+  print("hi")
+}
+printOnly() # remember to put a parentheses afterwards to call the function.
+```
+
+Now, define the same function with an input as argument (with a default value as well) -
+
+```{r}
+printOnly <- function(name="David"){
+  print(paste("hi", name))
+}
+printOnly()
+
+# check out what happens if there is no default value assigned to the input argument and you call the function without any value.
+```
+
+### Function with a return()
+
+So far, we have been, basically, printing something with the function. We actually want is to return the result. Now we will look into a function that returns a result and you can use it for later usage if you save it in a variable. Say, we want to add two numbers by a user defined function called `add` -
+
+```{r}
+add <- function(num1, num2){
+  result <- num1 + num2
+  return(result)
+}
+
+add(2,33)
+```
+
+Now, we can assign the output of the function to a variable (say, `result``) -
+
+```{r}
+add <- function(num1, num2){
+  result <- num1 + num2
+  return(result)
+}
+
+result <- add(2,33)
+```
+
+Check that nothing is printed on the console as it returned some value and the value is now saved in the variable `result`. If you type in `result` in the console, now you can see the value.
+
+### Scoping
+
+There is another interesting feature you should keep in mind while scripting and defining your own function(s) - The scoping. The value of a variable can change inside or outside of your function depending of it's position of definition and under what scope (either *global* or *local*) you call it -
+
+```{r}
+
+name <- "My name is David" # global scope
+loc <- "I live in Edinburgh" # global scope
+
+stay <- function(loc){
+  print(name)
+  loc <- "I live in London" # redefining locally and work within the scope of the function
+  print(loc)
+}
+stay(loc)
+
+# But, if you print "loc" now, see what happens......
+print(loc)
+
+```
+
 ## Exercise
+
