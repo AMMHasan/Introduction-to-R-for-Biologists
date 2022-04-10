@@ -7,7 +7,7 @@ site: bookdown::bookdown_site
 
 # Introduction
 
-This course is designed for the MSc Students in UCL Cancer Institute to introduce **R** (statistical-) programming language. I would appreciate if you could participate in this pre-course [survey]<link> to have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of **R** -
+This course is designed for the MSc Students in UCL Cancer Institute to introduce **R** (statistical-) programming language. I would appreciate if you could participate in this pre-course [survey]<link> to have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of **R** - 
 
 ## Definition
 
