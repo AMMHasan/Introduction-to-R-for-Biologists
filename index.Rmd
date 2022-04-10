@@ -7,7 +7,7 @@ site: bookdown::bookdown_site
 
 # Introduction
 
-*Course being desined for the MSc Students on UCL Cancer Institute.*
+*Course being desined for the MSc Students in UCL Cancer Institute.*
 
 ## Definition
 
