@@ -60,8 +60,24 @@ grade C: 4-5
 grade D: 0-3
 
 ```
+If a student scored 5, what's the allocated grade? Write a set of conditional `if else` statements to answer the question.
 
-Now write a set of conditional `if else` statements so that if there are 100s of students, one can do the grading smoothly using your code. Now check if a student scored 5, what his/her grade would be?
+```{r, results=F, echo= F}
+score <- 5
+if(score >= 8 & score <= 10){
+  print("Student got grade A")
+} else if(score >= 6 & score <=7){
+  print("Student got grade B")
+} else if(score >= 4 & score <= 5){
+  print("Student got grade C")
+} else{
+  print("Student for grade D")
+}
+
+
+```
+
+
 
 
 ## Loops
@@ -93,6 +109,7 @@ while(a < 20){
 }
 
 ```
+But, see, there's a logical fault in the coding.
 
 2. Using `break` to break out of the loop
 
@@ -113,7 +130,19 @@ while(a < 20){
 
 Look carefully, though `break` is applied in the `if-else` statement, it is active to the loop that it is a part of.
 
-### Short exercise
+#### Short exercise on while loop
+
+You are giant and in every step you cover 1.5 meters. Your home is 1 Km away from your current position. How many steps do you need to walk before you reach your home?
+
+```{r, echo=FALSE, results=F}
+count = 0
+elapsed = 0
+while(elapsed < 1000){
+   elapsed = elapsed + 1.5
+   count = count + 1
+}
+print(count)
+```
 
 ### for loop
 
@@ -168,9 +197,13 @@ for(i in my_matrix){
 
 ```
 
-But you do not want to print it by column, rather you want to do it by row -
 
-```{r}
+
+### Short exercise on For loop
+
+But you do not want to print the content of `my_matrix` by column, rather you want to do it by row. How would you do it using nested `for loops`?
+
+```{r, echo = F, results=F}
 for(row_index in 1:nrow(my_matrix)){
   for(col_index in 1:ncol(my_matrix)){
     print(my_matrix[row_index,col_index])
@@ -179,8 +212,6 @@ for(row_index in 1:nrow(my_matrix)){
 
 
 ```
-
-### Short exercise
 
 ## User defined functions
 
@@ -261,5 +292,20 @@ print(loc)
 
 ```
 
-## Exercise
+#### Short exercise on function
+
+Create a function called `div` to divide two numbers and make sure that if the denominator is 0, then the function prints out "Please provide non-zero denominator".
+
+Now check these two expression `div(2,0)` and `div(2,3)`
+
+```{r, echo=FALSE}
+div <- function(num, denom){
+  if(denom == 0){
+    print("Please provide non-zero denominator")
+    } else{
+      result = num/denom
+      return(result)
+    }
+  }
+```
 

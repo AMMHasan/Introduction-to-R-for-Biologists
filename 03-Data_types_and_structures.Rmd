@@ -19,7 +19,7 @@ In this chapter, we will cover the following topics -
 * Manipulating data
 
 
-## Useful data types in R
+## Useful data types in *R*
 
 There are different data types used in *R*. We will touch upon a few but heavily used data types in this class. These are namely - 
 
@@ -61,7 +61,7 @@ The columns namely *weight.in.kg* and	*height.in.cm* contain numeric data type.
 A very very important information - 
 Categorical data (nominal or ordinal) in *R* are also called *Factors*. Sometimes, you need to detach this characteristic (i.e. being factors) from your data and convert it to merely character type for the sake of data handling. 
 
-```{r}
+```{r, results= F}
 Overall.health.condition <- factor(c("Intermediate", "Good", "Poor", "Good", "Poor" ))
 Overall.health.condition
 #~~~~~~~~~~~~~~~~~~~~
@@ -100,6 +100,10 @@ Each of the component of the vector is called its *Element*. You can call or ref
 
 A useful tip - for sequential numbers, you can use a short-cut using colon sign in between the minimum and maximum values (inclusive) of the range. Like, for 1 to 100, you type in `1:100`.
 
+#### Short exercise on *Vector*
+
+Create a vector called `my_vec` and assign it with letters `A b c D e`. Then call the vector on the Console.
+
 
 ### Matrix: 
 A matrix is a two-dimensional (row and column) array of a single data type. Matrices are created using `matrix()` function. Think of you having 20 numbers, from 1 to 20 and you want to create a matrix with 4 rows and 5 columns. So you type in:
@@ -109,7 +113,11 @@ myMatrix
 ```
 If you want to subset the matrix you can do it easily. Always remember, matrix is a `m` row by `n` column `(m x n)` structure which you define in *R* as `[m,n]` or `[row, column]`. If you want to choose the value in the first row and the first column (which also indicates numeric `1` in myMatrix), you type in `myMatrix[1,1]`. If you want to select first 2 rows and 2nd to 4th columns, you type in `myMatrix[c(1,2), c(2,3,4)]` or `myMatrix[1:2, 2:4]`.
 
-### Short exercise
+#### Short exercise on *Matrix*
+
+1. Create a vector called `english_alphabets` with all 26 english alphabets.[Hint: `letter()` function returns all 26 english alphabets in lower-case] 
+
+2. Create a matrix with 13 rows and 2 columns that accommodates all those alphabets.
 
 ### Array: 
 You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.
@@ -172,12 +180,31 @@ subDataFrame <- myDataFrame[c("row1","row2"),c("column2", "column3")]
 subDataFrame
 ```
 
-Important nomenclature alert: In the realm of statistics, we refer a row as an *observation* and a column as a *variable.* In the realm of data analysts, they are *records* and *fields*, respectively. And, in the realm of Machine Learning, they are *examples* and *attributes*, respectively
+Important nomenclature alert: In the realm of statistics, we refer a row as an *observation* and a column as a *variable.* In the realm of data analysts, they are *records* and *fields*, respectively. And, in the realm of Machine Learning, they are *examples* and *attributes*, respectively.
+
+#### Short exercise on *Data Frame*
+
+1. Re-create the same data-frame with a different name (of your choice) with the following vectors -
+
+```{r}
+participant.ID=c("BMI1_001", "BMI1_002", "BMI1_003")
+Date=c("01/11/2021", "01/11/2021", "01/11/2021")
+weight.in.kg=c(55.5,45,75)
+height.in.cm=c(172,165,150)
+smoker=c("No", "Yes", "No")
+Overall.health.condition=c("Intermediate", "Good", "Poor")
+
+
+
+```
+
+2. Subset the columns `weight.in.kg` and `smoker` with -
+  a. indexing and
+  b. column names
 
 ### List: 
 In *R*, List is the (arguably) the most complex data structure which can hold different data types and data structures. Even, a list can hold another list. We will not cover this data structure in this course. 
 
-### Short exercise
 
 ## Import and export data
 
@@ -240,7 +267,8 @@ Now we will see how to add new column or row to the data-frame. As we have seen 
 ```{r}
 set.seed(seed = 123)
 random_numbers <- round(rnorm(150),2)
-random_numbers
+head(random_numbers)
+length(random_numbers)
 ```
 
 Now, we will add this vector to the data-frame as a column -
@@ -293,13 +321,14 @@ x[is.na(x)] <- mean(x, na.rm = T)
 
 Obviously, there are more complex ways to impute the missing data, we will not cover those in this lecture
 
-## Exercise
+#### Short exercise on manipulating data
 
-```
+
 Please do the following steps -
+
 1. Load the file named "iris_data_NA.csv".
 2. Find out how many data points are missing.
 3. Impute the missing data points with the median value of the respective columns. Round the values of the imputed data points to 2 decimal points using the funtion round()
 4. What are the sums of each column (with numeric values)?
-```
+
 

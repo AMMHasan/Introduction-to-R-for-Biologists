@@ -77,3 +77,10 @@ boxplot(wt~cyl,
 ```
 
 ## Exercise
+
+Plot the distribution of `Sepal.Length` and `Petal.Length` for different Species from the built-in `iris` data as shown below. Also add different colours [use `col=c("red","green", "blue")` argument in the `boxplot()` function] for each box.
+
+```{r, echo = F, results=F}
+boxplot(Sepal.Length ~ Species, data = iris, col=c("red","green", "blue"))
+```
+
