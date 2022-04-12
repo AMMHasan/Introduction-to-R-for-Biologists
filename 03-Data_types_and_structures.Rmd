@@ -208,9 +208,7 @@ In *R*, List is the (arguably) the most complex data structure which can hold di
 
 ## Import and export data
 
-For this course, we will limit ourselves to import data from our personal computers. Before that, go to the following link, download an excel file called `excell_iris_data.xlsx` and save to your working directory: <https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/excell_iris_data.xlsx>
-Download a csv version of this file from by going to this page: <https://raw.githubusercontent.com/AMMHasan/Introduction-to-R-for-Biologists/master/csv_iris_data.csv>. Right-click on the empty space on the page, select `Save As...`, then save the file to your working directory.
-
+For this course, we will limit ourselves to import data from our personal computers. Before that, go to the following link https://doi.org/10.5281/zenodo.6452121, download an excel file called `excell_iris_data.xlsx` and save to your working directory. Do the same for the csv file as well.
 
 The basic mode of reading a tabular dataset is the `read.table()` function. There are few others, like read.csv(), read.csv2(), read.ftable(), read.delim() etc. There are some basic parameter that you should be careful on -
 
