@@ -324,9 +324,9 @@ Obviously, there are more complex ways to impute the missing data, we will not c
 
 Please do the following steps -
 
-1. Load the file named "iris_data_NA.csv".
+1. Download the file named "csv_iris_data_NA.csv" from https://doi.org/10.5281/zenodo.6452121 and import it on your *R* environment.
 2. Find out how many data points are missing.
-3. Impute the missing data points with the median value of the respective columns. Round the values of the imputed data points to 2 decimal points using the funtion round()
+3. Impute the missing data points with the median value of the respective columns. Round the values of the imputed data points to 2 decimal points using the function round()
 4. What are the sums of each column (with numeric values)?
 
 
