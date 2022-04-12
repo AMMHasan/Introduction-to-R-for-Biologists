@@ -2,7 +2,8 @@
 title: "Introduction to R for Biologists"
 author: "Dr A M Mahedi Hasan"
 email: "A.M.M.Hasan@ucl.ac.uk"
-date: "`r Sys.Date()`"
+#date: "`r Sys.Date()`"
+date: "April 27, 2022"
 site: "bookdown::bookdown_site"
 output:
   bookdown::gitbook:
@@ -11,6 +12,9 @@ output:
     config:
       toolbar:
         position: static
+params:
+  start_date: '2022-04-27'
+  end_date: '2022-04-27'
 ---
 
 # Introduction
