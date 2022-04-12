@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 Data structure | Introduction to R for Biologists</title>
-  <meta name="description" content="Chapter 5 Data structure | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <title>4.2 Data structure | Introduction to R for Biologists</title>
+  <meta name="description" content="4.2 Data structure | Introduction to R for Biologists" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 Data structure | Introduction to R for Biologists" />
+  <meta property="og:title" content="4.2 Data structure | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 Data structure | Introduction to R for Biologists" />
+  <meta name="twitter:title" content="4.2 Data structure | Introduction to R for Biologists" />
   
   
   
@@ -24,25 +23,24 @@
 <meta name="author" content="Dr A M Mahedi Hasan" />
 
 
-<meta name="date" content="2022-03-30" />
+<meta name="date" content="2022-04-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-types-and-data-structures.html"/>
-<link rel="next" href="r-plot.html"/>
-<script src="libs/header-attrs-2.13/header-attrs.js"></script>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link rel="prev" href="useful-data-types-in-r.html"/>
+<link rel="next" href="import-and-export-data.html"/>
+<script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -51,11 +49,11 @@
 
 
 
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="assets/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="assets/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="assets/kePrint-0.0.1/kePrint.js"></script>
+<link href="assets/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 
 <style type="text/css">
@@ -142,68 +140,76 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definition"><i class="fa fa-check"></i><b>1.1</b> Definition<span></span></a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#mini-history"><i class="fa fa-check"></i><b>1.2</b> Mini history<span></span></a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing R and RStudio<span></span></a>
+<li class="chapter" data-level="1.1" data-path="definition.html"><a href="definition.html"><i class="fa fa-check"></i><b>1.1</b> Definition<span></span></a></li>
+<li class="chapter" data-level="1.2" data-path="mini-history.html"><a href="mini-history.html"><i class="fa fa-check"></i><b>1.2</b> Mini history<span></span></a></li>
+<li class="chapter" data-level="1.3" data-path="installing-r-and-rstudio.html"><a href="installing-r-and-rstudio.html"><i class="fa fa-check"></i><b>1.3</b> Installing <em>R</em> and RStudio<span></span></a>
 <ul>
-<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#to-install-r"><i class="fa fa-check"></i><b>1.3.1</b> To Install R<span></span></a></li>
-<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#to-install-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> To Install RStudio<span></span></a></li>
+<li class="chapter" data-level="1.3.1" data-path="installing-r-and-rstudio.html"><a href="installing-r-and-rstudio.html#to-install-r"><i class="fa fa-check"></i><b>1.3.1</b> To Install <em>R</em><span></span></a></li>
+<li class="chapter" data-level="1.3.2" data-path="installing-r-and-rstudio.html"><a href="installing-r-and-rstudio.html#to-install-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> To Install RStudio<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="who-am-i.html"><a href="who-am-i.html"><i class="fa fa-check"></i><b>2</b> Who am I?<span></span></a></li>
 <li class="chapter" data-level="3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html"><i class="fa fa-check"></i><b>3</b> Get to know RStudio interface<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#rstudio-windowspanels"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels<span></span></a>
+<li class="chapter" data-level="3.1" data-path="rstudio-windowspanels.html"><a href="rstudio-windowspanels.html"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels<span></span></a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#source-window"><i class="fa fa-check"></i><b>3.1.1</b> Source window<span></span></a></li>
-<li class="chapter" data-level="3.1.2" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#environment-history-connections-build-git-etc"><i class="fa fa-check"></i><b>3.1.2</b> Environment / History (Connections / Build / Git etc)<span></span></a></li>
-<li class="chapter" data-level="3.1.3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#console"><i class="fa fa-check"></i><b>3.1.3</b> Console<span></span></a></li>
-<li class="chapter" data-level="3.1.4" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#files-plots-packages-help"><i class="fa fa-check"></i><b>3.1.4</b> Files / Plots / Packages / Help<span></span></a></li>
+<li class="chapter" data-level="3.1.1" data-path="rstudio-windowspanels.html"><a href="rstudio-windowspanels.html#source-window"><i class="fa fa-check"></i><b>3.1.1</b> Source window<span></span></a></li>
+<li class="chapter" data-level="3.1.2" data-path="rstudio-windowspanels.html"><a href="rstudio-windowspanels.html#environment-history-connections-build-git-etc"><i class="fa fa-check"></i><b>3.1.2</b> Environment / History (Connections / Build / Git etc)<span></span></a></li>
+<li class="chapter" data-level="3.1.3" data-path="rstudio-windowspanels.html"><a href="rstudio-windowspanels.html#console"><i class="fa fa-check"></i><b>3.1.3</b> Console<span></span></a></li>
+<li class="chapter" data-level="3.1.4" data-path="rstudio-windowspanels.html"><a href="rstudio-windowspanels.html#files-plots-packages-help"><i class="fa fa-check"></i><b>3.1.4</b> Files / Plots / Packages / Help<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html"><i class="fa fa-check"></i><b>4</b> Data types and data structures<span></span></a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-types-in-r"><i class="fa fa-check"></i><b>4.1</b> Useful data types in R<span></span></a>
+<li class="chapter" data-level="4.1" data-path="useful-data-types-in-r.html"><a href="useful-data-types-in-r.html"><i class="fa fa-check"></i><b>4.1</b> Useful data types in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#numbers"><i class="fa fa-check"></i><b>4.1.1</b> Numbers:<span></span></a></li>
-<li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
-<li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
+<li class="chapter" data-level="4.1.1" data-path="useful-data-types-in-r.html"><a href="useful-data-types-in-r.html#numbers"><i class="fa fa-check"></i><b>4.1.1</b> Numbers:<span></span></a></li>
+<li class="chapter" data-level="4.1.2" data-path="useful-data-types-in-r.html"><a href="useful-data-types-in-r.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
+<li class="chapter" data-level="4.1.3" data-path="useful-data-types-in-r.html"><a href="useful-data-types-in-r.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="data-structure.html"><a href="data-structure.html"><i class="fa fa-check"></i><b>5</b> Data structure<span></span></a>
+<li class="chapter" data-level="4.2" data-path="data-structure.html"><a href="data-structure.html"><i class="fa fa-check"></i><b>4.2</b> Data structure<span></span></a>
 <ul>
-<li class="chapter" data-level="5.0.1" data-path="data-structure.html"><a href="data-structure.html#vector"><i class="fa fa-check"></i><b>5.0.1</b> Vector:<span></span></a></li>
-<li class="chapter" data-level="5.0.2" data-path="data-structure.html"><a href="data-structure.html#matrix"><i class="fa fa-check"></i><b>5.0.2</b> Matrix:<span></span></a></li>
-<li class="chapter" data-level="5.0.3" data-path="data-structure.html"><a href="data-structure.html#array"><i class="fa fa-check"></i><b>5.0.3</b> Array:<span></span></a></li>
-<li class="chapter" data-level="5.0.4" data-path="data-structure.html"><a href="data-structure.html#data-frame"><i class="fa fa-check"></i><b>5.0.4</b> Data frame:<span></span></a></li>
-<li class="chapter" data-level="5.0.5" data-path="data-structure.html"><a href="data-structure.html#list"><i class="fa fa-check"></i><b>5.0.5</b> List:<span></span></a></li>
-<li class="chapter" data-level="5.1" data-path="data-structure.html"><a href="data-structure.html#import-and-export-data"><i class="fa fa-check"></i><b>5.1</b> Import and export data<span></span></a></li>
-<li class="chapter" data-level="5.2" data-path="data-structure.html"><a href="data-structure.html#manipulating-data"><i class="fa fa-check"></i><b>5.2</b> Manipulating data<span></span></a></li>
-<li class="chapter" data-level="5.3" data-path="data-structure.html"><a href="data-structure.html#exercise"><i class="fa fa-check"></i><b>5.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="4.2.1" data-path="data-structure.html"><a href="data-structure.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
+<li class="chapter" data-level="4.2.2" data-path="data-structure.html"><a href="data-structure.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-structure.html"><a href="data-structure.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-structure.html"><a href="data-structure.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-structure.html"><a href="data-structure.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>6</b> R plot<span></span></a>
+<li class="chapter" data-level="4.3" data-path="import-and-export-data.html"><a href="import-and-export-data.html"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
+<li class="chapter" data-level="4.4" data-path="manipulating-data.html"><a href="manipulating-data.html"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="r-plot.html"><a href="r-plot.html"><i class="fa fa-check"></i><b>5</b> <em>R</em> plot<span></span></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="r-plot.html"><a href="r-plot.html#basic-plots-in-r"><i class="fa fa-check"></i><b>6.1</b> Basic plots in R<span></span></a>
+<li class="chapter" data-level="5.1" data-path="basic-plots-in-r.html"><a href="basic-plots-in-r.html"><i class="fa fa-check"></i><b>5.1</b> Basic plots in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="r-plot.html"><a href="r-plot.html#scatter"><i class="fa fa-check"></i><b>6.1.1</b> scatter<span></span></a></li>
-<li class="chapter" data-level="6.1.2" data-path="r-plot.html"><a href="r-plot.html#bar-plot"><i class="fa fa-check"></i><b>6.1.2</b> bar plot<span></span></a></li>
-<li class="chapter" data-level="6.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>6.1.3</b> histogram<span></span></a></li>
-<li class="chapter" data-level="6.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>6.1.4</b> box plot<span></span></a></li>
+<li class="chapter" data-level="5.1.1" data-path="basic-plots-in-r.html"><a href="basic-plots-in-r.html#scatter"><i class="fa fa-check"></i><b>5.1.1</b> scatter<span></span></a></li>
+<li class="chapter" data-level="5.1.2" data-path="basic-plots-in-r.html"><a href="basic-plots-in-r.html#bar-plot"><i class="fa fa-check"></i><b>5.1.2</b> bar plot<span></span></a></li>
+<li class="chapter" data-level="5.1.3" data-path="basic-plots-in-r.html"><a href="basic-plots-in-r.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
+<li class="chapter" data-level="5.1.4" data-path="basic-plots-in-r.html"><a href="basic-plots-in-r.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="r-plot.html"><a href="r-plot.html#exercise-1"><i class="fa fa-check"></i><b>6.2</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="exercise.html"><a href="exercise.html"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html"><i class="fa fa-check"></i><b>7</b> R programming and R functions for the beginners<span></span></a>
+<li class="chapter" data-level="6" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html"><i class="fa fa-check"></i><b>6</b> Control flow in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#control-flow-in-r"><i class="fa fa-check"></i><b>7.1</b> Control flow in R<span></span></a>
+<li class="chapter" data-level="6.1" data-path="conditional-execution.html"><a href="conditional-execution.html"><i class="fa fa-check"></i><b>6.1</b> Conditional execution<span></span></a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#if-else"><i class="fa fa-check"></i><b>7.1.1</b> If-else<span></span></a></li>
-<li class="chapter" data-level="7.1.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#while"><i class="fa fa-check"></i><b>7.1.2</b> while<span></span></a></li>
-<li class="chapter" data-level="7.1.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#for-loop"><i class="fa fa-check"></i><b>7.1.3</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.1.1" data-path="conditional-execution.html"><a href="conditional-execution.html#if-else-statement"><i class="fa fa-check"></i><b>6.1.1</b> <code>If-else</code> statement<span></span></a></li>
+<li class="chapter" data-level="6.1.2" data-path="conditional-execution.html"><a href="conditional-execution.html#short-exercise"><i class="fa fa-check"></i><b>6.1.2</b> Short exercise<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#user-defined-functions-in-r"><i class="fa fa-check"></i><b>7.2</b> User-defined functions in R<span></span></a></li>
-<li class="chapter" data-level="7.3" data-path="r-programming-and-r-functions-for-the-beginners.html"><a href="r-programming-and-r-functions-for-the-beginners.html#exercise-2"><i class="fa fa-check"></i><b>7.3</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="6.2" data-path="loops.html"><a href="loops.html"><i class="fa fa-check"></i><b>6.2</b> Loops<span></span></a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="loops.html"><a href="loops.html#while-loop"><i class="fa fa-check"></i><b>6.2.1</b> while loop<span></span></a></li>
+<li class="chapter" data-level="6.2.2" data-path="loops.html"><a href="loops.html#for-loop"><i class="fa fa-check"></i><b>6.2.2</b> for loop<span></span></a></li>
+<li class="chapter" data-level="6.2.3" data-path="loops.html"><a href="loops.html#short-exercise-on-for-loop"><i class="fa fa-check"></i><b>6.2.3</b> Short exercise on For loop<span></span></a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>8</b> References<span></span></a></li>
+<li class="chapter" data-level="6.3" data-path="user-defined-functions.html"><a href="user-defined-functions.html"><i class="fa fa-check"></i><b>6.3</b> User defined functions<span></span></a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="user-defined-functions.html"><a href="user-defined-functions.html#function-without-return"><i class="fa fa-check"></i><b>6.3.1</b> Function without return()<span></span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="user-defined-functions.html"><a href="user-defined-functions.html#function-with-a-return"><i class="fa fa-check"></i><b>6.3.2</b> Function with a return()<span></span></a></li>
+<li class="chapter" data-level="6.3.3" data-path="user-defined-functions.html"><a href="user-defined-functions.html#scoping"><i class="fa fa-check"></i><b>6.3.3</b> Scoping<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>7</b> References<span></span></a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -223,44 +229,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="data-structure" class="section level1 hasAnchor" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Data structure<a href="data-structure.html#data-structure" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>There are few useful pre-defined data structures heavily used in <em>R</em> and there are user defined data structures as well (there are no limits in this case). We will discuss a few of the former -</p>
-<div id="vector" class="section level3 hasAnchor" number="5.0.1">
-<h3><span class="header-section-number">5.0.1</span> Vector:<a href="data-structure.html#vector" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Let’s first think of a variable and value pair, like you have a variable <code>x</code> and it has a value of <code>2</code>. Like what we write in <em>R</em>: <code>x &lt;- 2</code> which means, we assign the value <code>2</code> to <code>x</code>. This is equivalent to a <em>scalar</em>.
-You can put more than one value in a variable, and then it will be equivalent to a <em>vector</em>: <code>y &lt;- c(1,2,3,4,5,6)</code>. Here we have used the <em>combine function</em> <code>c()</code> to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc).</p>
-<p>Each of the component of the vector is called its <em>Element</em>. You can call or refer the elements individually or as a group using their positional index. The positional index starts from <code>1</code> (or you call it <em>one-based indexing</em>). For example, if you want to call the first element of <code>y</code>, you can refer to it by typing <code>y[1]</code>, or you can refer to the 4th element by typing <code>y[4]</code>. If you want to refer to from 2nd to the 4th elements of <code>y</code>, you type in <code>y[c(2,3,4)]</code> or you can use <code>y[2:4]</code>.</p>
+<div id="data-structure" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Data structure<a href="data-structure.html#data-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are few useful pre-defined data structures heavily used in <em>R</em> and there are user defined data structures as well (there are no limits in this case). We will discuss a few of the former class -</p>
+<div id="vector" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Vector:<a href="data-structure.html#vector" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Let’s first think of a variable and value pair, like you have a variable <code>x</code> and it has a value of <code>2</code>. Like what we write in <em>R</em>:
+<code>x &lt;- 2</code>, which means, we assign the value <code>2</code> to <code>x</code>. This is equivalent to a <em>scalar</em>.
+You can put more than one value in a variable, and then it will be equivalent to a <em>vector</em>:</p>
+<pre><code>y &lt;- c(1,2,3,4,5,6)</code></pre>
+<p>Here we have used the <em>combine function</em> <code>c()</code> to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc). Just remember, if you want to hold multiple elements (be it numeric values or characters), enclose them with the <em>combine function</em> (as above).</p>
+<p>Each of the component of the vector is called its <em>Element</em>. You can call or refer the elements individually or as a group using their <em>positional index</em>. The positional index starts from <code>1</code>, which you can refer to as <em>one-based indexing</em>. For example, if you want to call or retrieve the first element of vector <code>y</code>, you can type in <code>y[1]</code>. Similarly, you can refer to the 4th element by typing in <code>y[4]</code>. If you want to refer to from 2nd to the 4th elements of <code>y</code>, you type in <code>y[c(2,3,4)]</code> or you can use <code>y[2:4]</code>.</p>
+<p>A useful tip - for sequential numbers, you can use a short-cut using colon sign in between the minimum and maximum values (inclusive) of the range. Like, for 1 to 100, you type in <code>1:100</code>.</p>
+<div id="short-exercise-on-vector" class="section level4 hasAnchor" number="4.2.1.1">
+<h4><span class="header-section-number">4.2.1.1</span> Short exercise on <em>Vector</em><a href="data-structure.html#short-exercise-on-vector" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Create a vector called <code>my_vec</code> and assign it with letters <code>A b c D e</code>. Then call the vector on the Console.</p>
 </div>
-<div id="matrix" class="section level3 hasAnchor" number="5.0.2">
-<h3><span class="header-section-number">5.0.2</span> Matrix:<a href="data-structure.html#matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A matrix is a two-dimensional (row and column) array of same data type. Matrices are created using <code>matrix()</code> function. Think of you have 20 numbers, from 1 to 20. You want to create a matrix with 4 rows and 5 columns. So you type in:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-structure.html#cb16-1" aria-hidden="true" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">nrow =</span> <span class="dv">4</span>,<span class="at">ncol =</span> <span class="dv">5</span>)</span>
-<span id="cb16-2"><a href="data-structure.html#cb16-2" aria-hidden="true" tabindex="-1"></a>myMatrix</span></code></pre></div>
+</div>
+<div id="matrix" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Matrix:<a href="data-structure.html#matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A matrix is a two-dimensional (row and column) array of a single data type. Matrices are created using <code>matrix()</code> function. Think of you having 20 numbers, from 1 to 20 and you want to create a matrix with 4 rows and 5 columns. So you type in:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-structure.html#cb6-1" aria-hidden="true" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">nrow =</span> <span class="dv">4</span>,<span class="at">ncol =</span> <span class="dv">5</span>)</span>
+<span id="cb6-2"><a href="data-structure.html#cb6-2" aria-hidden="true" tabindex="-1"></a>myMatrix</span></code></pre></div>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]
 ## [1,]    1    5    9   13   17
 ## [2,]    2    6   10   14   18
 ## [3,]    3    7   11   15   19
 ## [4,]    4    8   12   16   20</code></pre>
-<p>If you want to subset the matrix you can do it easily. Always remember, matrix is a m row by n column (m x n) structure which you define in <em>R</em> as <code>[m,n]</code> or <code>[row, column]</code>. If you want to choose the first row and first column (which also indicates the element 1 in myMatrix), you type in <code>myMatrix[1,1]</code>. If you want to select first 2 rows and 2nd to 4th columns, you type in <code>myMatrix[c(1,2), c(2,3,4)]</code> or <code>myMatrix[c(1:2), c(2:4)]</code>.</p>
+<p>If you want to subset the matrix you can do it easily. Always remember, matrix is a <code>m</code> row by <code>n</code> column <code>(m x n)</code> structure which you define in <em>R</em> as <code>[m,n]</code> or <code>[row, column]</code>. If you want to choose the value in the first row and the first column (which also indicates numeric <code>1</code> in myMatrix), you type in <code>myMatrix[1,1]</code>. If you want to select first 2 rows and 2nd to 4th columns, you type in <code>myMatrix[c(1,2), c(2,3,4)]</code> or <code>myMatrix[1:2, 2:4]</code>.</p>
+<div id="short-exercise-on-matrix" class="section level4 hasAnchor" number="4.2.2.1">
+<h4><span class="header-section-number">4.2.2.1</span> Short exercise on <em>Matrix</em><a href="data-structure.html#short-exercise-on-matrix" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li><p>Create a vector called <code>english_alphabets</code> with all 26 english alphabets.[Hint: <code>letter()</code> function returns all 26 english alphabets in lower-case]</p></li>
+<li><p>Create a matrix with 13 rows and 2 columns that accommodates all those alphabets.</p></li>
+</ol>
 </div>
-<div id="array" class="section level3 hasAnchor" number="5.0.3">
-<h3><span class="header-section-number">5.0.3</span> Array:<a href="data-structure.html#array" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="array" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Array:<a href="data-structure.html#array" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>You can accommodate your data in more than 2 dimensions using an array. We will not cover it in this course.</p>
 </div>
-<div id="data-frame" class="section level3 hasAnchor" number="5.0.4">
-<h3><span class="header-section-number">5.0.4</span> Data frame:<a href="data-structure.html#data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>For you, data frame is the main data type that will have a huge utility in this course. You will import data in this format and manipulate data in this format and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is again a two-dimensional array. It is more general than a matrix and can contain different data types in it. However, each column contains a single data type (of course). The function to create a data frame is <code>data.frame()</code> and an easy way to create a data frame is</p>
+<div id="data-frame" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Data frame:<a href="data-structure.html#data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is <code>data.frame()</code> and an easy way to create a data frame is</p>
 <pre><code>myDataFrame &lt;- data.frame(column1, column2, column3))</code></pre>
 <p>Let’s see the same data frame again and observe carefully how it is done.</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="data-structure.html#cb19-1" aria-hidden="true" tabindex="-1"></a>myDataFrame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb19-2"><a href="data-structure.html#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">participant.ID=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>),</span>
-<span id="cb19-3"><a href="data-structure.html#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Date=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>), </span>
-<span id="cb19-4"><a href="data-structure.html#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">weight.in.kg=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>), <span class="st">&quot;height in cm&quot;</span><span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>),</span>
-<span id="cb19-5"><a href="data-structure.html#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">smoker=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>),</span>
-<span id="cb19-6"><a href="data-structure.html#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">Overall.health.condition=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span>
-<span id="cb19-7"><a href="data-structure.html#cb19-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb19-8"><a href="data-structure.html#cb19-8" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="data-structure.html#cb9-1" aria-hidden="true" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
+<span id="cb9-2"><a href="data-structure.html#cb9-2" aria-hidden="true" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
+<span id="cb9-3"><a href="data-structure.html#cb9-3" aria-hidden="true" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
+<span id="cb9-4"><a href="data-structure.html#cb9-4" aria-hidden="true" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
+<span id="cb9-5"><a href="data-structure.html#cb9-5" aria-hidden="true" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
+<span id="cb9-6"><a href="data-structure.html#cb9-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span>
+<span id="cb9-7"><a href="data-structure.html#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="data-structure.html#cb9-8" aria-hidden="true" tabindex="-1"></a>myDataFrame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(participant.ID, Date, weight.in.kg, height.in.cm, smoker, Overall.health.condition)</span>
+<span id="cb9-9"><a href="data-structure.html#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="data-structure.html#cb9-10" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
 <pre><code>##   participant.ID       Date weight.in.kg height.in.cm smoker
 ## 1       BMI1_001 01/11/2021         55.5          172     No
 ## 2       BMI1_002 01/11/2021         45.0          165    Yes
@@ -271,29 +294,50 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 3                     Poor</code></pre>
 <p>Remember, each of the vector defining each column in the data frame has to be of same length. Now, if you want to subset the data frame as you did from matrix, you can use the same technique. For example, if you want to know the weight and height of first two patients, you type in <code>myDataFrame[c(1,2),c(3,4)]</code>. Interestingly in the case of data frame, you can use the column names to do that, like -</p>
 <pre><code>myDataFrame[c(1,2),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
-<p>Further more, there is another level of flexibility for selecting a column information by using a <code>$</code> notation as in <code>myDataFrame$weight.in.kg</code>.</p>
-<p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>, of course. Here, in this case, we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
-<pre><code>rownames(myDataFrame) &lt;-  c(&quot;row1&quot;, &quot;row2&quot;, &quot;row3&quot;)</code></pre>
+<p>Further more, there is another level of flexibility for selecting a column information by using <code>dataframe$columnName</code> notation as in our case <code>myDataFrame$weight.in.kg</code>.</p>
+<p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>. Here, in this case, we see there is no row name, rather they are indexed.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data-structure.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame)</span></code></pre></div>
+<pre><code>## [1] &quot;1&quot; &quot;2&quot; &quot;3&quot;</code></pre>
+<p>we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="data-structure.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame) <span class="ot">&lt;-</span>  <span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>, <span class="st">&quot;row2&quot;</span>, <span class="st">&quot;row3&quot;</span>)</span></code></pre></div>
+<p>For simplicity, we will change the column names as well to simply <code>column1</code>, <code>column2</code> etc -</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="data-structure.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(myDataFrame) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column1&quot;</span>,<span class="st">&quot;column2&quot;</span>,<span class="st">&quot;column3&quot;</span>,<span class="st">&quot;column4&quot;</span>,<span class="st">&quot;column5&quot;</span>,<span class="st">&quot;column6&quot;</span>)</span></code></pre></div>
+<p>And, let’s see the current look of our data-frame -</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-structure.html#cb16-1" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<pre><code>##       column1    column2 column3 column4 column5      column6
+## row1 BMI1_001 01/11/2021    55.5     172      No Intermediate
+## row2 BMI1_002 01/11/2021    45.0     165     Yes         Good
+## row3 BMI1_003 01/11/2021    75.0     150      No         Poor</code></pre>
 <p>Now, if we want to subset using row and column names, we can type in -</p>
-<pre><code>myDataFrame[c(&quot;row1&quot;,&quot;row2&quot;),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
-<p>Important nomenclature alert: In the realm of statistics, we refer a row as an <em>observation</em> and a column as a <em>variable.</em> In the realm of data analysts, they are <em>records</em> and <em>fields</em>, respectively. And, in the realm of Machine Learning, they are <em>examples</em> and <em>attributes</em>, respectively</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-structure.html#cb18-1" aria-hidden="true" tabindex="-1"></a>subDataFrame <span class="ot">&lt;-</span> myDataFrame[<span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>,<span class="st">&quot;row2&quot;</span>),<span class="fu">c</span>(<span class="st">&quot;column2&quot;</span>, <span class="st">&quot;column3&quot;</span>)]</span>
+<span id="cb18-2"><a href="data-structure.html#cb18-2" aria-hidden="true" tabindex="-1"></a>subDataFrame</span></code></pre></div>
+<pre><code>##         column2 column3
+## row1 01/11/2021    55.5
+## row2 01/11/2021    45.0</code></pre>
+<p>Important nomenclature alert: In the realm of statistics, we refer a row as an <em>observation</em> and a column as a <em>variable.</em> In the realm of data analysts, they are <em>records</em> and <em>fields</em>, respectively. And, in the realm of Machine Learning, they are <em>examples</em> and <em>attributes</em>, respectively.</p>
+<div id="short-exercise-on-data-frame" class="section level4 hasAnchor" number="4.2.4.1">
+<h4><span class="header-section-number">4.2.4.1</span> Short exercise on <em>Data Frame</em><a href="data-structure.html#short-exercise-on-data-frame" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<ol style="list-style-type: decimal">
+<li>Re-create the same data-frame with a different name (of your choice) with the following vectors -</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-structure.html#cb20-1" aria-hidden="true" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
+<span id="cb20-2"><a href="data-structure.html#cb20-2" aria-hidden="true" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
+<span id="cb20-3"><a href="data-structure.html#cb20-3" aria-hidden="true" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
+<span id="cb20-4"><a href="data-structure.html#cb20-4" aria-hidden="true" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
+<span id="cb20-5"><a href="data-structure.html#cb20-5" aria-hidden="true" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
+<span id="cb20-6"><a href="data-structure.html#cb20-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Subset the columns <code>weight.in.kg</code> and <code>smoker</code> with -</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>indexing and</li>
+<li>column names</li>
+</ol>
 </div>
-<div id="list" class="section level3 hasAnchor" number="5.0.5">
-<h3><span class="header-section-number">5.0.5</span> List:<a href="data-structure.html#list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="list" class="section level3 hasAnchor" number="4.2.5">
+<h3><span class="header-section-number">4.2.5</span> List:<a href="data-structure.html#list" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In <em>R</em>, List is the (arguably) the most complex data structure which can hold different data types and data structures. Even, a list can hold another list. We will not cover this data structure in this course.</p>
-</div>
-<div id="import-and-export-data" class="section level2 hasAnchor" number="5.1">
-<h2><span class="header-section-number">5.1</span> Import and export data<a href="data-structure.html#import-and-export-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>For this course, we will limit ourselves to import data from our personal computers. I have sent two different files to you - one with <code>.txt</code> extension and another with <code>.csv</code>. First we will deal with our <code>example_data.txt</code> file and to import it, we will use <code>read.table()</code> function. And for <code>example_data.csv</code> file, we will use <code>read.csv()</code> function.</p>
-<p>For exporting the file, we will use either <code>write.table()</code> function or <code>write.csv()</code> function.</p>
-<p>To deal with <em>.xls</em> or .<em>xlsx</em> files, we will touch this topic when we discuss how to <em>load packages</em>, later.</p>
-</div>
-<div id="manipulating-data" class="section level2 hasAnchor" number="5.2">
-<h2><span class="header-section-number">5.2</span> Manipulating data<a href="data-structure.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-</div>
-<div id="exercise" class="section level2 hasAnchor" number="5.3">
-<h2><span class="header-section-number">5.3</span> Exercise<a href="data-structure.html#exercise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-
 </div>
 </div>
             </section>
@@ -301,18 +345,18 @@ You can put more than one value in a variable, and then it will be equivalent to
           </div>
         </div>
       </div>
-<a href="data-types-and-data-structures.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="r-plot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="useful-data-types-in-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="import-and-export-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -351,6 +395,9 @@ gitbook.start({
 },
 "toc": {
 "collapse": "subsection"
+},
+"toolbar": {
+"position": "static"
 }
 });
 });

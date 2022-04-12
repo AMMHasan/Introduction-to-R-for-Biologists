@@ -1,11 +1,18 @@
 # References
 
-RStudio: https://www.youtube.com/watch?v=FIrsOBy5k58
+**RStudio:** https://www.youtube.com/watch?v=FIrsOBy5k58
 
-Quick-R: for help
+**For quick help**
 
-R-seek: for help
+Quick-R: https://www.statmethods.net/
 
-R-bloggers: active developments in R
+R-seek: https://rseek.org/
 
-Book: R in action
+**Active developments in *R* **
+
+R-bloggers: https://www.r-bloggers.com/
+
+
+**Book:** 
+
+*R* in action: https://www.manning.com/books/r-in-action

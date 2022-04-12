@@ -1,13 +1,21 @@
 --- 
 title: "Introduction to R for Biologists"
 author: "Dr A M Mahedi Hasan"
+email: "A.M.M.Hasan@ucl.ac.uk"
 date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+site: "bookdown::bookdown_site"
+output:
+  bookdown::gitbook:
+    lib_dir: assets
+    split_by: chapter
+    config:
+      toolbar:
+        position: static
 ---
 
 # Introduction
 
-This course is designed for the MSc Students in UCL Cancer Institute to introduce *R* (statistical-) programming language. I would appreciate if you could participate in this pre-course [survey]<link> to have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of *R* - 
+This workshop is designed for the MSc Students in UCL Cancer Institute to introduce *R* (statistical-) programming language. I would appreciate if you could participate in this pre-course [survey]<link> so that I have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of *R* - 
 
 ## Definition
 
@@ -18,11 +26,11 @@ This course is designed for the MSc Students in UCL Cancer Institute to introduc
 *R* is an open-source implementation of the S programming language, which was designed for statistical analysis. *S* was created by Rick Becker, John Chambers, Doug Dunn, Jean McRae, and Judy Schilling at Bell Labs around 1976. 
 In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, started on an implementation of *S* which had become the *R* programming language over time. In 1995, statistician Martin Mächler convinced them to make *R* a free and open-source software. The first official release came in June 1995. and  the first official "stable beta" version (v1.0) was released on 29 February 2000. R is supported by a huge community leevel contribution as it is upen source. 
 
-## Installing R and RStudio
+## Installing *R* and RStudio
 
-We will be using RStudio, which is an Integrated Development Environment (IDE) of R. To my view, it is very handy working in RStudio environemnt, rather than using simply R. However, to use RStudio, we’ll need to install first the Base-R, and then RStudio software. Base-R is the basic software which contains the R programming language. Desktop version of both software are totally free and open source.
+We will be using RStudio, which is an Integrated Development Environment (IDE) of *R*. To my view, it is very handy working in RStudio environment, rather than using simply R. However, to use RStudio, we’ll need to install first the Base-*R*, and then RStudio software. Base-*R* is the basic software which contains the R programming language. Desktop version of both software are totally free and open source.
 
-### To Install R
+### To Install *R*
 #### For Mac users
 - Open an internet browser and go to www.r-project.org.
 - Click the "download R" link in the middle of the page under "Getting Started."

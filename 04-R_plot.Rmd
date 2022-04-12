@@ -1,6 +1,6 @@
-# R plot
+# *R* plot
 
-## Basic plots in R
+## Basic plots in *R*
 
 Base *R* has a vast library of functions for plotting data so that you communicate your results to others. Even there are addition packages (i.e. `ggplot`) to plot complex and big data more efficiently. We will cover a few from the base *R* in this class. We will use a built-in data-frame (`mtcars`) that comes with *R* installation and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using *R*, but we will cover a few of them in this class. 
 
