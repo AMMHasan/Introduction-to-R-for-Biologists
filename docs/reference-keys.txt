@@ -2,11 +2,11 @@ introduction
 definition
 mini-history
 installing-r-and-rstudio
-to-install-r
+installing-r
 for-mac-users
 for-windows-users
 for-linux-ubuntu-distribution-users
-to-install-rstudio
+installing-rstudio
 for-mac-users-1
 for-windows-users-1
 for-linux-users
@@ -35,9 +35,9 @@ list
 import-and-export-data
 manipulating-data
 short-exercise-on-manipulating-data
-r-plot
+r-plots
 basic-plots-in-r
-scatter
+scatter-plot
 bar-plot
 histogram
 box-plot

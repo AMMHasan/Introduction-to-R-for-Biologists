@@ -17,7 +17,8 @@ In this chapter, we will cover basically the so-called *Control flow in R*  with
 
 ### `If-else` statement
 
-The very basic *conditional execution* is the `if` and `if-else` statements. Let's think you have a condition of do something (i.e. choose from a set of data-points or perform a mathematical operation) using *R*, you use , like -
+The very basic *conditional execution* is the `if` and `if-else` statements. Let's think you have a condition of do something (*i.e.* choose from a set of data-points or perform a mathematical operation) using *R*, you use `if(condition){do something}`. For example -
+
 ```{r}
 x <- 10
 if(x == 10){
@@ -37,7 +38,7 @@ if(x == 10){
 
 ```
 
-You are not quiet content with the arguments here, you want to add more twists to the conditions, you add intermediate `else if` condition -
+You are not quiet content with the arguments here, you want to add more twists to the conditions, you add an intermediate `else if` condition -
 ```{r}
 x <- 11
 if(x > 20){
@@ -45,7 +46,7 @@ if(x > 20){
 } else if(x <= 20 & x >= 10){
   print("x is between 10 and 20")
 } else{
-  print("x is not less than  10")
+  print("x is less than  10")
 }
 ```
 
@@ -57,7 +58,7 @@ You have a job to grade 20 math scripts (the score ranges from 0 to 10) from a c
 grade A: 8-10
 grade B: 6-7
 grade C: 4-5
-grade D: 0-3
+grade F: 0-3
 
 ```
 If a student scored 5, what's the allocated grade? Write a set of conditional `if else` statements to answer the question.
@@ -71,7 +72,7 @@ if(score >= 8 & score <= 10){
 } else if(score >= 4 & score <= 5){
   print("Student got grade C")
 } else{
-  print("Student for grade D")
+  print("Student for grade F")
 }
 
 
@@ -99,7 +100,8 @@ The basic structure of while loop is `while(condition){execute some action}`, li
 ```
 
 There are two ways to tackle this - 
-1. you can add aother condition -
+
+1. you can increase the value of `a` (in each iteration) -
 ```{r}
 a <- 10
 while(a < 20){
@@ -116,7 +118,6 @@ But, see, there's a logical fault in the coding.
 ```{r}
 a <- 10
 while(a < 20){
-  
   a <- a + 1
   if(a < 20){
     print("a is less than 20")
@@ -128,7 +129,7 @@ while(a < 20){
 }
 ```
 
-Look carefully, though `break` is applied in the `if-else` statement, it is active to the loop that it is a part of.
+Look carefully, though `break` is applied in the `if-else` statement, it affects on the loop that it is part of.
 
 #### Short exercise on while loop
 
@@ -258,7 +259,7 @@ add <- function(num1, num2){
 add(2,33)
 ```
 
-Now, we can assign the output of the function to a variable (say, `result``) -
+Now, we can assign the output of the function to a variable (say, `result`) -
 
 ```{r}
 add <- function(num1, num2){
@@ -273,7 +274,7 @@ Check that nothing is printed on the console as it returned some value and the v
 
 ### Scoping
 
-There is another interesting feature you should keep in mind while scripting and defining your own function(s) - The scoping. The value of a variable can change inside or outside of your function depending of it's position of definition and under what scope (either *global* or *local*) you call it -
+There is another interesting feature you should keep in mind while scripting and defining your own function(s) - The *scoping*. The value of a variable can change inside or outside of your function depending of it's position of definition and under what scope (either *global* or *local*) you call it -
 
 ```{r}
 
@@ -294,7 +295,7 @@ print(loc)
 
 #### Short exercise on function
 
-Create a function called `div` to divide two numbers and make sure that if the denominator is 0, then the function prints out "Please provide non-zero denominator".
+Create a function called `div` to divide two numbers. If the denominator is 0, then the function prints out "Please provide a non-zero denominator".
 
 Now check these two expression `div(2,0)` and `div(2,3)`
 

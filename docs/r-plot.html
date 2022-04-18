@@ -20,7 +20,7 @@
   
   
 
-<meta name="author" content="Dr A M Mahedi Hasan" />
+<meta name="author" content="Dr A M Mahedi Hasan (a.m.m.hasan@ucl.ac.uk)" />
 
 
 <meta name="date" content="2022-04-27" />
@@ -144,8 +144,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#mini-history"><i class="fa fa-check"></i><b>1.2</b> Mini history<span></span></a></li>
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing <em>R</em> and RStudio<span></span></a>
 <ul>
-<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#to-install-r"><i class="fa fa-check"></i><b>1.3.1</b> To Install <em>R</em><span></span></a></li>
-<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#to-install-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> To Install RStudio<span></span></a></li>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i><b>1.3.1</b> Installing <em>R</em><span></span></a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> Installing RStudio<span></span></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="who-am-i.html"><a href="who-am-i.html"><i class="fa fa-check"></i><b>2</b> Who am I?<span></span></a></li>
@@ -182,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="5.1" data-path="r-plot.html"><a href="r-plot.html#basic-plots-in-r"><i class="fa fa-check"></i><b>5.1</b> Basic plots in <em>R</em><span></span></a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="r-plot.html"><a href="r-plot.html#scatter"><i class="fa fa-check"></i><b>5.1.1</b> scatter<span></span></a></li>
+<li class="chapter" data-level="5.1.1" data-path="r-plot.html"><a href="r-plot.html#scatter-plot"><i class="fa fa-check"></i><b>5.1.1</b> scatter plot<span></span></a></li>
 <li class="chapter" data-level="5.1.2" data-path="r-plot.html"><a href="r-plot.html#bar-plot"><i class="fa fa-check"></i><b>5.1.2</b> bar plot<span></span></a></li>
 <li class="chapter" data-level="5.1.3" data-path="r-plot.html"><a href="r-plot.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
 <li class="chapter" data-level="5.1.4" data-path="r-plot.html"><a href="r-plot.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
@@ -233,18 +233,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Chapter 5</span> <em>R</em> plot<a href="r-plot.html#r-plot" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="basic-plots-in-r" class="section level2 hasAnchor" number="5.1">
 <h2><span class="header-section-number">5.1</span> Basic plots in <em>R</em><a href="r-plot.html#basic-plots-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Base <em>R</em> has a vast library of functions for plotting data so that you communicate your results to others. Even there are addition packages (i.e. <code>ggplot</code>) to plot complex and big data more efficiently. We will cover a few from the base <em>R</em> in this class. We will use a built-in data-frame (<code>mtcars</code>) that comes with <em>R</em> installation and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using <em>R</em>, but we will cover a few of them in this class.</p>
-<div id="scatter" class="section level3 hasAnchor" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> scatter<a href="r-plot.html#scatter" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The first one we will learn is <em>scatter plot</em>. You need two variables to draw it and basically you look at the relationship between these two variables using <em>scatter plot</em>. The function to do it is simply <code>plot()</code></p>
+<p>Base <em>R</em> has a vast library of functions for plotting data for you to communicate your results to others. Even there are addition packages (<em>i.e.</em> <code>ggplot</code>) to plot complex and big data more efficiently. We will cover a few functions from the base <em>R</em> in this workshop. We will use a built-in data-frame (<code>mtcars</code>) that comes with <em>R</em> installation and we will use different columns to draw various graphs in this chapter.</p>
+<div id="scatter-plot" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> scatter plot<a href="r-plot.html#scatter-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The first one we will learn is the <em>scatter plot</em>. You need two variables to draw such a plot and basically you look at the relationship between these two variables using <em>scatter plot</em>. The function to do it is simple: <code>plot()</code></p>
 <div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="r-plot.html#cb58-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>mpg</span>
 <span id="cb58-2"><a href="r-plot.html#cb58-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> mtcars<span class="sc">$</span>disp</span>
 <span id="cb58-3"><a href="r-plot.html#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="co"># the easiest way is to use plot() function</span></span>
 <span id="cb58-4"><a href="r-plot.html#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="r-plot.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You can input the data-points directly, but look at the axis labels</span></span>
 <span id="cb59-2"><a href="r-plot.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>mpg,mtcars<span class="sc">$</span>disp)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-2.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-2.png" width="672" /></p>
 <div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="r-plot.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We can decorate the plot with different annotations -</span></span>
 <span id="cb60-2"><a href="r-plot.html#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,</span>
 <span id="cb60-3"><a href="r-plot.html#cb60-3" aria-hidden="true" tabindex="-1"></a>     y, </span>
@@ -254,7 +254,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb60-7"><a href="r-plot.html#cb60-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch=</span><span class="dv">19</span>, </span>
 <span id="cb60-8"><a href="r-plot.html#cb60-8" aria-hidden="true" tabindex="-1"></a>     <span class="at">lty =</span><span class="dv">2</span>, </span>
 <span id="cb60-9"><a href="r-plot.html#cb60-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">type =</span> <span class="st">&quot;b&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-25-3.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-3.png" width="672" /></p>
 </div>
 <div id="bar-plot" class="section level3 hasAnchor" number="5.1.2">
 <h3><span class="header-section-number">5.1.2</span> bar plot<a href="r-plot.html#bar-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -263,28 +263,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb61-2"><a href="r-plot.html#cb61-2" aria-hidden="true" tabindex="-1"></a>counts <span class="ot">&lt;-</span> <span class="fu">table</span>(mtcars<span class="sc">$</span>cyl)</span>
 <span id="cb61-3"><a href="r-plot.html#cb61-3" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the count table now. </span></span>
 <span id="cb61-4"><a href="r-plot.html#cb61-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
 <div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="r-plot.html#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can add some annotations as well</span></span>
 <span id="cb62-2"><a href="r-plot.html#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(counts,</span>
 <span id="cb62-3"><a href="r-plot.html#cb62-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Number of cylinders in a car&quot;</span>,</span>
 <span id="cb62-4"><a href="r-plot.html#cb62-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Frequency&quot;</span>,</span>
 <span id="cb62-5"><a href="r-plot.html#cb62-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">main =</span> <span class="st">&quot;The number of cars by different cylinder types&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-26-2.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
 </div>
 <div id="histogram" class="section level3 hasAnchor" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> histogram<a href="r-plot.html#histogram" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The next type of graph we will cover is the <em>Histogram.</em> Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -</p>
 <div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="r-plot.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># simply -</span></span>
 <span id="cb63-2"><a href="r-plot.html#cb63-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
 <div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="r-plot.html#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can change the break points of the histogram -</span></span>
 <span id="cb64-2"><a href="r-plot.html#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">20</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-2.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-2.png" width="672" /></p>
 <div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="r-plot.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># you can also add some annotations</span></span>
 <span id="cb65-2"><a href="r-plot.html#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mtcars<span class="sc">$</span>wt, <span class="at">breaks =</span> <span class="dv">10</span>, <span class="at">xlab =</span> <span class="st">&quot;weight (1000 lbs)&quot;</span>)</span>
 <span id="cb65-3"><a href="r-plot.html#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;red&quot;</span>, <span class="at">lty=</span><span class="dv">2</span>, <span class="at">lwd=</span><span class="dv">2</span>) </span>
 <span id="cb65-4"><a href="r-plot.html#cb65-4" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">median</span>(mtcars<span class="sc">$</span>wt), <span class="at">col=</span><span class="st">&quot;blue&quot;</span>, <span class="at">lty=</span><span class="dv">3</span>, <span class="at">lwd=</span><span class="dv">2</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-27-3.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-3.png" width="672" /></p>
 </div>
 <div id="box-plot" class="section level3 hasAnchor" number="5.1.4">
 <h3><span class="header-section-number">5.1.4</span> box plot<a href="r-plot.html#box-plot" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -295,20 +295,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>For example, if you want to see the distribution of the same weight of the cars using <em>box plot</em>, the command is -</p>
 <div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="r-plot.html#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(mtcars<span class="sc">$</span>wt, <span class="at">horizontal =</span> T)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-28-1.png" width="672" />
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-29-1.png" width="672" />
 Most importantly, you can look at the data compared to other variable as well. For example, if you and to look at the MPG values by car cylinders, here is the code -</p>
 <div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="r-plot.html#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(wt<span class="sc">~</span>cyl,</span>
 <span id="cb67-2"><a href="r-plot.html#cb67-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">data=</span>mtcars, </span>
 <span id="cb67-3"><a href="r-plot.html#cb67-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">main=</span><span class="st">&quot;Car weight Data&quot;</span>,</span>
 <span id="cb67-4"><a href="r-plot.html#cb67-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab=</span><span class="st">&quot;Number of Cylinders in a car&quot;</span>, </span>
 <span id="cb67-5"><a href="r-plot.html#cb67-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab=</span><span class="st">&quot;Weight (1000 lbs) of the cars&quot;</span>)</span></code></pre></div>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
 </div>
 </div>
 <div id="exercise" class="section level2 hasAnchor" number="5.2">
 <h2><span class="header-section-number">5.2</span> Exercise<a href="r-plot.html#exercise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Plot the distribution of <code>Sepal.Length</code> and <code>Petal.Length</code> for different Species from the built-in <code>iris</code> data as shown below. Also add different colours [use <code>col=c("red","green", "blue")</code> argument in the <code>boxplot()</code> function] for each box.</p>
-<p><img src="bookdownproj_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p><img src="bookdownproj_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 
 </div>
 </div>

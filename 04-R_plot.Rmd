@@ -1,12 +1,12 @@
-# *R* plot
+# *R* plots
 
 ## Basic plots in *R*
 
-Base *R* has a vast library of functions for plotting data so that you communicate your results to others. Even there are addition packages (i.e. `ggplot`) to plot complex and big data more efficiently. We will cover a few from the base *R* in this class. We will use a built-in data-frame (`mtcars`) that comes with *R* installation and we will be using different columns to draw different graphs in this section. And, there are many types of graphs that you can plot using *R*, but we will cover a few of them in this class. 
+Base *R* has a vast library of functions for plotting data for you to communicate your results to others. Even there are addition packages (*i.e.* `ggplot`) to plot complex and big data more efficiently. We will cover a few functions from the base *R* in this workshop. We will use a built-in data-frame (`mtcars`) that comes with *R* installation and we will use different columns to draw various graphs in this chapter.
 
 
-### scatter
-The first one we will learn is *scatter plot*. You need two variables to draw it and basically you look at the relationship between these two variables using *scatter plot*. The function to do it is simply `plot()`
+### scatter plot
+The first one we will learn is the *scatter plot*. You need two variables to draw such a plot and basically you look at the relationship between these two variables using *scatter plot*. The function to do it is simple: `plot()`
 
 ```{r}
 x <- mtcars$mpg
@@ -22,8 +22,9 @@ plot(x,
      ylab = "displacement", 
      col="salmon", 
      pch=19, 
-     lty =2, 
-     type = "b")
+     #lty =2, 
+     #type = "b"
+     )
 ```
 
 ### bar plot
@@ -43,7 +44,7 @@ barplot(counts,
 
 ### histogram
 
-The next type of graph we will cover is the *Histogram.* Histogram shows you the distribution of your data. For example you want to see the distribution of the displacement -
+The next type of graph we will cover is the *Histogram*. *Histogram* shows you the distribution of your data points. For example, you want to see the distribution of the displacement -
 
 ```{r}
 # simply -
@@ -61,12 +62,13 @@ The last type of plot, that we will cover today, is the *box plot*. It is import
 
 ![boxplot](https://miro.medium.com/max/1400/1*2c21SkzJMf3frPXPAR_gZA.png)
 
-For example, if you want to see the distribution of the same weight of the cars using *box plot*, the command is - 
+For example, if you want to see the distribution of weights of the cars using *box plot*, the command is - 
 
 ```{r}
 boxplot(mtcars$wt, horizontal = T)
 ```
-Most importantly, you can look at the data compared to other variable as well. For example, if you and to look at the MPG values by car cylinders, here is the code -
+
+Most importantly, you can look at the data compared to other variables as well. For example, if you and to look at the MPG values by car cylinder types, here is the code -
 
 ```{r}
 boxplot(wt~cyl,
