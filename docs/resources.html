@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction to R for Biologists</title>
-  <meta name="description" content="Introduction to R for Biologists" />
+  <title>Chapter 7 Resources | Introduction to R for Biologists</title>
+  <meta name="description" content="Chapter 7 Resources | Introduction to R for Biologists" />
   <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction to R for Biologists" />
+  <meta property="og:title" content="Chapter 7 Resources | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction to R for Biologists" />
+  <meta name="twitter:title" content="Chapter 7 Resources | Introduction to R for Biologists" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="control-flow-in-r.html"/>
 
-<link rel="next" href="who-am-i.html"/>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -229,107 +229,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Introduction to R for Biologists</h1>
-<p class="author"><em>Dr A M Mahedi Hasan (<a href="mailto:a.m.m.hasan@ucl.ac.uk" class="email">a.m.m.hasan@ucl.ac.uk</a>)</em></p>
-<p class="date"><em>April 27, 2022</em></p>
-</div>
-<div id="introduction" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This workshop is designed for the MSc Students in UCL Cancer Institute to introduce <em>R</em> (statistical-) programming language. I would appreciate if you participate in this pre-course [survey]<link> so that I have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of <em>R</em>.</p>
-<div id="definition" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Definition<a href="index.html#definition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>“<em>R</em> is a programming language for statistical computing and graphics supported by the <em>R</em> Core Team and the <em>R</em> Foundation for Statistical Computing.” - Wikipedia</p>
-</div>
-<div id="mini-history" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Mini history<a href="index.html#mini-history" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><em>R</em> is an open-source implementation of the <em>S</em> programming language, which was designed for statistical analysis. <em>S</em> was created by Rick Becker, John Chambers, Doug Dunn, Jean McRae, and Judy Schilling at Bell Labs around 1976.
-In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, started on an implementation of <em>S</em> which had become the <em>R</em> programming language over time. In 1995, statistician Martin Mächler convinced them to make <em>R</em> a free and open-source software. The first official release came in June 1995, and the first official “stable beta” version (v1.0) was released on 29 February 2000. <em>R</em> is supported by a huge community level contribution as it is open source.</p>
-</div>
-<div id="installing-r-and-rstudio" class="section level2 hasAnchor" number="1.3">
-<h2><span class="header-section-number">1.3</span> Installing <em>R</em> and RStudio<a href="index.html#installing-r-and-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We will be using RStudio, which is an Integrated Development Environment (IDE) of <em>R</em>. To my view, it is very handy working in RStudio environment, rather than using simply <em>R</em>. However, to use RStudio, we’ll need to install first the Base-<em>R</em>, and then RStudio software. Base-<em>R</em> is the basic software which contains the <em>R</em> programming language. Desktop version of both software are totally free and open source.</p>
-<div id="installing-r" class="section level3 hasAnchor" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> Installing <em>R</em><a href="index.html#installing-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="for-mac-users" class="section level4 hasAnchor" number="1.3.1.1">
-<h4><span class="header-section-number">1.3.1.1</span> For Mac users<a href="index.html#for-mac-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Open an internet browser and go to <a href="https://www.r-project.org" class="uri">https://www.r-project.org</a></li>
-<li>Click the “download R” link in the middle of the page under “Getting Started.”</li>
-<li>Select a CRAN location (a mirror site) and click the corresponding link.</li>
-<li>Click on the “Download R for MacOS” link at the top of the page.</li>
-<li>Click on an appropriate link under Latest releases (as of today, the latest version is R-4.1.3.pkg).</li>
-<li>Save the .pkg file, double-click it to open, and follow the installation instructions.</li>
-<li>Now that <em>R</em> is installed, you need to download and install RStudio.</li>
-</ul>
-</div>
-<div id="for-windows-users" class="section level4 hasAnchor" number="1.3.1.2">
-<h4><span class="header-section-number">1.3.1.2</span> For Windows users<a href="index.html#for-windows-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Open an internet browser and go to <a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a></li>
-<li>Click the “download R for Windows” link under “Download and Install R” box.</li>
-<li>Click on the <code>base</code> version.</li>
-<li>Click on the latest version of <em>R</em> for Windows (as if for this tutorial, the latest version is <code>Download R 4.1.3 for Windows (87 megabytes, 32/64 bit)</code>). Save the <code>.exe</code> file on your computer.</li>
-<li>Double-click on the <code>.exe</code> file, and follow the default installation instructions. Please do not install <em>R</em> on your network drive, it will make your life difficult.</li>
-<li>Now that <em>R</em> is installed, you need to download and install RStudio.</li>
-</ul>
-</div>
-<div id="for-linux-ubuntu-distribution-users" class="section level4 hasAnchor" number="1.3.1.3">
-<h4><span class="header-section-number">1.3.1.3</span> For Linux (Ubuntu distribution) users<a href="index.html#for-linux-ubuntu-distribution-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>For most of the versions of Linux, <em>R</em> should already be installed. However, if you want to install it manually, this is the code -</p>
-<pre><code>sudo apt-get install r-base r-base-dev</code></pre>
-</div>
-</div>
-<div id="installing-rstudio" class="section level3 hasAnchor" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> Installing RStudio<a href="index.html#installing-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="for-mac-users-1" class="section level4 hasAnchor" number="1.3.2.1">
-<h4><span class="header-section-number">1.3.2.1</span> For Mac users<a href="index.html#for-mac-users-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Go to <a href="https://www.rstudio.com" class="uri">https://www.rstudio.com</a> and click on the “Download” tab on the top</li>
-<li>Click on “Download” button under RStudio Desktop.</li>
-<li>Click on the version recommended for your system (i.e. the latest Mac version), save the .dmg file on your computer, double-click it to open, and then drag and drop it to your applications folder.</li>
-</ul>
-</div>
-<div id="for-windows-users-1" class="section level4 hasAnchor" number="1.3.2.2">
-<h4><span class="header-section-number">1.3.2.2</span> For Windows users<a href="index.html#for-windows-users-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Go to <a href="https://www.rstudio.com" class="uri">https://www.rstudio.com</a> and click on the “Download” tab on the top</li>
-<li>Click on <code>RStudio Desktop</code> and it will bring down to the free <code>Open Source Edition</code> option.</li>
-<li>Click on the <code>DOWNLOAD RSTUDIO DESKTOP</code> button</li>
-<li>Now from the <code>Download the RStudio IDE</code>, click on the <code>Download</code> button.</li>
-<li>Now click on the latest version of RStudio - <code>DOWNLOAD RSTUDIO FOR WINDOWS</code> button, save the <code>.exe</code> file on your computer, double-click it to open, and then follow the default settings to install on your computer.</li>
-</ul>
-</div>
-<div id="for-linux-users" class="section level4 hasAnchor" number="1.3.2.3">
-<h4><span class="header-section-number">1.3.2.3</span> For Linux users<a href="index.html#for-linux-users" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ul>
-<li>Go to <a href="https://www.rstudio.com" class="uri">https://www.rstudio.com</a></li>
-<li>Choose the right package and download for your system</li>
-<li>Open the file in <code>Ubuntu Software Centre</code></li>
-<li>Click install and follow the set of instruction</li>
-</ul>
-</div>
-<div id="rstudio-cloud" class="section level4 hasAnchor" number="1.3.2.4">
-<h4><span class="header-section-number">1.3.2.4</span> RStudio Cloud<a href="index.html#rstudio-cloud" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>If you have further problem installing <em>R</em> on you computer, do not worry. You can log on to the RStudio Cloud. Simply -</p>
-<ul>
-<li>google for <code>RStudio Cloud</code> or go to <a href="https://rstudio.cloud/" class="uri">https://rstudio.cloud/</a>.</li>
-<li>Sign up and log in (you can do it with you google or github profile)</li>
-<li>From the <code>New Project</code> button on the top-right, select for <code>New Rstudio Project</code>.</li>
-<li>Now you will have a RStudio interface with 1 CPU and 1 GB of RAM which is sufficient for our workshop.</li>
-</ul>
+<div id="resources" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Resources<a href="resources.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><strong>RStudio:</strong> <a href="https://www.youtube.com/watch?v=FIrsOBy5k58" class="uri">https://www.youtube.com/watch?v=FIrsOBy5k58</a></p>
+<p><strong>For quick help</strong></p>
+<p>Quick-R: <a href="https://www.statmethods.net/" class="uri">https://www.statmethods.net/</a></p>
+<p>R-seek: <a href="https://rseek.org/" class="uri">https://rseek.org/</a></p>
+<p><strong>Active developments in <em>R</em> </strong></p>
+<p>R-bloggers: <a href="https://www.r-bloggers.com/" class="uri">https://www.r-bloggers.com/</a></p>
+<p><strong>Book:</strong></p>
+<p><em>R</em> in action: <a href="https://www.manning.com/books/r-in-action" class="uri">https://www.manning.com/books/r-in-action</a></p>
+<p>==============================================================================</p>
+<pre><code>&gt; sessionInfo()
 
-</div>
-</div>
-</div>
+R version 4.1.0 (2021-05-18)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Big Sur 11.6
+
+Matrix products: default
+LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+
+locale:
+[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] compiler_4.1.0  bookdown_0.25   fastmap_1.1.0   cli_3.2.0       htmltools_0.5.2 tools_4.1.0    
+ [7] yaml_2.3.5      rmarkdown_2.13  knitr_1.38      xfun_0.30       digest_0.6.29   rlang_1.0.2    
+[13] evaluate_0.15  
+</code></pre>
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="control-flow-in-r.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="who-am-i.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
@@ -360,7 +299,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/edit/master/index.Rmd",
+"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/edit/master/06-References.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -368,7 +307,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/index.Rmd",
+"link": "https://github.com/AMMHasan/Introduction-to-R-for-Biologists/blob/master/06-References.Rmd",
 "text": null
 },
 "download": null,

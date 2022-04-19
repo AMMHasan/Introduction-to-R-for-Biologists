@@ -1,4 +1,4 @@
-# References
+# Resources
 
 **RStudio:** https://www.youtube.com/watch?v=FIrsOBy5k58
 
@@ -17,7 +17,7 @@ R-bloggers: https://www.r-bloggers.com/
 
 *R* in action: https://www.manning.com/books/r-in-action
 
-===============================================
+==============================================================================
 ```
 > sessionInfo()
 

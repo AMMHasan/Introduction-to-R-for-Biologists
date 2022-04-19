@@ -56,4 +56,4 @@ function-without-return
 function-with-a-return
 scoping
 short-exercise-on-function
-references
+resources
