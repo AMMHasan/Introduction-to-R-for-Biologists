@@ -133,13 +133,13 @@ Look carefully, though `break` is applied in the `if-else` statement, it affects
 
 #### Short exercise on while loop
 
-You are giant and in every step you cover 1.5 meters. Your home is 1 Km away from your current position. How many steps do you need to walk before you reach your home?
+You are giant and in every step you cover 15 meters. Your home is 100 km away from your current position. How many steps do you need to walk before you reach your home?
 
 ```{r, echo=FALSE, results=F}
 count = 0
 elapsed = 0
-while(elapsed < 1000){
-   elapsed = elapsed + 1.5
+while(elapsed < 100000){
+   elapsed = elapsed + 15
    count = count + 1
 }
 print(count)
