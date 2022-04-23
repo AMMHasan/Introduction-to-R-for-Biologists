@@ -37,11 +37,9 @@ We will be using RStudio, which is an Integrated Development Environment (IDE) o
 
 ### Installing *R*
 #### For Mac users
-- Open an internet browser and go to https://www.r-project.org
-- Click the "download R" link in the middle of the page under "Getting Started."
-- Select a CRAN location (a mirror site) and click the corresponding link.
+- Open an internet browser and go to https://cran.r-project.org
 - Click on the "Download R for MacOS" link at the top of the page.
-- Click on an appropriate link under Latest releases (as of today, the latest version is R-4.1.3.pkg).
+- Click on an appropriate link under Latest releases (as of today, the latest version is R 4.2.0.pkg).
 - Save the .pkg file, double-click it to open, and follow the installation instructions.
 - Now that *R* is installed, you need to download and install RStudio.
 
@@ -49,8 +47,8 @@ We will be using RStudio, which is an Integrated Development Environment (IDE) o
 - Open an internet browser and go to https://cran.r-project.org
 - Click the "download R for Windows" link under "Download and Install R" box.
 - Click on the `base` version.
-- Click on the latest version of *R* for Windows (as if for this tutorial, the latest version is `Download R 4.1.3 for Windows (87 megabytes, 32/64 bit)`). Save the `.exe` file on your computer.
-- Double-click on the `.exe` file, and follow the default installation instructions. Please do not install *R* on your network drive, it will make your life difficult.
+- Click on the latest version of *R* for Windows (as if for this tutorial, the latest version is `Download R-4.2.0 for Windows (79 megabytes, 64 bit)`). Save the `.exe` file on your computer.
+- Double-click on the `.exe` file, and follow the default installation instructions. **Please do not install *R* on your network drive**, it will make your life difficult.
 - Now that *R* is installed, you need to download and install RStudio.
 
 
