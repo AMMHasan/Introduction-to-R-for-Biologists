@@ -33,7 +33,7 @@ In 1991, statisticians Ross Ihaka and Robert Gentleman at the University of Auck
 
 ## Installing *R* and RStudio
 
-We will be using RStudio, which is an Integrated Development Environment (IDE) of *R*. To my view, it is very handy working in RStudio environment, rather than using simply *R*. However, to use RStudio, we’ll need to install first the Base-*R*, and then RStudio software. Base-*R* is the basic software which contains the *R* programming language. Desktop version of both software are totally free and open source.
+We will be using RStudio, which is an Integrated Development Environment (IDE) of *R*. To my view, it is very handy working in RStudio environment, rather than using simply *R*. However, to use RStudio, we’ll need to install the Base-*R* first, and then RStudio software. Base-*R* is the basic software which contains the *R* programming language. Desktop version of both software are totally free and open source.
 
 ### Installing *R*
 #### For Mac users
