@@ -58,5 +58,5 @@ scoping
 short-exercise-on-function
 resources
 useful-resources
-post-work-survey
+post-workshop-survey
 sessioninfo
