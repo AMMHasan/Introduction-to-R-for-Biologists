@@ -57,3 +57,6 @@ function-with-a-return
 scoping
 short-exercise-on-function
 resources
+useful-resources
+post-work-survey
+sessioninfo
