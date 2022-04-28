@@ -15,7 +15,7 @@ UCL Cancer Institute
 WC1E 6DD
 
 
-LinkedIn: [**A M Mahedi Hasan**](www.linkedin.com/in/a-m-mahedi-hasan-aa8a4547)
+
 
 <img src="/Users/mahedi/Documents/Collaborations/UCL_CI/Introduction-to-R-for-Biologists/figs/At_scottish_border.jpeg" />
 <img src="/Users/mahedi/Documents/Collaborations/UCL_CI/Introduction-to-R-for-Biologists/figs/map.png" />
