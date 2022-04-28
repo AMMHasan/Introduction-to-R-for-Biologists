@@ -21,7 +21,7 @@ R-bloggers: https://www.r-bloggers.com/
 
 ## Post-workshop survey
 
-It will be really nice if you could go to this link [**survey**](https://www.menti.com/rakkyam5ns) and answer the questions. It should take less than 5 minutes.
+It will be really nice if you could go to this link [**survey**]() and answer the questions. It should take less than 5 minutes.
 
 
 ## SessionInfo

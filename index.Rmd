@@ -20,7 +20,7 @@ params:
 
 # Introduction
 
-This workshop is designed for the Cancer MSc Students in UCL Cancer Institute to introduce *R* (statistical-) programming language. I would appreciate if you participate in this pre-course [**survey**](https://www.menti.com/ik2k8namii) so that I have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of *R*.
+This workshop is designed for the Cancer MSc Students in UCL Cancer Institute to introduce *R* (statistical-) programming language. I would appreciate if you participate in this pre-course [**survey**]() so that I have an overview of the participants and tailor the lecture accordingly. Now, I will briefly touch on the history of *R*.
 
 ## Definition
 
