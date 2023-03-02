@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Control flow in R | Introduction to R for Biologists</title>
   <meta name="description" content="Chapter 6 Control flow in R | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Control flow in R | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
@@ -94,7 +94,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -107,7 +107,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -138,82 +138,82 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Introduction to R for Biologists</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definition"><i class="fa fa-check"></i><b>1.1</b> Definition<span></span></a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#mini-history"><i class="fa fa-check"></i><b>1.2</b> Mini history<span></span></a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing <em>R</em> and RStudio<span></span></a>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#definition"><i class="fa fa-check"></i><b>1.1</b> Definition</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#mini-history"><i class="fa fa-check"></i><b>1.2</b> Mini history</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#installing-r-and-rstudio"><i class="fa fa-check"></i><b>1.3</b> Installing <em>R</em> and RStudio</a>
 <ul>
-<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i><b>1.3.1</b> Installing <em>R</em><span></span></a></li>
-<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> Installing RStudio<span></span></a></li>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i><b>1.3.1</b> Installing <em>R</em></a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#installing-rstudio"><i class="fa fa-check"></i><b>1.3.2</b> Installing RStudio</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="who-am-i.html"><a href="who-am-i.html"><i class="fa fa-check"></i><b>2</b> Who am I?<span></span></a></li>
-<li class="chapter" data-level="3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html"><i class="fa fa-check"></i><b>3</b> Get to know RStudio interface<span></span></a>
+<li class="chapter" data-level="2" data-path="who-am-i.html"><a href="who-am-i.html"><i class="fa fa-check"></i><b>2</b> Who am I?</a></li>
+<li class="chapter" data-level="3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html"><i class="fa fa-check"></i><b>3</b> Get to know RStudio interface</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#rstudio-windowspanels"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels<span></span></a>
+<li class="chapter" data-level="3.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#rstudio-windowspanels"><i class="fa fa-check"></i><b>3.1</b> RStudio Windows/Panels</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#source-window"><i class="fa fa-check"></i><b>3.1.1</b> Source window<span></span></a></li>
-<li class="chapter" data-level="3.1.2" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#environment-history-connections-build-git-etc"><i class="fa fa-check"></i><b>3.1.2</b> Environment / History (Connections / Build / Git etc)<span></span></a></li>
-<li class="chapter" data-level="3.1.3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#console"><i class="fa fa-check"></i><b>3.1.3</b> Console<span></span></a></li>
-<li class="chapter" data-level="3.1.4" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#files-plots-packages-help"><i class="fa fa-check"></i><b>3.1.4</b> Files / Plots / Packages / Help<span></span></a></li>
+<li class="chapter" data-level="3.1.1" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#source-window"><i class="fa fa-check"></i><b>3.1.1</b> Source window</a></li>
+<li class="chapter" data-level="3.1.2" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#environment-history-connections-build-git-etc"><i class="fa fa-check"></i><b>3.1.2</b> Environment / History (Connections / Build / Git etc)</a></li>
+<li class="chapter" data-level="3.1.3" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#console"><i class="fa fa-check"></i><b>3.1.3</b> Console</a></li>
+<li class="chapter" data-level="3.1.4" data-path="get-to-know-rstudio-interface.html"><a href="get-to-know-rstudio-interface.html#files-plots-packages-help"><i class="fa fa-check"></i><b>3.1.4</b> Files / Plots / Packages / Help</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html"><i class="fa fa-check"></i><b>4</b> Data types and data structures<span></span></a>
+<li class="chapter" data-level="4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html"><i class="fa fa-check"></i><b>4</b> Data types and data structures</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-types-in-r"><i class="fa fa-check"></i><b>4.1</b> Useful data types in <em>R</em><span></span></a>
+<li class="chapter" data-level="4.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#useful-data-types-in-r"><i class="fa fa-check"></i><b>4.1</b> Useful data types in <em>R</em></a>
 <ul>
-<li class="chapter" data-level="4.1.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#numbers"><i class="fa fa-check"></i><b>4.1.1</b> Numbers:<span></span></a></li>
-<li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:<span></span></a></li>
-<li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:<span></span></a></li>
+<li class="chapter" data-level="4.1.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#numbers"><i class="fa fa-check"></i><b>4.1.1</b> Numbers:</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#character"><i class="fa fa-check"></i><b>4.1.2</b> Character:</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#logical"><i class="fa fa-check"></i><b>4.1.3</b> Logical:</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-structure"><i class="fa fa-check"></i><b>4.2</b> Data structure<span></span></a>
+<li class="chapter" data-level="4.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-structure"><i class="fa fa-check"></i><b>4.2</b> Data structure</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:<span></span></a></li>
-<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:<span></span></a></li>
-<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:<span></span></a></li>
-<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:<span></span></a></li>
-<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:<span></span></a></li>
+<li class="chapter" data-level="4.2.1" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#vector"><i class="fa fa-check"></i><b>4.2.1</b> Vector:</a></li>
+<li class="chapter" data-level="4.2.2" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#matrix"><i class="fa fa-check"></i><b>4.2.2</b> Matrix:</a></li>
+<li class="chapter" data-level="4.2.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#array"><i class="fa fa-check"></i><b>4.2.3</b> Array:</a></li>
+<li class="chapter" data-level="4.2.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#data-frame"><i class="fa fa-check"></i><b>4.2.4</b> Data frame:</a></li>
+<li class="chapter" data-level="4.2.5" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#list"><i class="fa fa-check"></i><b>4.2.5</b> List:</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data<span></span></a></li>
-<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data<span></span></a></li>
+<li class="chapter" data-level="4.3" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#import-and-export-data"><i class="fa fa-check"></i><b>4.3</b> Import and export data</a></li>
+<li class="chapter" data-level="4.4" data-path="data-types-and-data-structures.html"><a href="data-types-and-data-structures.html#manipulating-data"><i class="fa fa-check"></i><b>4.4</b> Manipulating data</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="r-plots.html"><a href="r-plots.html"><i class="fa fa-check"></i><b>5</b> <em>R</em> plots<span></span></a>
+<li class="chapter" data-level="5" data-path="r-plots.html"><a href="r-plots.html"><i class="fa fa-check"></i><b>5</b> <em>R</em> plots</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="r-plots.html"><a href="r-plots.html#basic-plots-in-r"><i class="fa fa-check"></i><b>5.1</b> Basic plots in <em>R</em><span></span></a>
+<li class="chapter" data-level="5.1" data-path="r-plots.html"><a href="r-plots.html#basic-plots-in-r"><i class="fa fa-check"></i><b>5.1</b> Basic plots in <em>R</em></a>
 <ul>
-<li class="chapter" data-level="5.1.1" data-path="r-plots.html"><a href="r-plots.html#scatter-plot"><i class="fa fa-check"></i><b>5.1.1</b> scatter plot<span></span></a></li>
-<li class="chapter" data-level="5.1.2" data-path="r-plots.html"><a href="r-plots.html#bar-plot"><i class="fa fa-check"></i><b>5.1.2</b> bar plot<span></span></a></li>
-<li class="chapter" data-level="5.1.3" data-path="r-plots.html"><a href="r-plots.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram<span></span></a></li>
-<li class="chapter" data-level="5.1.4" data-path="r-plots.html"><a href="r-plots.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot<span></span></a></li>
+<li class="chapter" data-level="5.1.1" data-path="r-plots.html"><a href="r-plots.html#scatter-plot"><i class="fa fa-check"></i><b>5.1.1</b> scatter plot</a></li>
+<li class="chapter" data-level="5.1.2" data-path="r-plots.html"><a href="r-plots.html#bar-plot"><i class="fa fa-check"></i><b>5.1.2</b> bar plot</a></li>
+<li class="chapter" data-level="5.1.3" data-path="r-plots.html"><a href="r-plots.html#histogram"><i class="fa fa-check"></i><b>5.1.3</b> histogram</a></li>
+<li class="chapter" data-level="5.1.4" data-path="r-plots.html"><a href="r-plots.html#box-plot"><i class="fa fa-check"></i><b>5.1.4</b> box plot</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="r-plots.html"><a href="r-plots.html#exercise"><i class="fa fa-check"></i><b>5.2</b> Exercise<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="r-plots.html"><a href="r-plots.html#exercise"><i class="fa fa-check"></i><b>5.2</b> Exercise</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html"><i class="fa fa-check"></i><b>6</b> Control flow in <em>R</em><span></span></a>
+<li class="chapter" data-level="6" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html"><i class="fa fa-check"></i><b>6</b> Control flow in <em>R</em></a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#conditional-execution"><i class="fa fa-check"></i><b>6.1</b> Conditional execution<span></span></a>
+<li class="chapter" data-level="6.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#conditional-execution"><i class="fa fa-check"></i><b>6.1</b> Conditional execution</a>
 <ul>
-<li class="chapter" data-level="6.1.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#if-else-statement"><i class="fa fa-check"></i><b>6.1.1</b> <code>If-else</code> statement<span></span></a></li>
-<li class="chapter" data-level="6.1.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise"><i class="fa fa-check"></i><b>6.1.2</b> Short exercise<span></span></a></li>
+<li class="chapter" data-level="6.1.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#if-else-statement"><i class="fa fa-check"></i><b>6.1.1</b> <code>If-else</code> statement</a></li>
+<li class="chapter" data-level="6.1.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise"><i class="fa fa-check"></i><b>6.1.2</b> Short exercise</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#loops"><i class="fa fa-check"></i><b>6.2</b> Loops<span></span></a>
+<li class="chapter" data-level="6.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#loops"><i class="fa fa-check"></i><b>6.2</b> Loops</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#while-loop"><i class="fa fa-check"></i><b>6.2.1</b> while loop<span></span></a></li>
-<li class="chapter" data-level="6.2.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#for-loop"><i class="fa fa-check"></i><b>6.2.2</b> for loop<span></span></a></li>
-<li class="chapter" data-level="6.2.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-on-for-loop"><i class="fa fa-check"></i><b>6.2.3</b> Short exercise on For loop<span></span></a></li>
+<li class="chapter" data-level="6.2.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#while-loop"><i class="fa fa-check"></i><b>6.2.1</b> while loop</a></li>
+<li class="chapter" data-level="6.2.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#for-loop"><i class="fa fa-check"></i><b>6.2.2</b> for loop</a></li>
+<li class="chapter" data-level="6.2.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#short-exercise-on-for-loop"><i class="fa fa-check"></i><b>6.2.3</b> Short exercise on For loop</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#user-defined-functions"><i class="fa fa-check"></i><b>6.3</b> User defined functions<span></span></a>
+<li class="chapter" data-level="6.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#user-defined-functions"><i class="fa fa-check"></i><b>6.3</b> User defined functions</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-without-return"><i class="fa fa-check"></i><b>6.3.1</b> Function without return()<span></span></a></li>
-<li class="chapter" data-level="6.3.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-with-a-return"><i class="fa fa-check"></i><b>6.3.2</b> Function with a return()<span></span></a></li>
-<li class="chapter" data-level="6.3.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#scoping"><i class="fa fa-check"></i><b>6.3.3</b> Scoping<span></span></a></li>
+<li class="chapter" data-level="6.3.1" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-without-return"><i class="fa fa-check"></i><b>6.3.1</b> Function without return()</a></li>
+<li class="chapter" data-level="6.3.2" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#function-with-a-return"><i class="fa fa-check"></i><b>6.3.2</b> Function with a return()</a></li>
+<li class="chapter" data-level="6.3.3" data-path="control-flow-in-r.html"><a href="control-flow-in-r.html#scoping"><i class="fa fa-check"></i><b>6.3.3</b> Scoping</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>7</b> Resources<span></span></a>
+<li class="chapter" data-level="7" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i><b>7</b> Resources</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="resources.html"><a href="resources.html#useful-resources"><i class="fa fa-check"></i><b>7.1</b> Useful resources<span></span></a></li>
-<li class="chapter" data-level="7.2" data-path="resources.html"><a href="resources.html#post-workshop-survey"><i class="fa fa-check"></i><b>7.2</b> Post-workshop survey<span></span></a></li>
-<li class="chapter" data-level="7.3" data-path="resources.html"><a href="resources.html#sessioninfo"><i class="fa fa-check"></i><b>7.3</b> SessionInfo<span></span></a></li>
+<li class="chapter" data-level="7.1" data-path="resources.html"><a href="resources.html#useful-resources"><i class="fa fa-check"></i><b>7.1</b> Useful resources</a></li>
+<li class="chapter" data-level="7.2" data-path="resources.html"><a href="resources.html#post-workshop-survey"><i class="fa fa-check"></i><b>7.2</b> Post-workshop survey</a></li>
+<li class="chapter" data-level="7.3" data-path="resources.html"><a href="resources.html#sessioninfo"><i class="fa fa-check"></i><b>7.3</b> SessionInfo</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
