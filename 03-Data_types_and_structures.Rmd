@@ -89,13 +89,13 @@ There are few useful pre-defined data structures that are heavily used in *R*. T
 ### Vector: 
 Let's first think of a *variable* and *value* pair, like you have a variable `x` and it has a value of `2`. Like what we write in *R*: 
 `x <- 2`, which means, we assign the value `2` to `x`. This is equivalent to a *scalar*. 
-You can put more than one value in a variable, and then it will be equivalent to a *vector*: 
+You can put more than one value in a variable, and then it will be equivalent to a *vector*, which is storing more than one *scalar* values: 
 ```
 y <- c(1,2,3,4,5,6)
 ``` 
 Here we have used the *combine function* `c()` to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc). Just remember, if you want to hold multiple elements of same type (be it numeric values or characters), enclose them with the *combine function* (as above).
 
-Each of the component of the vector is called its *Element*. You can call or refer the elements individually or as a group using their *positional index*. The positional index starts from `1`, which you can refer to as *one-based indexing*. For example, if you want to call or retrieve the first element of vector `y`, you can type in `y[1]`. Similarly, you can refer to the 4th element by typing in `y[4]`. If you want to refer to from 2nd to the 4th elements of `y`, you type in `y[c(2,3,4)]` or you can use `y[2:4]`. 
+Each of the components of the vector is called its *Element*. You can call or refer the elements individually or as a group using their *positional index*. The positional index starts from `1`, which you can refer to as *one-based indexing*. For example, if you want to call or retrieve the first element of vector `y`, you can type in `y[1]`. Similarly, you can refer to the 4th element by typing in `y[4]`. If you want to refer to from 2nd to the 4th elements of `y`, you type in `y[c(2,3,4)]` or you can use `y[2:4]`. 
 
 A useful tip - for sequential numbers, you can use a short-cut using colon sign in between the minimum and maximum values (inclusive) of the range. Like, for 1 to 100, you type in `1:100`.
 
@@ -110,7 +110,7 @@ A matrix is a two-dimensional (row and column) array of a single data type. Matr
 myMatrix <- matrix(data=1:20,nrow = 4,ncol = 5)
 myMatrix
 ```
-If you want to subset the matrix you can do it easily. Always remember, matrix is a `m` row by `n` column `(m x n)` structure which you define in *R* as `[m,n]` or `[row, column]`. If you want to choose the value in the first row and the first column (which also indicates the element numeric `1` in myMatrix), you type in `myMatrix[1,1]`. If you want to select first 2 rows and 2nd to 4th columns, you type in `myMatrix[c(1,2), c(2,3,4)]` or `myMatrix[1:2, 2:4]`.
+If you want to subset the matrix you can do it easily. Always remember, matrix is a `m` row by `n` column `(m x n)` structure which you define in *R* as `[m,n]` or `[row, column]`. If you want to choose the value in the first row and the first column (which also indicates the element numeric `1` in myMatrix), you type in `myMatrix[1,1]`. If you want to select first two rows and 2nd to 4th columns, you type in `myMatrix[c(1,2), c(2,3,4)]` or `myMatrix[1:2, 2:4]`.
 
 #### Short exercise on *Matrix*
 
@@ -123,7 +123,7 @@ You can accommodate your data in more than 2 dimensions using an array. We will 
 
 
 ### Data frame: 
-For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it's imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is `data.frame()` and an easy way to create a data frame is 
+For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it's imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is `data.frame()` and an easy way to create a data frame (using same-size vectors) is - 
 ```
 myDataFrame <- data.frame(vector1, vector2, vector3))
 ```
