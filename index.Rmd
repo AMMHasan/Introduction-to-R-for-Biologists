@@ -3,7 +3,7 @@ title: "Introduction to R for Biologists"
 author: "Dr A M Mahedi Hasan (a.m.m.hasan@ucl.ac.uk)"
 email: "A.M.M.Hasan@ucl.ac.uk"
 #date: "`r Sys.Date()`"
-date: "April 27, 2022"
+date: "March 06, 2023"
 site: "bookdown::bookdown_site"
 output:
   bookdown::gitbook:
