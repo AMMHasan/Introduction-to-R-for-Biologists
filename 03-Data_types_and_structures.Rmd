@@ -114,7 +114,7 @@ If you want to subset the matrix you can do it easily. Always remember, matrix i
 
 #### Short exercise on *Matrix*
 
-1. Create a vector called `english_alphabets` with all 26 english alphabets.[Hint: `letter()` function returns all 26 english alphabets in lower-case] 
+1. Create a vector called `english_alphabets` with all 26 english alphabets.[Hint: `letters` returns all 26 english alphabets in lower-case] 
 
 2. Create a matrix with 13 rows and 2 columns that accommodates all those alphabets.
 
