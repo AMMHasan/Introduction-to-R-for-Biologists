@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Data types and data structures | Introduction to R for Biologists</title>
   <meta name="description" content="Chapter 4 Data types and data structures | Introduction to R for Biologists" />
-  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Data types and data structures | Introduction to R for Biologists" />
   <meta property="og:type" content="book" />
@@ -54,6 +54,8 @@
 <script src="assets/anchor-sections-1.1.0/anchor-sections.js"></script>
 <script src="assets/kePrint-0.0.1/kePrint.js"></script>
 <link href="assets/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="assets/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
+<script src="assets/bsTable-3.3.7/bootstrapTable.js"></script>
 
 
 <style type="text/css">
@@ -121,6 +123,10 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -364,21 +370,21 @@ Poor
 <p>The columns namely <em>weight.in.kg</em> and <em>height.in.cm</em> contain numeric data type.</p>
 <p>A very very important information -
 Categorical data (nominal or ordinal) in <em>R</em> are also called <em>Factors</em>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="data-types-and-data-structures.html#cb4-1" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span> ))</span>
-<span id="cb4-2"><a href="data-types-and-data-structures.html#cb4-2" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span>
-<span id="cb4-3"><a href="data-types-and-data-structures.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
-<span id="cb4-4"><a href="data-types-and-data-structures.html#cb4-4" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
-<span id="cb4-5"><a href="data-types-and-data-structures.html#cb4-5" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> F)</span>
-<span id="cb4-6"><a href="data-types-and-data-structures.html#cb4-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span>
-<span id="cb4-7"><a href="data-types-and-data-structures.html#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
-<span id="cb4-8"><a href="data-types-and-data-structures.html#cb4-8" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
-<span id="cb4-9"><a href="data-types-and-data-structures.html#cb4-9" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> T)</span>
-<span id="cb4-10"><a href="data-types-and-data-structures.html#cb4-10" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span>
-<span id="cb4-11"><a href="data-types-and-data-structures.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
-<span id="cb4-12"><a href="data-types-and-data-structures.html#cb4-12" aria-hidden="true" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
-<span id="cb4-13"><a href="data-types-and-data-structures.html#cb4-13" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">ordered =</span> T, </span>
-<span id="cb4-14"><a href="data-types-and-data-structures.html#cb4-14" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>))</span>
-<span id="cb4-15"><a href="data-types-and-data-structures.html#cb4-15" aria-hidden="true" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="data-types-and-data-structures.html#cb4-1" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span> ))</span>
+<span id="cb4-2"><a href="data-types-and-data-structures.html#cb4-2" tabindex="-1"></a>Overall.health.condition</span>
+<span id="cb4-3"><a href="data-types-and-data-structures.html#cb4-3" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb4-4"><a href="data-types-and-data-structures.html#cb4-4" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb4-5"><a href="data-types-and-data-structures.html#cb4-5" tabindex="-1"></a>                                   <span class="at">ordered =</span> F)</span>
+<span id="cb4-6"><a href="data-types-and-data-structures.html#cb4-6" tabindex="-1"></a>Overall.health.condition</span>
+<span id="cb4-7"><a href="data-types-and-data-structures.html#cb4-7" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb4-8"><a href="data-types-and-data-structures.html#cb4-8" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb4-9"><a href="data-types-and-data-structures.html#cb4-9" tabindex="-1"></a>                                   <span class="at">ordered =</span> T)</span>
+<span id="cb4-10"><a href="data-types-and-data-structures.html#cb4-10" tabindex="-1"></a>Overall.health.condition</span>
+<span id="cb4-11"><a href="data-types-and-data-structures.html#cb4-11" tabindex="-1"></a><span class="co">#~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb4-12"><a href="data-types-and-data-structures.html#cb4-12" tabindex="-1"></a>Overall.health.condition <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>), </span>
+<span id="cb4-13"><a href="data-types-and-data-structures.html#cb4-13" tabindex="-1"></a>                                   <span class="at">ordered =</span> T, </span>
+<span id="cb4-14"><a href="data-types-and-data-structures.html#cb4-14" tabindex="-1"></a>                                   <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">&quot;Poor&quot;</span>, <span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>))</span>
+<span id="cb4-15"><a href="data-types-and-data-structures.html#cb4-15" tabindex="-1"></a>Overall.health.condition</span></code></pre></div>
 <p>There are also <em>complex</em> data types, <em>date</em> data types etc, which we will not cover in this workshop.</p>
 </div>
 </div>
@@ -402,8 +408,8 @@ You can put more than one value in a variable, and then it will be equivalent to
 <div id="matrix" class="section level3 hasAnchor" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Matrix:<a href="data-types-and-data-structures.html#matrix" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A matrix is a two-dimensional (row and column) array of a single data type. Matrices are created using <code>matrix()</code> function. Think of you having 20 numbers, from 1 to 20 and you want to create a matrix with 4 rows and 5 columns. So you type in:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-types-and-data-structures.html#cb6-1" aria-hidden="true" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">nrow =</span> <span class="dv">4</span>,<span class="at">ncol =</span> <span class="dv">5</span>)</span>
-<span id="cb6-2"><a href="data-types-and-data-structures.html#cb6-2" aria-hidden="true" tabindex="-1"></a>myMatrix</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-types-and-data-structures.html#cb6-1" tabindex="-1"></a>myMatrix <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">data=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">nrow =</span> <span class="dv">4</span>,<span class="at">ncol =</span> <span class="dv">5</span>)</span>
+<span id="cb6-2"><a href="data-types-and-data-structures.html#cb6-2" tabindex="-1"></a>myMatrix</span></code></pre></div>
 <pre><code>##      [,1] [,2] [,3] [,4] [,5]
 ## [1,]    1    5    9   13   17
 ## [2,]    2    6   10   14   18
@@ -427,16 +433,16 @@ You can put more than one value in a variable, and then it will be equivalent to
 <p>For you, data frame is the main data type that will have a vast utility in this course. You will import data in this format and manipulate data and export data in this format. Therefore, it’s imperative that you understand it very carefully. A data frame is a two-dimensional array. It is more general than a matrix and can contain different data types in it at the same time. However, each column contains a single data type (of course). The function to create a data frame is <code>data.frame()</code> and an easy way to create a data frame (using same-size vectors) is -</p>
 <pre><code>myDataFrame &lt;- data.frame(vector1, vector2, vector3))</code></pre>
 <p>Let’s see the same data frame again and observe carefully how it is done.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="data-types-and-data-structures.html#cb9-1" aria-hidden="true" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
-<span id="cb9-2"><a href="data-types-and-data-structures.html#cb9-2" aria-hidden="true" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
-<span id="cb9-3"><a href="data-types-and-data-structures.html#cb9-3" aria-hidden="true" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
-<span id="cb9-4"><a href="data-types-and-data-structures.html#cb9-4" aria-hidden="true" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
-<span id="cb9-5"><a href="data-types-and-data-structures.html#cb9-5" aria-hidden="true" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
-<span id="cb9-6"><a href="data-types-and-data-structures.html#cb9-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span>
-<span id="cb9-7"><a href="data-types-and-data-structures.html#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="data-types-and-data-structures.html#cb9-8" aria-hidden="true" tabindex="-1"></a>myDataFrame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(participant.ID, Date, weight.in.kg, height.in.cm, smoker, Overall.health.condition)</span>
-<span id="cb9-9"><a href="data-types-and-data-structures.html#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="data-types-and-data-structures.html#cb9-10" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="data-types-and-data-structures.html#cb9-1" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
+<span id="cb9-2"><a href="data-types-and-data-structures.html#cb9-2" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
+<span id="cb9-3"><a href="data-types-and-data-structures.html#cb9-3" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
+<span id="cb9-4"><a href="data-types-and-data-structures.html#cb9-4" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
+<span id="cb9-5"><a href="data-types-and-data-structures.html#cb9-5" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
+<span id="cb9-6"><a href="data-types-and-data-structures.html#cb9-6" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span>
+<span id="cb9-7"><a href="data-types-and-data-structures.html#cb9-7" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="data-types-and-data-structures.html#cb9-8" tabindex="-1"></a>myDataFrame <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(participant.ID, Date, weight.in.kg, height.in.cm, smoker, Overall.health.condition)</span>
+<span id="cb9-9"><a href="data-types-and-data-structures.html#cb9-9" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="data-types-and-data-structures.html#cb9-10" tabindex="-1"></a>myDataFrame</span></code></pre></div>
 <pre><code>##   participant.ID       Date weight.in.kg height.in.cm smoker
 ## 1       BMI1_001 01/11/2021         55.5          172     No
 ## 2       BMI1_002 01/11/2021         45.0          165    Yes
@@ -449,21 +455,21 @@ You can put more than one value in a variable, and then it will be equivalent to
 <pre><code>myDataFrame[c(1,2),c(&quot;weight.in.kg&quot;, &quot;height.in.cm&quot;)]</code></pre>
 <p>Further more, there is another level of flexibility for selecting a column information by using <code>dataframe$columnName</code> notation as in our case <code>myDataFrame$weight.in.kg</code>.</p>
 <p>Now, you can inquire what are the column names by utilizing <code>colnames()</code> function and for the row names - <code>rownames()</code>. Here, in this case, we see there is no row name, rather they are indexed with 1 2 3 as character.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data-types-and-data-structures.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="data-types-and-data-structures.html#cb12-1" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame)</span></code></pre></div>
 <pre><code>## [1] &quot;1&quot; &quot;2&quot; &quot;3&quot;</code></pre>
 <p>we don’t have row names yet, but we can assign them with <code>row1</code>, <code>row2</code> and <code>row2</code> by typing in</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="data-types-and-data-structures.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame) <span class="ot">&lt;-</span>  <span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>, <span class="st">&quot;row2&quot;</span>, <span class="st">&quot;row3&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="data-types-and-data-structures.html#cb14-1" tabindex="-1"></a><span class="fu">rownames</span>(myDataFrame) <span class="ot">&lt;-</span>  <span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>, <span class="st">&quot;row2&quot;</span>, <span class="st">&quot;row3&quot;</span>)</span></code></pre></div>
 <p>For simplicity, we will change the column names as well to simply <code>column1</code>, <code>column2</code> etc -</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="data-types-and-data-structures.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(myDataFrame) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column1&quot;</span>,<span class="st">&quot;column2&quot;</span>,<span class="st">&quot;column3&quot;</span>,<span class="st">&quot;column4&quot;</span>,<span class="st">&quot;column5&quot;</span>,<span class="st">&quot;column6&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="data-types-and-data-structures.html#cb15-1" tabindex="-1"></a><span class="fu">colnames</span>(myDataFrame) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;column1&quot;</span>,<span class="st">&quot;column2&quot;</span>,<span class="st">&quot;column3&quot;</span>,<span class="st">&quot;column4&quot;</span>,<span class="st">&quot;column5&quot;</span>,<span class="st">&quot;column6&quot;</span>)</span></code></pre></div>
 <p>And, let’s see the current look of our data-frame -</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-types-and-data-structures.html#cb16-1" aria-hidden="true" tabindex="-1"></a>myDataFrame</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="data-types-and-data-structures.html#cb16-1" tabindex="-1"></a>myDataFrame</span></code></pre></div>
 <pre><code>##       column1    column2 column3 column4 column5      column6
 ## row1 BMI1_001 01/11/2021    55.5     172      No Intermediate
 ## row2 BMI1_002 01/11/2021    45.0     165     Yes         Good
 ## row3 BMI1_003 01/11/2021    75.0     150      No         Poor</code></pre>
 <p>Now, if we want to subset using row and column names, we can type in -</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-types-and-data-structures.html#cb18-1" aria-hidden="true" tabindex="-1"></a>subDataFrame <span class="ot">&lt;-</span> myDataFrame[<span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>,<span class="st">&quot;row2&quot;</span>),<span class="fu">c</span>(<span class="st">&quot;column2&quot;</span>, <span class="st">&quot;column3&quot;</span>)]</span>
-<span id="cb18-2"><a href="data-types-and-data-structures.html#cb18-2" aria-hidden="true" tabindex="-1"></a>subDataFrame</span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="data-types-and-data-structures.html#cb18-1" tabindex="-1"></a>subDataFrame <span class="ot">&lt;-</span> myDataFrame[<span class="fu">c</span>(<span class="st">&quot;row1&quot;</span>,<span class="st">&quot;row2&quot;</span>),<span class="fu">c</span>(<span class="st">&quot;column2&quot;</span>, <span class="st">&quot;column3&quot;</span>)]</span>
+<span id="cb18-2"><a href="data-types-and-data-structures.html#cb18-2" tabindex="-1"></a>subDataFrame</span></code></pre></div>
 <pre><code>##         column2 column3
 ## row1 01/11/2021    55.5
 ## row2 01/11/2021    45.0</code></pre>
@@ -473,12 +479,12 @@ You can put more than one value in a variable, and then it will be equivalent to
 <ol style="list-style-type: decimal">
 <li>Re-create the same data-frame with a different name (of your choice) with the following vectors -</li>
 </ol>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-types-and-data-structures.html#cb20-1" aria-hidden="true" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
-<span id="cb20-2"><a href="data-types-and-data-structures.html#cb20-2" aria-hidden="true" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
-<span id="cb20-3"><a href="data-types-and-data-structures.html#cb20-3" aria-hidden="true" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
-<span id="cb20-4"><a href="data-types-and-data-structures.html#cb20-4" aria-hidden="true" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
-<span id="cb20-5"><a href="data-types-and-data-structures.html#cb20-5" aria-hidden="true" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
-<span id="cb20-6"><a href="data-types-and-data-structures.html#cb20-6" aria-hidden="true" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="data-types-and-data-structures.html#cb20-1" tabindex="-1"></a>participant.ID<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;BMI1_001&quot;</span>, <span class="st">&quot;BMI1_002&quot;</span>, <span class="st">&quot;BMI1_003&quot;</span>)</span>
+<span id="cb20-2"><a href="data-types-and-data-structures.html#cb20-2" tabindex="-1"></a>Date<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>, <span class="st">&quot;01/11/2021&quot;</span>)</span>
+<span id="cb20-3"><a href="data-types-and-data-structures.html#cb20-3" tabindex="-1"></a>weight.in.kg<span class="ot">=</span><span class="fu">c</span>(<span class="fl">55.5</span>,<span class="dv">45</span>,<span class="dv">75</span>)</span>
+<span id="cb20-4"><a href="data-types-and-data-structures.html#cb20-4" tabindex="-1"></a>height.in.cm<span class="ot">=</span><span class="fu">c</span>(<span class="dv">172</span>,<span class="dv">165</span>,<span class="dv">150</span>)</span>
+<span id="cb20-5"><a href="data-types-and-data-structures.html#cb20-5" tabindex="-1"></a>smoker<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>, <span class="st">&quot;No&quot;</span>)</span>
+<span id="cb20-6"><a href="data-types-and-data-structures.html#cb20-6" tabindex="-1"></a>Overall.health.condition<span class="ot">=</span><span class="fu">c</span>(<span class="st">&quot;Intermediate&quot;</span>, <span class="st">&quot;Good&quot;</span>, <span class="st">&quot;Poor&quot;</span>)</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>Subset the columns <code>weight.in.kg</code> and <code>smoker</code> with -</li>
 </ol>
@@ -504,8 +510,8 @@ You can put more than one value in a variable, and then it will be equivalent to
 <li>row.names = if there’s a column for row name (usually the first column in the raw data), specify with the column number and later get rid of that column using say, <code>data[,column_number] &lt;- NULL</code></li>
 </ol>
 <p>Now we will read the csv file -</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-types-and-data-structures.html#cb21-1" aria-hidden="true" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;csv_iris_data.csv&quot;</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
-<span id="cb21-2"><a href="data-types-and-data-structures.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="data-types-and-data-structures.html#cb21-1" tabindex="-1"></a>df_csv <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">&quot;csv_iris_data.csv&quot;</span>, <span class="at">row.names =</span> <span class="dv">1</span>)</span>
+<span id="cb21-2"><a href="data-types-and-data-structures.html#cb21-2" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## 1          5.1         3.5          1.4         0.2  setosa
 ## 2          4.9         3.0          1.4         0.2  setosa
@@ -514,34 +520,21 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
 <p>Now that we have read our data-frame and checked few rows from the top of it, we want to export it to our computer -</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-types-and-data-structures.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> df_csv, <span class="at">file =</span> <span class="st">&quot;My_output_df.csv&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="data-types-and-data-structures.html#cb23-1" tabindex="-1"></a><span class="fu">write.csv</span>(<span class="at">x =</span> df_csv, <span class="at">file =</span> <span class="st">&quot;My_output_df.csv&quot;</span>)</span></code></pre></div>
 <p>In the case of reading an excel file, either with <em>.xls</em> or .<em>xlsx</em> extension, we need to load a package called <code>readxl</code>.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-types-and-data-structures.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;readxl&quot;)</span></span>
-<span id="cb24-2"><a href="data-types-and-data-structures.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb24-3"><a href="data-types-and-data-structures.html#cb24-3" aria-hidden="true" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">&#39;excell_iris_data.xlsx&#39;</span>,<span class="at">sheet=</span><span class="st">&#39;Sheet1&#39;</span>)</span>
-<span id="cb24-4"><a href="data-types-and-data-structures.html#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code></pre></div>
-<pre><code>## # A tibble: 6 × 5
-##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
-##          &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;  
-## 1          5.1         3.5          1.4         0.2 setosa 
-## 2          4.9         3            1.4         0.2 setosa 
-## 3          4.7         3.2          1.3         0.2 setosa 
-## 4          4.6         3.1          1.5         0.2 setosa 
-## 5          5           3.6          1.4         0.2 setosa 
-## 6          5.4         3.9          1.7         0.4 setosa</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="data-types-and-data-structures.html#cb24-1" tabindex="-1"></a><span class="co"># install.packages(&quot;readxl&quot;)</span></span>
+<span id="cb24-2"><a href="data-types-and-data-structures.html#cb24-2" tabindex="-1"></a><span class="co"># library(readxl)</span></span>
+<span id="cb24-3"><a href="data-types-and-data-structures.html#cb24-3" tabindex="-1"></a><span class="co"># df_excel &lt;- read_excel(&#39;excell_iris_data.xlsx&#39;,sheet=&#39;Sheet1&#39;)</span></span>
+<span id="cb24-4"><a href="data-types-and-data-structures.html#cb24-4" tabindex="-1"></a><span class="co"># head(df_excel)</span></span></code></pre></div>
 <p>Unfortunately, to write an excel file, we need another package -</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="data-types-and-data-structures.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&quot;xlsx&quot;)</span></span>
-<span id="cb26-2"><a href="data-types-and-data-structures.html#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xlsx)</span>
-<span id="cb26-3"><a href="data-types-and-data-structures.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">write.xlsx</span>(<span class="at">x=</span>df_excel, <span class="st">&quot;My_output_df.xlsx&quot;</span>)</span></code></pre></div>
-</div>
-<div id="manipulating-data" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Manipulating data<a href="data-types-and-data-structures.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>First thing, I would do to check after loading a data-frame to the <em>R</em> environment is checking its dimension, look at the top and bottom of the dataset, look at the structure and summary of the data by following set of commands -</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="data-types-and-data-structures.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the dimension of the data</span></span>
-<span id="cb27-2"><a href="data-types-and-data-structures.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(df_csv)</span></code></pre></div>
-<pre><code>## [1] 150   5</code></pre>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-types-and-data-structures.html#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the head or tail</span></span>
-<span id="cb29-2"><a href="data-types-and-data-structures.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="data-types-and-data-structures.html#cb25-1" tabindex="-1"></a><span class="co"># install.packages(&quot;xlsx&quot;)</span></span>
+<span id="cb25-2"><a href="data-types-and-data-structures.html#cb25-2" tabindex="-1"></a><span class="co"># library(xlsx)</span></span>
+<span id="cb25-3"><a href="data-types-and-data-structures.html#cb25-3" tabindex="-1"></a><span class="co"># write.xlsx(x=df_excel, &quot;My_output_df.xlsx&quot;)</span></span></code></pre></div>
+<p>However, in some cases loading package <code>xlsx</code> in your <code>R</code> session may create an error message due to incompatibility with <code>Java</code> version on your computer (and that’s why I have commented out those two code snippet above). You may fix this problem my installing appropriate version of <code>Java</code> (there’s a solution on <a href="https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava"><em>stackoverflow</em></a>). Alternatively, you can load a fantastic package called <code>rio</code> and use its <code>import()</code> function to load your <em>.xls</em> or <em>.xlsx</em> files and <code>export()</code> function to write your output data in those formats as well -</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="data-types-and-data-structures.html#cb26-1" tabindex="-1"></a><span class="co"># install.packages(&quot;rio&quot;)</span></span>
+<span id="cb26-2"><a href="data-types-and-data-structures.html#cb26-2" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb26-3"><a href="data-types-and-data-structures.html#cb26-3" tabindex="-1"></a>df_excel <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="st">&#39;excell_iris_data.xlsx&#39;</span>,<span class="at">sheet=</span><span class="st">&#39;Sheet1&#39;</span>)</span>
+<span id="cb26-4"><a href="data-types-and-data-structures.html#cb26-4" tabindex="-1"></a><span class="fu">head</span>(df_excel)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 ## 1          5.1         3.5          1.4         0.2  setosa
 ## 2          4.9         3.0          1.4         0.2  setosa
@@ -549,7 +542,27 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 4          4.6         3.1          1.5         0.2  setosa
 ## 5          5.0         3.6          1.4         0.2  setosa
 ## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-types-and-data-structures.html#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(df_csv)</span></code></pre></div>
+<p>Accordingly, for exporting (or writing) the file on your computer -</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="data-types-and-data-structures.html#cb28-1" tabindex="-1"></a><span class="co"># install.packages(&quot;rio&quot;)</span></span>
+<span id="cb28-2"><a href="data-types-and-data-structures.html#cb28-2" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb28-3"><a href="data-types-and-data-structures.html#cb28-3" tabindex="-1"></a><span class="fu">export</span>(<span class="at">x=</span>df_excel, <span class="st">&quot;My_output_df.xlsx&quot;</span>)</span></code></pre></div>
+</div>
+<div id="manipulating-data" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Manipulating data<a href="data-types-and-data-structures.html#manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>First thing, I would do to check after loading a data-frame to the <em>R</em> environment is checking its dimension, look at the top and bottom of the dataset, look at the structure and summary of the data by following set of commands -</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="data-types-and-data-structures.html#cb29-1" tabindex="-1"></a><span class="co"># check the dimension of the data</span></span>
+<span id="cb29-2"><a href="data-types-and-data-structures.html#cb29-2" tabindex="-1"></a><span class="fu">dim</span>(df_csv)</span></code></pre></div>
+<pre><code>## [1] 150   5</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="data-types-and-data-structures.html#cb31-1" tabindex="-1"></a><span class="co"># check the head or tail</span></span>
+<span id="cb31-2"><a href="data-types-and-data-structures.html#cb31-2" tabindex="-1"></a><span class="fu">head</span>(df_csv)</span></code></pre></div>
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data-types-and-data-structures.html#cb33-1" tabindex="-1"></a><span class="fu">tail</span>(df_csv)</span></code></pre></div>
 <pre><code>##     Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
 ## 145          6.7         3.3          5.7         2.5 virginica
 ## 146          6.7         3.0          5.2         2.3 virginica
@@ -557,15 +570,15 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 148          6.5         3.0          5.2         2.0 virginica
 ## 149          6.2         3.4          5.4         2.3 virginica
 ## 150          5.9         3.0          5.1         1.8 virginica</code></pre>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="data-types-and-data-structures.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># apply str() and summary() function </span></span>
-<span id="cb33-2"><a href="data-types-and-data-structures.html#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(df_csv)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data-types-and-data-structures.html#cb35-1" tabindex="-1"></a><span class="co"># apply str() and summary() function </span></span>
+<span id="cb35-2"><a href="data-types-and-data-structures.html#cb35-2" tabindex="-1"></a><span class="fu">str</span>(df_csv)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
 ##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
 ##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
 ##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
 ##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
 ##  $ Species     : chr  &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; &quot;setosa&quot; ...</code></pre>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="data-types-and-data-structures.html#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(df_csv)</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data-types-and-data-structures.html#cb37-1" tabindex="-1"></a><span class="fu">summary</span>(df_csv)</span></code></pre></div>
 <pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
 ##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
 ##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
@@ -582,18 +595,18 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## </code></pre>
 <p>We have covered how to change the row or column names in the section <code>Data frame</code></p>
 <p>Now we will see how to add new column or row to the data-frame. As we have seen that there are 150 rows in <code>df_csv</code> data-frame, therefore, we need a column that contains 150 data points. Let’s create a vector <code>random_numbers</code> that holds 150 random numbers -</p>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="data-types-and-data-structures.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="at">seed =</span> <span class="dv">123</span>)</span>
-<span id="cb37-2"><a href="data-types-and-data-structures.html#cb37-2" aria-hidden="true" tabindex="-1"></a>random_numbers <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">150</span>),<span class="dv">2</span>)</span>
-<span id="cb37-3"><a href="data-types-and-data-structures.html#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(random_numbers)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data-types-and-data-structures.html#cb39-1" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="at">seed =</span> <span class="dv">123</span>)</span>
+<span id="cb39-2"><a href="data-types-and-data-structures.html#cb39-2" tabindex="-1"></a>random_numbers <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(<span class="dv">150</span>),<span class="dv">2</span>)</span>
+<span id="cb39-3"><a href="data-types-and-data-structures.html#cb39-3" tabindex="-1"></a><span class="fu">head</span>(random_numbers)</span></code></pre></div>
 <pre><code>## [1] -0.56 -0.23  1.56  0.07  0.13  1.72</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="data-types-and-data-structures.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(random_numbers)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data-types-and-data-structures.html#cb41-1" tabindex="-1"></a><span class="fu">length</span>(random_numbers)</span></code></pre></div>
 <pre><code>## [1] 150</code></pre>
 <p>Now, we will add this vector to the data-frame as a column -</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="data-types-and-data-structures.html#cb41-1" aria-hidden="true" tabindex="-1"></a>new_df <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_csv, random_numbers)</span>
-<span id="cb41-2"><a href="data-types-and-data-structures.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="co"># alternatively,</span></span>
-<span id="cb41-3"><a href="data-types-and-data-structures.html#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="co">#df_csv$random_number_column &lt;- random_numbers</span></span>
-<span id="cb41-4"><a href="data-types-and-data-structures.html#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-5"><a href="data-types-and-data-structures.html#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(new_df)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data-types-and-data-structures.html#cb43-1" tabindex="-1"></a>new_df <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_csv, random_numbers)</span>
+<span id="cb43-2"><a href="data-types-and-data-structures.html#cb43-2" tabindex="-1"></a><span class="co"># alternatively,</span></span>
+<span id="cb43-3"><a href="data-types-and-data-structures.html#cb43-3" tabindex="-1"></a><span class="co">#df_csv$random_number_column &lt;- random_numbers</span></span>
+<span id="cb43-4"><a href="data-types-and-data-structures.html#cb43-4" tabindex="-1"></a></span>
+<span id="cb43-5"><a href="data-types-and-data-structures.html#cb43-5" tabindex="-1"></a><span class="fu">head</span>(new_df)</span></code></pre></div>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species random_numbers
 ## 1          5.1         3.5          1.4         0.2  setosa          -0.56
 ## 2          4.9         3.0          1.4         0.2  setosa          -0.23
@@ -602,17 +615,17 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 5          5.0         3.6          1.4         0.2  setosa           0.13
 ## 6          5.4         3.9          1.7         0.4  setosa           1.72</code></pre>
 <p>Similarly, to add a new row to the current data-frame, let’s create another vector of 6 matched data-type elements to match the six columns in the <code>new_df</code> and add to the end of the data-frame -</p>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="data-types-and-data-structures.html#cb43-1" aria-hidden="true" tabindex="-1"></a>new_row <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Length), </span>
-<span id="cb43-2"><a href="data-types-and-data-structures.html#cb43-2" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Width),</span>
-<span id="cb43-3"><a href="data-types-and-data-structures.html#cb43-3" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Length),</span>
-<span id="cb43-4"><a href="data-types-and-data-structures.html#cb43-4" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Width),</span>
-<span id="cb43-5"><a href="data-types-and-data-structures.html#cb43-5" aria-hidden="true" tabindex="-1"></a>             <span class="st">&quot;random_sp&quot;</span>,</span>
-<span id="cb43-6"><a href="data-types-and-data-structures.html#cb43-6" aria-hidden="true" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>random_numbers)</span>
-<span id="cb43-7"><a href="data-types-and-data-structures.html#cb43-7" aria-hidden="true" tabindex="-1"></a>             )</span>
-<span id="cb43-8"><a href="data-types-and-data-structures.html#cb43-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-9"><a href="data-types-and-data-structures.html#cb43-9" aria-hidden="true" tabindex="-1"></a>new_df2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(new_df, new_row)</span>
-<span id="cb43-10"><a href="data-types-and-data-structures.html#cb43-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb43-11"><a href="data-types-and-data-structures.html#cb43-11" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(new_df2)</span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-types-and-data-structures.html#cb45-1" tabindex="-1"></a>new_row <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Length), </span>
+<span id="cb45-2"><a href="data-types-and-data-structures.html#cb45-2" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Sepal.Width),</span>
+<span id="cb45-3"><a href="data-types-and-data-structures.html#cb45-3" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Length),</span>
+<span id="cb45-4"><a href="data-types-and-data-structures.html#cb45-4" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>Petal.Width),</span>
+<span id="cb45-5"><a href="data-types-and-data-structures.html#cb45-5" tabindex="-1"></a>             <span class="st">&quot;random_sp&quot;</span>,</span>
+<span id="cb45-6"><a href="data-types-and-data-structures.html#cb45-6" tabindex="-1"></a>             <span class="fu">mean</span>(new_df<span class="sc">$</span>random_numbers)</span>
+<span id="cb45-7"><a href="data-types-and-data-structures.html#cb45-7" tabindex="-1"></a>             )</span>
+<span id="cb45-8"><a href="data-types-and-data-structures.html#cb45-8" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="data-types-and-data-structures.html#cb45-9" tabindex="-1"></a>new_df2 <span class="ot">&lt;-</span> <span class="fu">rbind</span>(new_df, new_row)</span>
+<span id="cb45-10"><a href="data-types-and-data-structures.html#cb45-10" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="data-types-and-data-structures.html#cb45-11" tabindex="-1"></a><span class="fu">tail</span>(new_df2)</span></code></pre></div>
 <pre><code>##         Sepal.Length      Sepal.Width Petal.Length      Petal.Width   Species
 ## 146              6.7                3          5.2              2.3 virginica
 ## 147              6.3              2.5            5              1.9 virginica
@@ -628,23 +641,23 @@ You can put more than one value in a variable, and then it will be equivalent to
 ## 150               -1.29
 ## 151 -0.0244666666666667</code></pre>
 <p>Now, we will touch on another important topic today - <em>dealing with missing data</em>. Missing data in <em>R</em> are represented by the symbol <strong>NA</strong> (not available) or impossible values (<em>i.e.</em> dividing by zero) are represented by the symbol <strong>NaN</strong> (not a number). Here we will deal with only <strong>NA</strong> which is the most common in day-to-day <em>R</em>. If we have a vector <code>x</code> which contains one or more <strong>NA</strong> values, we use <code>is.na()</code> function to inquire about <strong>NA</strong> values-</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="data-types-and-data-structures.html#cb45-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="cn">NA</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>,<span class="dv">6</span>)</span>
-<span id="cb45-2"><a href="data-types-and-data-structures.html#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">is.na</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-types-and-data-structures.html#cb47-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="cn">NA</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>,<span class="dv">6</span>)</span>
+<span id="cb47-2"><a href="data-types-and-data-structures.html#cb47-2" tabindex="-1"></a><span class="fu">is.na</span>(x)</span></code></pre></div>
 <pre><code>## [1] FALSE FALSE  TRUE FALSE FALSE  TRUE FALSE FALSE</code></pre>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="data-types-and-data-structures.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(x))</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-types-and-data-structures.html#cb49-1" tabindex="-1"></a><span class="fu">any</span>(<span class="fu">is.na</span>(x))</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <p>The problem with the missing value(s) is that it hampers the simple operations, like - calculating the mean or sum etc -</p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="data-types-and-data-structures.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-types-and-data-structures.html#cb51-1" tabindex="-1"></a><span class="fu">sum</span>(x)</span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="data-types-and-data-structures.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-types-and-data-structures.html#cb53-1" tabindex="-1"></a><span class="fu">mean</span>(x)</span></code></pre></div>
 <pre><code>## [1] NA</code></pre>
 <p>However, if you include a magic argument <code>na.rm=TRUE</code>, then the problem can be overcome and those operations can be performed on rest of the valid elements of the vector <code>x</code> -</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="data-types-and-data-structures.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data-types-and-data-structures.html#cb55-1" tabindex="-1"></a><span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 21</code></pre>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="data-types-and-data-structures.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data-types-and-data-structures.html#cb57-1" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 <p>However, a clever way to handle the missing data points is to <em>impute</em> them, and a basic way of doing so is to take the mean of the rest of the data points, and replace the <strong>NA</strong> values with the mean -</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="data-types-and-data-structures.html#cb57-1" aria-hidden="true" tabindex="-1"></a>x[<span class="fu">is.na</span>(x)] <span class="ot">&lt;-</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> T)</span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="data-types-and-data-structures.html#cb59-1" tabindex="-1"></a>x[<span class="fu">is.na</span>(x)] <span class="ot">&lt;-</span> <span class="fu">mean</span>(x, <span class="at">na.rm =</span> T)</span></code></pre></div>
 <p>Obviously, there are more complex ways to impute the missing data, we will not cover those in this workshop.</p>
 <div id="short-exercise-on-manipulating-data" class="section level4 hasAnchor" number="4.4.0.1">
 <h4><span class="header-section-number">4.4.0.1</span> Short exercise on manipulating data<a href="data-types-and-data-structures.html#short-exercise-on-manipulating-data" class="anchor-section" aria-label="Anchor link to header"></a></h4>

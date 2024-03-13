@@ -232,15 +232,31 @@ write.csv(x = df_csv, file = "My_output_df.csv")
 In the case of reading an excel file, either with *.xls* or .*xlsx* extension, we need to load a package called `readxl`.
 ```{r, message=FALSE, warning=FALSE}
 # install.packages("readxl")
-library(readxl)
-df_excel <- read_excel('excell_iris_data.xlsx',sheet='Sheet1')
-head(df_excel)
+# library(readxl)
+# df_excel <- read_excel('excell_iris_data.xlsx',sheet='Sheet1')
+# head(df_excel)
 ```
 Unfortunately, to write an excel file, we need another package -
 ```{r}
 # install.packages("xlsx")
-library(xlsx)
-write.xlsx(x=df_excel, "My_output_df.xlsx")
+# library(xlsx)
+# write.xlsx(x=df_excel, "My_output_df.xlsx")
+```
+
+
+However, in some cases loading package `xlsx` in your `R` session may create an error message due to incompatibility with `Java` version on your computer (and that's why I have commented out those two code snippet above). You may fix this problem my installing appropriate version of `Java` (there's a solution on [*stackoverflow*](https://stackoverflow.com/questions/17376939/problems-when-trying-to-load-a-package-in-r-due-to-rjava)). Alternatively, you can load a fantastic package called `rio` and use its `import()` function to load your *.xls* or *.xlsx* files and `export()` function to write your output data in those formats as well -
+
+```{r, message=FALSE, warning=FALSE}
+# install.packages("rio")
+library(rio)
+df_excel <- import('excell_iris_data.xlsx',sheet='Sheet1')
+head(df_excel)
+```
+Accordingly, for exporting (or writing) the file on your computer -
+```{r}
+# install.packages("rio")
+library(rio)
+export(x=df_excel, "My_output_df.xlsx")
 ```
 
 
