@@ -24,7 +24,7 @@ There are different data types used in *R*. We will touch upon a few, but heavil
 
 
 ### Numbers: 
-Numbers can be Integers, or can be floating numbers (decimal numbers). They are recognized as simple `Numeric` data type in *R*. 
+Numbers can be Integers, or can be floating numbers (decimal numbers). They are recognised as simple `Numeric` data type in *R*. 
 
 ###  Character: 
 This type of data can be equivalent to categorical variable. In other programming language, this is equivalent to *String* or *Text* data type. Here in *R*, these can be *nominal* (just names) or *ordinal* (names with hidden order) variables. 
@@ -95,7 +95,7 @@ y <- c(1,2,3,4,5,6)
 ``` 
 Here we have used the *combine function* `c()` to create a vector. Vector can hold different data-types individually, that means, one vector can hold only one type of data (numeric or character or logical etc). Just remember, if you want to hold multiple elements of same type (be it numeric values or characters), enclose them with the *combine function* (as above).
 
-Each of the components of the vector is called its *Element*. You can call or refer the elements individually or as a group using their *positional index*. The positional index starts from `1`, which you can refer to as *one-based indexing*. For example, if you want to call or retrieve the first element of vector `y`, you can type in `y[1]`. Similarly, you can refer to the 4th element by typing in `y[4]`. If you want to refer to from 2nd to the 4th elements of `y`, you type in `y[c(2,3,4)]` or you can use `y[2:4]`. 
+Each of the components of the vector is called its *Element*. You can call or refer to the elements individually or as a group using their *positional index*. The positional index starts from `1`, which you can refer to as *one-based indexing*. For example, if you want to call or retrieve the first element of vector `y`, you can type in `y[1]`. Similarly, you can refer to the 4th element by typing in `y[4]`. If you want to refer to from 2nd to the 4th elements of `y`, you type in `y[c(2,3,4)]` or you can use `y[2:4]`. 
 
 A useful tip - for sequential numbers, you can use a short-cut using colon sign in between the minimum and maximum values (inclusive) of the range. Like, for 1 to 100, you type in `1:100`.
 
